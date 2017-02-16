@@ -624,6 +624,13 @@ button + label {
   .logo {
     height: 5em;
     width: 100em; } }
+
+/*No stop...Don't continue...It's not safe below here...*/
+
+
+
+
+
 /*! Lity - v1.6.5 - 2016-04-05
 * http://sorgalla.com/lity/
 * Copyright (c) 2016 Jan Sorgalla; Licensed MIT */
@@ -811,6 +818,15 @@ button + label {
 
 .lity-hide {
   display: none; }
+
+
+
+/*I SAID STOP TURN BACK NOW...*/
+
+
+
+
+
 
 /*animations*/
 /******************
@@ -2362,6 +2378,7 @@ button + label {
   background: url(../images/preloader.gif) center no-repeat #000; }
 
 /*!
+*Yep I copied the entire font awesome CSS into here because I'm insane
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
