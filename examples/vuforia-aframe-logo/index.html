@@ -16,12 +16,15 @@
 </head>
 
 <body>
+    <button onclick="playVid()" type="button">Play Video</button>
+    <button onclick="pauseVid()" type="button">Pause Video</button><br> 
+    
     <div hidden>
         <div id="lookattarget" class="bottomScreen">Look at the target ...</div>
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.7</h1>
+            <h1>AR Portfolio V1.8</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -43,7 +46,7 @@
 
         <a-assets>
             <a-asset-item id="vuforiakey" src="key.txt"></a-asset-item>
-            <video autoplay muted id="battleWithin" loop="true" src="video/battleWithinSilent.mp4" webkit-playsinline />
+            <video id="battleWithin" loop="true" src="video/battleWithinSilent.mp4" webkit-playsinline />
             <img id="logo" src="images/logoWhite.png">
         </a-assets>
 
@@ -66,11 +69,17 @@
     </ar-scene>
     <script src="app.js"></script>
     
-    <script>
-document.getElementById('playVid').onclick = function (){
-    document.getElementById('battleWithin').play();
-};
-</script>
+<script> 
+var vid = document.getElementById("battleWithin"); 
+
+function playVid() { 
+    vid.play(); 
+} 
+
+function pauseVid() { 
+    vid.pause(); 
+} 
+</script> 
 
 </body>
 
