@@ -28,22 +28,43 @@
       <div class="loader-section section-right"></div>
     </div>
 
+<!--
     <ar-scene vuforiakey="#vuforiakey"
               vuforiadataset__evr="src:url(../resources/datasets/EVR.xml);">
+-->
+       <ar-scene vuforiakey="#vuforiakey"
+              vuforiadataset__stonesandchips="src:url(../resources/datasets/StonesAndChips.xml);">
+           
+           
       <a-assets>
          <a-asset-item id="vuforiakey" src="key.txt"></a-asset-item>
         <video id="battleWithin" autoplay loop="true" src="video/battleWithin.mp4"></video>
+        <img id="logo" src="images/logoWhite.png">
       </a-assets>
+           
+           
 
       <!-- attach to stones target. x/y in the plane, z up -->
-      <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.evr.qrcode" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">
+           
+<!--      <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.evr.qrcode" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">-->
+        <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.stonesandchips.stones" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">
         <a-entity id="logoscene"  scale="0.005 0.005 0.005" rotation="90 0 0" visible="false">
+         
+            
+            <a-image src="#logo"></a-image>
+
+       </a-entity>
+      </ar-frame>   
+           
+    <ar-frame id="frame2" trackvisibility="true" visible="false" parent="vuforia.stonesandchips.chips" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">
+        <a-entity id="logoscene2"  scale="0.005 0.005 0.005" rotation="90 0 0" visible="false">
          
             
             <a-video src="#battleWithin" width="16" height="9" position="0 0 0"></a-video>
 
        </a-entity>
-      </ar-frame>      
+      </ar-frame> 
+           
     </ar-scene>
     <script src="app.js"></script>
   </body>
