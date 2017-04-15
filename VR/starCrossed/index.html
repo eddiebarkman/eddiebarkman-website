@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from vrweb.io/p/starCrossed/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2017 07:33:39 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Star Crossed | VRWeb.IO</title>
+    <meta name="description" content="Field of Stars">
+    <script src="aframe.js"></script>
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    
+</head>
+
+<body>
+    
+<!--<a href ="http://vrweb.io/"><image style="position: absolute; top:0; left:0; z-index:9000; height:3em; width:4em; padding:0.5em;" src="backButton-01.png"></image></a>-->
+    <a-scene>
+        <a-assets>
+                <img id="BG" src="BG-03.jpg">
+                <img id="begin" src="begin.png">
+                <img id="title" src="titleV2.png">
+                <img id="experience" src="gaze.png">
+                <img id="madeBy" src="madeBy.png">
+                <img id="light" src="light.png">
+                <img id="shootingStar" src="shootingStar.png">
+                <img id="VRLogo" src="VRLogo-01.png">
+                <audio id="starCrossed" src="StarCrossed.mp3">
+        </a-assets>
+                
+                
+ <a-entity sound="src: StarCrossed.mp3" position="0 0 0"></a-entity>
+
+
+
+        <a-entity camera look-controls>
+                        <a-entity id="circleCursor" position="0 0 -3" geometry="primitive: circle; radius: 0.02; " material="color: #161629; shader: flat" cursor="maxDistance: 30; fuse: true" timeout="1500">
+                <a-animation easing="ease-in" attribute="scale" fill="forwards" from="1 1 1" to="2 2 2" dur="0"></a-animation>
+                <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="1 1 1" to="1 1 1" dur="150"></a-animation>
+                <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="forwards" from="1 1 1" to="2 2 2" dur="1500"></a-animation>
+
+                
+            </a-entity>
+            
+            <a-entity id="ringCursor" position="0 0 -3" geometry="primitive: ring; radiusOuter: 0.06; radiusInner:0.05; " material="color: #161629; shader: flat">
+            
+            </a-entity>
+        </a-entity>
+
+
+        <a-sky src="#BG" segments-height="20">
+            <a-animation attribute="rotation" to="0 360 0" dur="150000" easing="linear" fill="forwards" repeat="indefinite">
+            </a-animation>
+
+        </a-sky>
+    
+            
+        <a-plane id="button1" src="#begin" transparent="true" opacity="1" height="0.4" width="1" position="0 0.6 -3" shader="flat" look-at="[camera]" sound="src: StarCrossed.mp3; on: click; volume:15;">
+<!--
+            
+                <a-animation begin="clickStart" easing="ease-in" attribute="scale" fill="forwards" from="1" to="1.2" dur="800"></a-animation>
+                <a-animation begin="clickEnd" easing="ease-in" attribute="scale" fill="forwards" from="1.2" to="1" dur="400"></a-animation>
+-->
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="1" to="0" dur="1500"></a-animation>
+            <a-animation begin="1600 float" easing="ease-in" attribute="position" fill="forwards" from="0 2 -10" to="0 -15 5" dur="1500"></a-animation>
+            
+            <a-animation begin="123000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="1500"></a-animation>
+            <a-animation begin="120000 float" easing="ease-in" attribute="position" fill="forwards" from="0 -15 5" to="0 0.6 -3" dur="1500"></a-animation>
+
+        </a-plane>
+            
+        <a-plane id="titlePic" src="#title" transparent="true" opacity="1" height="1" width="3" position="0 2.5 -7" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="1" to="0" dur="1500"></a-animation>
+            <a-animation begin="1600 float" easing="ease-in" attribute="position" fill="forwards" from="0 2.5 -7" to="0 -55 5" dur="1500"></a-animation>
+            
+            <a-animation begin="123000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="1500"></a-animation>
+            <a-animation begin="120000 float" easing="ease-in" attribute="position" fill="forwards" from="0 -15 5" to="0 2.5 -7" dur="1500"></a-animation>
+
+        </a-plane>
+            
+            <a-plane id="experiencePic" src="#experience" transparent="true" opacity="1" height="0.3" width="8" position="0 0.7 -10" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="1" to="0" dur="1500"></a-animation>
+            <a-animation begin="1600 float" easing="ease-in" attribute="position" fill="forwards" from="0 0.7 -10" to="0 -55 5" dur="1500"></a-animation>
+            
+            <a-animation begin="123000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="1500"></a-animation>
+            <a-animation begin="120000 float" easing="ease-in" attribute="position" fill="forwards" from="0 -15 5" to="0 0.7 -10" dur="1500"></a-animation>
+
+        </a-plane>
+            
+        <a-plane id="madeByPic" src="#madeBy" transparent="true" opacity="1" height="0.3" width="5" position="0 0.3 -10" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="1" to="0" dur="1500"></a-animation>
+            <a-animation begin="1600 float" easing="ease-in" attribute="position" fill="forwards" from="0 0.3 -10" to="0 -55 5" dur="1500"></a-animation>
+            
+            <a-animation begin="123000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="1500"></a-animation>
+            <a-animation begin="120000 float" easing="ease-in" attribute="position" fill="forwards" from="0 -55 5" to="0 0.3 -10" dur="1500"></a-animation>
+
+        </a-plane>
+            
+            <!--ShootingStarOne-->
+        <a-entity rotation="0 0 20">    
+        <a-plane id="star1" src="#shootingStar" transparent="true" opacity="0" height="1" width="1" position="-8 12 -10" shader="flat">
+            <a-animation begin="1000 float" easing="ease" attribute="opacity" fill="forwards" from="0" to="1" dur="700"></a-animation>
+            <a-animation begin="float" easing="ease" attribute="position" fill="forwards" from="-8 12 -10" to="20 -7 -10" dur="6000"></a-animation>
+            <a-animation begin="3000 float" easing="ease-in-out" attribute="opacity" fill="forwards" from="1" to="0" dur="1000"></a-animation>
+
+        </a-plane>
+            
+        </a-entity>
+            
+              <!--ShootingStartwo-->
+                 <a-entity rotation="0 0 -120">    
+        <a-plane id="star2" src="#shootingStar" transparent="true" opacity="0" height="1" width="1" position="5 -12 -15" shader="flat">
+            <a-animation begin="1000 float" easing="ease" attribute="opacity" fill="forwards" from="0" to="1" dur="700"></a-animation>
+            <a-animation begin="float" easing="ease-in-out" attribute="position" fill="forwards" from="-14 12 -15" to="5 -12 -15" dur="6000"></a-animation>
+            <a-animation begin="3000 float" easing="ease" attribute="opacity" fill="forwards" from="1" to="0" dur="1000"></a-animation>
+
+        </a-plane>
+            
+        </a-entity>
+            
+            
+<!--
+        <a-plane id="logo" src="#VRLogo" transparent="true" opacity="1" height="0.5" width="0.5" position="0 -2 0" shader="flat" rotation="-90 0 0">
+
+        </a-plane> 
+-->
+            
+                
+                <!--First Wave of Lights-->
+            <a-entity>
+ 
+        <a-plane id="ballOfLight" src="#light" transparent="true" opacity="0" height="1" width="1" position="5 0 -10" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="25 -1 -10" to="5 500 -10" dur="40000"></a-animation>
+
+        </a-plane>
+        
+            
+            <a-plane id="ballOfLight2" src="#light" transparent="true" opacity="0" height="1" width="1" position="-5 0 -10" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="-5 -1 -25" to="5 400 -10" dur="30000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight3" src="#light" transparent="true" opacity="0" height="1" width="1" position="-15 -1 -5" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="-15 -1 -5" to="15 600 -5" dur="50000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight4" src="#light" transparent="true" opacity="0" height="1" width="1" position="30 -1 4" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="30 0 4" to="30 500 4" dur="45000"></a-animation>
+        </a-plane>
+            
+        <a-plane id="ballOfLight5" src="#light" transparent="true" opacity="0" height="1" width="1" position="10 0 -25" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="10 0 -25" to="10 600 -25" dur="40000"></a-animation>
+        </a-plane>      
+            
+        <a-plane id="ballOfLight6" src="#light" transparent="true" opacity="0" height="1" width="1" position="3 0 -1" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="14 0 -1" to="10 500 -25" dur="35000"></a-animation>
+        </a-plane>     
+            
+        <a-plane id="ballOfLight7" src="#light" transparent="true" opacity="0" height="1" width="1" position="40 0 -12" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="40 0 -12" to="40 600 -25" dur="55000"></a-animation>
+        </a-plane>        
+            
+            <a-plane id="ballOfLight8" src="#light" transparent="true" opacity="0" height="1" width="1" position="14 0 -4" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="-35 0 -4" to="40 700 -4" dur="45000"></a-animation>
+        </a-plane>    
+            
+            
+            <a-plane id="ballOfLight9" src="#light" transparent="true" opacity="0" height="1" width="1" position="9 0 17" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="8 0 17" to="9 450 17" dur="35000"></a-animation>
+        </a-plane>          
+            
+            <a-plane id="ballOfLight10" src="#light" transparent="true" opacity="0" height="1" width="1" position="77 0 -12" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="77 0 -10" to="77 500 -10" dur="28000"></a-animation>
+        </a-plane>
+            
+            
+                  
+        <a-plane id="ballOfLight11" src="#light" transparent="true" opacity="0" height="1" width="1" position="6 0 -18" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="6 -1 -18" to="5 300 -10" dur="40000"></a-animation>
+
+        </a-plane>
+        
+            
+            <a-plane id="ballOfLight12" src="#light" transparent="true" opacity="0" height="1" width="1" position="2 0 10" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="15 -1 10" to="-5 400 10" dur="30000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight13" src="#light" transparent="true" opacity="0" height="1" width="1" position="-25 -1 -35" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="-35 -1 -7" to="15 500 -5" dur="50000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight14" src="#light" transparent="true" opacity="0" height="1" width="1" position="-30 -1 -4" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="-30 0 -4" to="-10 400 -40" dur="45000"></a-animation>
+        </a-plane>
+            
+        <a-plane id="ballOfLight15" src="#light" transparent="true" opacity="0" height="1" width="1" position="-10 0 25" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="-10 0 25" to="-19 500 12" dur="40000"></a-animation>
+        </a-plane>      
+            
+        <a-plane id="ballOfLight16" src="#light" transparent="true" opacity="0" height="1" width="1" position="3 0 -1" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="3 0 -1" to="-3 650 -50" dur="35000"></a-animation>
+        </a-plane>     
+            
+        <a-plane id="ballOfLight17" src="#light" transparent="true" opacity="0" height="1" width="1" position="-10 0 72" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="11 0 12" to="-40 600 25" dur="55000"></a-animation>
+        </a-plane>        
+            
+            <a-plane id="ballOfLight18" src="#light" transparent="true" opacity="0" height="1" width="1" position="-23 0 42" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="23 0 4" to="35 600 4" dur="45000"></a-animation>
+        </a-plane>    
+            
+            
+            <a-plane id="ballOfLight19" src="#light" transparent="true" opacity="0" height="1" width="1" position="-9 0 -17" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="-9 0 -17" to="-16 400 50" dur="35000"></a-animation>
+        </a-plane>          
+            
+            <a-plane id="ballOfLight20" src="#light" transparent="true" opacity="0" height="1" width="1" position="-37 0 30" shader="flat" look-at="[camera]">
+            <a-animation begin="float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="-77 0 10" to="-77 700 10" dur="28000"></a-animation>
+        </a-plane>
+                
+                           <a-animation attribute="rotation" to="0 -360 0" dur="100000" easing="linear" fill="forwards" repeat="indefinite">
+            </a-entity>
+            
+             <!--second Wave of Lights-->
+                <a-entity><!--Entity 2-->
+ 
+        <a-plane id="ballOfLight21" src="#light" transparent="true" opacity="0" height="1" width="1" position="5 0 -10" shader="flat" look-at="[camera]">
+            <a-animation begin="700 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="700 float" easing="ease-in" attribute="position" fill="forwards" from="5 -1 -10" to="5 500 -10" dur="40000"></a-animation>
+
+        </a-plane>
+        
+            
+            <a-plane id="ballOfLight22" src="#light" transparent="true" opacity="0" height="1" width="1" position="-5 0 -10" shader="flat" look-at="[camera]">
+            <a-animation begin="3500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="3500 float" easing="ease-in" attribute="position" fill="forwards" from="-22 -1 -10" to="5 400 -10" dur="30000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight23" src="#light" transparent="true" opacity="0" height="1" width="1" position="-15 -1 -5" shader="flat" look-at="[camera]">
+            <a-animation begin="5577 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="5577" easing="ease-in" attribute="position" fill="forwards" from="-15 -1 -5" to="15 600 -5" dur="50000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight24" src="#light" transparent="true" opacity="0" height="1" width="1" position="30 -1 4" shader="flat" look-at="[camera]">
+            <a-animation begin="3400 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="3400 float" easing="ease-in" attribute="position" fill="forwards" from="30 0 4" to="30 500 4" dur="45000"></a-animation>
+        </a-plane>
+            
+        <a-plane id="ballOfLight25" src="#light" transparent="true" opacity="0" height="1" width="1" position="10 0 -25" shader="flat" look-at="[camera]">
+            <a-animation begin="5300 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="4500 float" easing="ease-in" attribute="position" fill="forwards" from="10 0 -25" to="10 600 -25" dur="40000"></a-animation>
+        </a-plane>      
+            
+        <a-plane id="ballOfLight26" src="#light" transparent="true" opacity="0" height="1" width="1" position="3 0 -1" shader="flat" look-at="[camera]">
+            <a-animation begin="7999 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="7999 float" easing="ease-in" attribute="position" fill="forwards" from="3 0 -1" to="10 500 -25" dur="35000"></a-animation>
+        </a-plane>     
+            
+        <a-plane id="ballOfLight27" src="#light" transparent="true" opacity="0" height="1" width="1" position="40 0 -12" shader="flat" look-at="[camera]">
+            <a-animation begin="3000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="3000 float" easing="ease-in" attribute="position" fill="forwards" from="40 0 -12" to="40 600 -25" dur="55000"></a-animation>
+        </a-plane>        
+            
+            <a-plane id="ballOfLight28" src="#light" transparent="true" opacity="0" height="1" width="1" position="14 0 -4" shader="flat" look-at="[camera]">
+            <a-animation begin="6000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="6000 float" easing="ease-in" attribute="position" fill="forwards" from="-35 0 -4" to="40 700 -4" dur="45000"></a-animation>
+        </a-plane>    
+            
+            
+            <a-plane id="ballOfLight29" src="#light" transparent="true" opacity="0" height="1" width="1" position="9 0 17" shader="flat" look-at="[camera]">
+            <a-animation begin="4000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="4000 float" easing="ease-in" attribute="position" fill="forwards" from="9 0 17" to="9 450 17" dur="35000"></a-animation>
+        </a-plane>          
+            
+            <a-plane id="ballOfLight30" src="#light" transparent="true" opacity="0" height="1" width="1" position="77 0 -12" shader="flat" look-at="[camera]">
+            <a-animation begin="3500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="3500 float" easing="ease-in" attribute="position" fill="forwards" from="77 0 -10" to="77 500 -10" dur="28000"></a-animation>
+        </a-plane>
+            
+            
+                  
+        <a-plane id="ballOfLight31" src="#light" transparent="true" opacity="0" height="1" width="1" position="6 0 -18" shader="flat" look-at="[camera]">
+            <a-animation begin="1250 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="1250 float" easing="ease-in" attribute="position" fill="forwards" from="5 -1 -10" to="5 300 -10" dur="40000"></a-animation>
+
+        </a-plane>
+        
+            
+            <a-plane id="ballOfLight32" src="#light" transparent="true" opacity="0" height="1" width="1" position="2 0 10" shader="flat" look-at="[camera]">
+            <a-animation begin="2900 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="2900 float" easing="ease-in" attribute="position" fill="forwards" from="7 -1 19" to="-5 400 10" dur="30000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight33" src="#light" transparent="true" opacity="0" height="1" width="1" position="-25 -1 -35" shader="flat" look-at="[camera]">
+            <a-animation begin="4200 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="4200 float" easing="ease-in" attribute="position" fill="forwards" from="-15 -1 -5" to="15 500 -5" dur="50000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight34" src="#light" transparent="true" opacity="0" height="1" width="1" position="-30 -1 -4" shader="flat" look-at="[camera]">
+            <a-animation begin="7600 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="7600 float" easing="ease-in" attribute="position" fill="forwards" from="-30 0 -4" to="-10 400 -40" dur="45000"></a-animation>
+        </a-plane>
+            
+        <a-plane id="ballOfLight35" src="#light" transparent="true" opacity="0" height="1" width="1" position="-10 0 25" shader="flat" look-at="[camera]">
+            <a-animation begin="6000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="6000 float" easing="ease-in" attribute="position" fill="forwards" from="-10 0 25" to="-19 500 12" dur="40000"></a-animation>
+        </a-plane>      
+            
+        <a-plane id="ballOfLight36" src="#light" transparent="true" opacity="0" height="1" width="1" position="3 0 -1" shader="flat" look-at="[camera]">
+            <a-animation begin="3500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="3500 float" easing="ease-in" attribute="position" fill="forwards" from="3 0 -1" to="-3 650 -50" dur="35000"></a-animation>
+        </a-plane>     
+            
+        <a-plane id="ballOfLight37" src="#light" transparent="true" opacity="0" height="1" width="1" position="-10 0 72" shader="flat" look-at="[camera]">
+            <a-animation begin="5900 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="5900 float" easing="ease-in" attribute="position" fill="forwards" from="-10 0 12" to="-40 600 25" dur="55000"></a-animation>
+        </a-plane>        
+            
+            <a-plane id="ballOfLight38" src="#light" transparent="true" opacity="0" height="1" width="1" position="-23 0 42" shader="flat" look-at="[camera]">
+            <a-animation begin="1200 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="float" easing="ease-in" attribute="position" fill="forwards" from="23 0 4" to="35 600 4" dur="45000"></a-animation>
+        </a-plane>    
+            
+            
+            <a-plane id="ballOfLight39" src="#light" transparent="true" opacity="0" height="1" width="1" position="-9 0 -17" shader="flat" look-at="[camera]">
+            <a-animation begin="3000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="3000 float" easing="ease-in" attribute="position" fill="forwards" from="-9 0 -17" to="-16 400 50" dur="35000"></a-animation>
+        </a-plane>          
+            
+            <a-plane id="ballOfLight40" src="#light" transparent="true" opacity="0" height="1" width="1" position="-37 0 30" shader="flat" look-at="[camera]">
+            <a-animation begin="5500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="5500 float" easing="ease-in" attribute="position" fill="forwards" from="-77 0 10" to="-77 700 10" dur="28000"></a-animation>
+        </a-plane>
+                
+                           <a-animation attribute="rotation" to="0 280 0" dur="110000" easing="linear" fill="forwards" repeat="indefinite">
+            </a-entity>     
+                
+                    
+                <a-entity><!--Entity 3-->
+ 
+        <a-plane id="ballOfLight41" src="#light" transparent="true" opacity="0" height="1" width="1" position="15 0 2" shader="flat" look-at="[camera]">
+            <a-animation begin="21000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="10000 float" easing="ease-in" attribute="position" fill="forwards" from="15 -1 2" to="5 500 -10" dur="40000"></a-animation>
+
+        </a-plane>
+        
+            <a-plane id="ballOfLight42" src="#light" transparent="true" opacity="0" height="1" width="1" position="52 0 -17" shader="flat" look-at="[camera]">
+            <a-animation begin="23500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="13500 float" easing="ease-in" attribute="position" fill="forwards" from="52 -1 -17" to="5 400 -10" dur="30000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight43" src="#light" transparent="true" opacity="0" height="1" width="1" position="75 -1 -3" shader="flat" look-at="[camera]">
+            <a-animation begin="25577 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="15577" easing="ease-in" attribute="position" fill="forwards" from="75 -1 -30" to="15 600 -5" dur="50000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight44" src="#light" transparent="true" opacity="0" height="1" width="1" position="12 -1 35" shader="flat" look-at="[camera]">
+            <a-animation begin="23400 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="13400 float" easing="ease-in" attribute="position" fill="forwards" from="-12 0 35" to="12 500 35" dur="75000"></a-animation>
+        </a-plane>
+            
+        <a-plane id="ballOfLight45" src="#light" transparent="true" opacity="0" height="1" width="1" position="10 0 -15" shader="flat" look-at="[camera]">
+            <a-animation begin="25300 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="24500 float" easing="ease-in" attribute="position" fill="forwards" from="40 0 -15" to="10 600 -25" dur="42000"></a-animation>
+        </a-plane>      
+            
+        <a-plane id="ballOfLight46" src="#light" transparent="true" opacity="0" height="1" width="1" position="33 0 -42" shader="flat" look-at="[camera]">
+            <a-animation begin="27999 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="27999 float" easing="ease-in" attribute="position" fill="forwards" from="33 0 -42" to="10 500 -25" dur="35000"></a-animation>
+        </a-plane>     
+            
+        <a-plane id="ballOfLight47" src="#light" transparent="true" opacity="0" height="1" width="1" position="47 0 -32" shader="flat" look-at="[camera]">
+            <a-animation begin="23000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="23000 float" easing="ease-in" attribute="position" fill="forwards" from="47 0 -32" to="40 600 -25" dur="65000"></a-animation>
+        </a-plane>        
+            
+            <a-plane id="ballOfLight48" src="#light" transparent="true" opacity="0" height="1" width="1" position="22 0 75" shader="flat" look-at="[camera]">
+            <a-animation begin="26000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="26000 float" easing="ease-in" attribute="position" fill="forwards" from="22 0 75" to="40 700 -4" dur="35000"></a-animation>
+        </a-plane>    
+            
+            
+            <a-plane id="ballOfLight49" src="#light" transparent="true" opacity="0" height="1" width="1" position="69 0 -9" shader="flat" look-at="[camera]">
+            <a-animation begin="24000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="24000 float" easing="ease-in" attribute="position" fill="forwards" from="69 0 -9" to="9 450 17" dur="45000"></a-animation>
+        </a-plane>          
+            
+            <a-plane id="ballOfLight50" src="#light" transparent="true" opacity="0" height="1" width="1" position="34 0 -22" shader="flat" look-at="[camera]">
+            <a-animation begin="23500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="23500 float" easing="ease-in" attribute="position" fill="forwards" from="34 0 -22" to="77 500 -10" dur="38000"></a-animation>
+        </a-plane>
+            
+            
+                  
+        <a-plane id="ballOfLight51" src="#light" transparent="true" opacity="0" height="1" width="1" position="9 0 -41" shader="flat" look-at="[camera]">
+            <a-animation begin="21250 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="21250 float" easing="ease-in" attribute="position" fill="forwards" from="9 -1 -41" to="5 300 -10" dur="50000"></a-animation>
+
+        </a-plane>
+        
+            
+            <a-plane id="ballOfLight52" src="#light" transparent="true" opacity="0" height="1" width="1" position="-1 0 12" shader="flat" look-at="[camera]">
+            <a-animation begin="22900 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="22900 float" easing="ease-in" attribute="position" fill="forwards" from="-1 -1 12" to="-1 400 12" dur="100000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight53" src="#light" transparent="true" opacity="0" height="1" width="1" position="-5 -1 -40" shader="flat" look-at="[camera]">
+            <a-animation begin="24200 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="24200 float" easing="ease-in" attribute="position" fill="forwards" from="-5 -1 -40" to="5 500 -40" dur="45000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight54" src="#light" transparent="true" opacity="0" height="1" width="1" position="-21 -1 -20" shader="flat" look-at="[camera]">
+            <a-animation begin="27600 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="27600 float" easing="ease-in" attribute="position" fill="forwards" from="-21 0 -20" to="-21 400 -20" dur="65000"></a-animation>
+        </a-plane>
+            
+        <a-plane id="ballOfLight55" src="#light" transparent="true" opacity="0" height="1" width="1" position="11 0 35" shader="flat" look-at="[camera]">
+            <a-animation begin="26000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="26000 float" easing="ease-in" attribute="position" fill="forwards" from="11 0 35" to="-19 500 12" dur="50000"></a-animation>
+        </a-plane>      
+            
+        <a-plane id="ballOfLight56" src="#light" transparent="true" opacity="0" height="1" width="1" position="-33 0 -15" shader="flat" look-at="[camera]">
+            <a-animation begin="23500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="13500 float" easing="ease-in" attribute="position" fill="forwards" from="33 0 -15" to="-33 650 -15" dur="85000"></a-animation>
+        </a-plane>     
+            
+        <a-plane id="ballOfLight57" src="#light" transparent="true" opacity="0" height="1" width="1" position="-1 0 -42" shader="flat" look-at="[camera]">
+            <a-animation begin="25900 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="25900 float" easing="ease-in" attribute="position" fill="forwards" from="-1 0 -42" to="-40 600 2 -42" dur="55000"></a-animation>
+        </a-plane>        
+            
+            <a-plane id="ballOfLight58" src="#light" transparent="true" opacity="0" height="1" width="1" position="-15 0 22" shader="flat" look-at="[camera]">
+            <a-animation begin="21200 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="21200 float" easing="ease-in" attribute="position" fill="forwards" from="15 0 22" to="15 600 5" dur="75000"></a-animation>
+        </a-plane>    
+            
+            
+            <a-plane id="ballOfLight59" src="#light" transparent="true" opacity="0" height="1" width="1" position="12 0 -7" shader="flat" look-at="[camera]">
+            <a-animation begin="23000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="23000 float" easing="ease-in" attribute="position" fill="forwards" from="12 0 -7" to="12 400 7" dur="45000"></a-animation>
+        </a-plane>          
+            
+            <a-plane id="ballOfLight60" src="#light" transparent="true" opacity="0" height="1" width="1" position="-66 0 8" shader="flat" look-at="[camera]">
+            <a-animation begin="25500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="25500 float" easing="ease-in" attribute="position" fill="forwards" from="-66 0 8" to="-66 700 8" dur="38000"></a-animation>
+        </a-plane>
+                
+                           <a-animation attribute="rotation" to="0 90 0" dur="130000" easing="linear" fill="forwards" repeat="indefinite">
+            </a-entity>         
+                    
+                    
+                    <a-entity><!--Entity 4-->
+ 
+        <a-plane id="ballOfLight61" src="#light" transparent="true" opacity="0" height="1" width="1" position="-15 0 2" shader="flat" look-at="[camera]">
+            <a-animation begin="10000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="10000 float" easing="ease-in" attribute="position" fill="forwards" from="-15 -1 -2" to="-5 500 10" dur="40000"></a-animation>
+
+        </a-plane>
+        
+            <a-plane id="ballOfLight62" src="#light" transparent="true" opacity="0" height="1" width="1" position="-52 0 17" shader="flat" look-at="[camera]">
+            <a-animation begin="13500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="13500 float" easing="ease-in" attribute="position" fill="forwards" from="-54 -2 17" to="5 400 -10" dur="30000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight63" src="#light" transparent="true" opacity="0" height="1" width="1" position="75 -1 -3" shader="flat" look-at="[camera]">
+            <a-animation begin="15577 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="15577" easing="ease-in" attribute="position" fill="forwards" from="-75 -1 30" to="-15 600 -5" dur="50000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight64" src="#light" transparent="true" opacity="0" height="1" width="1" position="12 -1 35" shader="flat" look-at="[camera]">
+            <a-animation begin="13400 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="13400 float" easing="ease-in" attribute="position" fill="forwards" from="12 0 35" to="-12 500 35" dur="75000"></a-animation>
+        </a-plane>
+            
+        <a-plane id="ballOfLight65" src="#light" transparent="true" opacity="0" height="1" width="1" position="10 0 -15" shader="flat" look-at="[camera]">
+            <a-animation begin="15300 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="14500 float" easing="ease-in" attribute="position" fill="forwards" from="-41 0 15" to="10 600 25" dur="42000"></a-animation>
+        </a-plane>      
+            
+        <a-plane id="ballOfLight66" src="#light" transparent="true" opacity="0" height="1" width="1" position="33 0 -42" shader="flat" look-at="[camera]">
+            <a-animation begin="17999 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="17999 float" easing="ease-in" attribute="position" fill="forwards" from="-23 0 -42" to="-10 500 -25" dur="35000"></a-animation>
+        </a-plane>     
+            
+        <a-plane id="ballOfLight67" src="#light" transparent="true" opacity="0" height="1" width="1" position="47 0 -32" shader="flat" look-at="[camera]">
+            <a-animation begin="13000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="13000 float" easing="ease-in" attribute="position" fill="forwards" from="-37 0 32" to="40 600 -25" dur="60000"></a-animation>
+        </a-plane>        
+            
+            <a-plane id="ballOfLight68" src="#light" transparent="true" opacity="0" height="1" width="1" position="22 0 75" shader="flat" look-at="[camera]">
+            <a-animation begin="16000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="16000 float" easing="ease-in" attribute="position" fill="forwards" from="22 0 75" to="-40 700 -42" dur="39000"></a-animation>
+        </a-plane>    
+            
+            
+            <a-plane id="ballOfLight69" src="#light" transparent="true" opacity="0" height="1" width="1" position="69 0 -9" shader="flat" look-at="[camera]">
+            <a-animation begin="14000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="14000 float" easing="ease-in" attribute="position" fill="forwards" from="69 0 -9" to="-9 450 -7" dur="45000"></a-animation>
+        </a-plane>          
+            
+            <a-plane id="ballOfLight70" src="#light" transparent="true" opacity="0" height="1" width="1" position="34 0 -22" shader="flat" look-at="[camera]">
+            <a-animation begin="13500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="13500 float" easing="ease-in" attribute="position" fill="forwards" from="-34 0 29" to="-57 500 10" dur="38000"></a-animation>
+        </a-plane>
+            
+            
+                  
+        <a-plane id="ballOfLight71" src="#light" transparent="true" opacity="0" height="1" width="1" position="9 0 -41" shader="flat" look-at="[camera]">
+            <a-animation begin="11250 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="11250 float" easing="ease-in" attribute="position" fill="forwards" from="-19 -1 -4" to="-5 300 -10" dur="50000"></a-animation>
+
+        </a-plane>
+        
+            
+            <a-plane id="ballOfLight72" src="#light" transparent="true" opacity="0" height="1" width="1" position="-1 0 12" shader="flat" look-at="[camera]">
+            <a-animation begin="12900 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="12900 float" easing="ease-in" attribute="position" fill="forwards" from="-13 -1 24" to="-1 400 -12" dur="100000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight73" src="#light" transparent="true" opacity="0" height="1" width="1" position="-5 -1 -40" shader="flat" look-at="[camera]">
+            <a-animation begin="14200 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="14200 float" easing="ease-in" attribute="position" fill="forwards" from="15 -1 -40" to="-5 500 -40" dur="45000"></a-animation>
+        </a-plane>
+
+        <a-plane id="ballOfLight74" src="#light" transparent="true" opacity="0" height="1" width="1" position="-21 -1 -20" shader="flat" look-at="[camera]">
+            <a-animation begin="17600 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="17600 float" easing="ease-in" attribute="position" fill="forwards" from="23 0 -22" to="-21 400 -22" dur="65000"></a-animation>
+        </a-plane>
+            
+        <a-plane id="ballOfLight75" src="#light" transparent="true" opacity="0" height="1" width="1" position="11 0 35" shader="flat" look-at="[camera]">
+            <a-animation begin="16000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="16000 float" easing="ease-in" attribute="position" fill="forwards" from="11 0 35" to="-9 500 -15" dur="50000"></a-animation>
+        </a-plane>      
+            
+        <a-plane id="ballOfLight76" src="#light" transparent="true" opacity="0" height="1" width="1" position="-33 0 -15" shader="flat" look-at="[camera]">
+            <a-animation begin="13500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="13500 float" easing="ease-in" attribute="position" fill="forwards" from="-33 0 35" to="33 650 -25" dur="85000"></a-animation>
+        </a-plane>     
+            
+        <a-plane id="ballOfLight77" src="#light" transparent="true" opacity="0" height="1" width="1" position="-1 0 -42" shader="flat" look-at="[camera]">
+            <a-animation begin="15900 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="15900 float" easing="ease-in" attribute="position" fill="forwards" from="-20 0 42" to="-40 600 2 -42" dur="55000"></a-animation>
+        </a-plane>        
+            
+            <a-plane id="ballOfLight78" src="#light" transparent="true" opacity="0" height="1" width="1" position="-15 0 22" shader="flat" look-at="[camera]">
+            <a-animation begin="11200 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="11200 float" easing="ease-in" attribute="position" fill="forwards" from="11 0 27" to="1 600 20" dur="75000"></a-animation>
+        </a-plane>    
+            
+            
+            <a-plane id="ballOfLight79" src="#light" transparent="true" opacity="0" height="1" width="1" position="12 0 -7" shader="flat" look-at="[camera]">
+            <a-animation begin="13000 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="13000 float" easing="ease-in" attribute="position" fill="forwards" from="2 0 -17" to="12 400 17" dur="45000"></a-animation>
+        </a-plane>          
+            
+            <a-plane id="ballOfLight80" src="#light" transparent="true" opacity="0" height="1" width="1" position="-66 0 8" shader="flat" look-at="[camera]">
+            <a-animation begin="15500 float" easing="ease-in" attribute="opacity" fill="forwards" from="0" to="1" dur="10000"></a-animation>
+            <a-animation begin="15500 float" easing="ease-in" attribute="position" fill="forwards" from="-26 0 80" to="-16 700 1" dur="38000"></a-animation>
+        </a-plane>
+                
+                           <a-animation attribute="rotation" to="0 -120 0" dur="130000" easing="linear" fill="forwards" repeat="indefinite">
+            </a-entity>
+                    
+                    
+            
+    </a-scene>
+        
+        <script>
+
+        document.querySelector('#button1').addEventListener('click', function () {
+            
+
+            document.querySelector('#button1').emit('float');
+            document.querySelector('#star1').emit('float');
+            document.querySelector('#star2').emit('float');
+            document.querySelector('#titlePic').emit('float');
+            document.querySelector('#experiencePic').emit('float');
+            document.querySelector('#madeByPic').emit('float');
+            document.querySelector('#circleCursor').emit('float');
+            document.querySelector('#ringCursor').emit('float');
+            document.querySelector('#ballOfLight').emit('float');
+            document.querySelector('#ballOfLight2').emit('float');
+            document.querySelector('#ballOfLight3').emit('float');
+            document.querySelector('#ballOfLight4').emit('float');
+            document.querySelector('#ballOfLight5').emit('float');
+            document.querySelector('#ballOfLight6').emit('float');
+            document.querySelector('#ballOfLight7').emit('float');
+            document.querySelector('#ballOfLight8').emit('float');
+            document.querySelector('#ballOfLight9').emit('float');
+            document.querySelector('#ballOfLight10').emit('float');
+            document.querySelector('#ballOfLight11').emit('float');
+            document.querySelector('#ballOfLight12').emit('float');
+            document.querySelector('#ballOfLight13').emit('float');
+            document.querySelector('#ballOfLight14').emit('float');
+            document.querySelector('#ballOfLight15').emit('float');
+            document.querySelector('#ballOfLight16').emit('float');
+            document.querySelector('#ballOfLight17').emit('float');
+            document.querySelector('#ballOfLight18').emit('float');
+            document.querySelector('#ballOfLight19').emit('float');
+            document.querySelector('#ballOfLight20').emit('float');
+            document.querySelector('#ballOfLight21').emit('float');
+            document.querySelector('#ballOfLight22').emit('float');
+            document.querySelector('#ballOfLight23').emit('float');
+            document.querySelector('#ballOfLight24').emit('float');
+            document.querySelector('#ballOfLight25').emit('float');
+            document.querySelector('#ballOfLight26').emit('float');
+            document.querySelector('#ballOfLight27').emit('float');
+            document.querySelector('#ballOfLight28').emit('float');
+            document.querySelector('#ballOfLight29').emit('float');
+            document.querySelector('#ballOfLight30').emit('float');
+            document.querySelector('#ballOfLight31').emit('float');
+            document.querySelector('#ballOfLight32').emit('float');
+            document.querySelector('#ballOfLight33').emit('float');
+            document.querySelector('#ballOfLight34').emit('float');
+            document.querySelector('#ballOfLight35').emit('float');
+            document.querySelector('#ballOfLight36').emit('float');
+            document.querySelector('#ballOfLight37').emit('float');
+            document.querySelector('#ballOfLight38').emit('float');
+            document.querySelector('#ballOfLight39').emit('float');
+            document.querySelector('#ballOfLight40').emit('float');
+            document.querySelector('#ballOfLight41').emit('float');
+            document.querySelector('#ballOfLight42').emit('float');
+            document.querySelector('#ballOfLight43').emit('float');
+            document.querySelector('#ballOfLight44').emit('float');
+            document.querySelector('#ballOfLight45').emit('float');
+            document.querySelector('#ballOfLight46').emit('float');
+            document.querySelector('#ballOfLight47').emit('float');
+            document.querySelector('#ballOfLight48').emit('float');
+            document.querySelector('#ballOfLight49').emit('float');
+            document.querySelector('#ballOfLight50').emit('float');
+            document.querySelector('#ballOfLight51').emit('float');
+            document.querySelector('#ballOfLight52').emit('float');
+            document.querySelector('#ballOfLight53').emit('float');
+            document.querySelector('#ballOfLight54').emit('float');
+            document.querySelector('#ballOfLight55').emit('float');
+            document.querySelector('#ballOfLight56').emit('float');
+            document.querySelector('#ballOfLight57').emit('float');
+            document.querySelector('#ballOfLight58').emit('float');
+            document.querySelector('#ballOfLight59').emit('float');
+            document.querySelector('#ballOfLight60').emit('float');
+            document.querySelector('#ballOfLight61').emit('float');
+            document.querySelector('#ballOfLight62').emit('float');
+            document.querySelector('#ballOfLight63').emit('float');
+            document.querySelector('#ballOfLight64').emit('float');
+            document.querySelector('#ballOfLight65').emit('float');
+            document.querySelector('#ballOfLight66').emit('float');
+            document.querySelector('#ballOfLight67').emit('float');
+            document.querySelector('#ballOfLight68').emit('float');
+            document.querySelector('#ballOfLight69').emit('float');
+            document.querySelector('#ballOfLight70').emit('float');
+            document.querySelector('#ballOfLight71').emit('float');
+            document.querySelector('#ballOfLight72').emit('float');
+            document.querySelector('#ballOfLight73').emit('float');
+            document.querySelector('#ballOfLight74').emit('float');
+            document.querySelector('#ballOfLight75').emit('float');
+            document.querySelector('#ballOfLight76').emit('float');
+            document.querySelector('#ballOfLight77').emit('float');
+            document.querySelector('#ballOfLight78').emit('float');
+            document.querySelector('#ballOfLight79').emit('float');
+            document.querySelector('#ballOfLight80').emit('float');
+        
+             });
+            
+            
+        
+        </script>
+</body>
+
+
+<!-- Mirrored from vrweb.io/p/starCrossed/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2017 07:36:15 GMT -->
+</html>
