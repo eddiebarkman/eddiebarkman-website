@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.20</h1>
+            <h1>AR Portfolio V1.21</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -45,7 +45,7 @@
 
         <a-assets>
             <a-asset-item id="vuforiakey" src="key.txt"></a-asset-item>
-            <video webkit-playsinline playsinline onclick="this.play();" id="battleWithin" loop="true" src="video/battleWithin.mp4"></video>
+            <video webkit-playsinline playsinline onclick="playVid();" id="battleWithin" loop="true" src="video/battleWithin.mp4"></video>
             <img id="logo" src="images/logoWhite.png">
         </a-assets>
 
@@ -75,7 +75,6 @@
     </ar-scene>
     <script src="app.js"></script>
     
-<!--
 <script> 
 var vid = document.getElementById("battleWithin"); 
 
@@ -87,7 +86,6 @@ function pauseVid() {
     vid.pause(); 
 } 
 </script> 
--->
 
     <script>
       var arScene = document.querySelector('ar-scene');
