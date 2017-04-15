@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.9</h1>
+            <h1>AR Portfolio V1.95</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -114,7 +114,7 @@ function pauseVid() {
           menu.appendChild(button);
           // when a button is tapped, have the reality fade in the corresponding panorama
           button.addEventListener('click', function () {
-            vid.pause(); 
+            vid.play(); 
               arScene.sceneEl.emit('showpanorama', { name: p.name });     
           });
       });
