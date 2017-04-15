@@ -14,8 +14,6 @@
     <script src="../resources/js/CSS3DArgonRenderer.js"></script>
     <script src="../resources/js/CSS3DArgonHUD.js"></script>
     <script src="../resources/js/aframe-look-at-component.js"></script>
-    <script src="https://rawgit.com/oscarmarinmiro/aframe-video-controls/master/dist/aframe-video-controls.min.js"></script> 
-
 </head>
 
 <body>    
@@ -25,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.19</h1>
+            <h1>AR Portfolio V1.20</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -47,12 +45,12 @@
 
         <a-assets>
             <a-asset-item id="vuforiakey" src="key.txt"></a-asset-item>
-            <video webkit-playsinline playsinline id="battleWithin" loop="true" src="video/battleWithin.mp4"></video>
+            <video webkit-playsinline playsinline onclick="this.play();" id="battleWithin" loop="true" src="video/battleWithin.mp4"></video>
             <img id="logo" src="images/logoWhite.png">
         </a-assets>
 
          <ar-camera>
-        <a-entity id="cursor" cursor="fuse:true; fuse-timeout: 1000"
+        <a-entity id="myCursor" cursor="fuse:true; fuse-timeout: 1000"
                     position="0 0 -0.1"
                     geometry="primitive:ring; radiusInner: 0.001; radiusOuter: 0.0015"
                     material="color: #2E3A87; opacity:0.3;">          
@@ -70,8 +68,6 @@
 
                 <!--        <a-image src="#logo" width="200" height="100"></a-image>-->
                 <a-video src="#battleWithin" width="32" height="18" rotation="90 180 180" position="0 0 0"></a-video>
-                
-                <a-entity video-controls="src:#battleWithin"></a-entity>
 
             </a-entity>
         </ar-frame>
