@@ -5,6 +5,7 @@
     <meta name="description" content="Augmented Reality Portfolio">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" type="text/css" href="../resources/splash.css">
+    <link rel="stylesheet" type="text/css" href="../resources/style.css">
     <link rel="stylesheet" type="text/css" href="app.css">
 
     <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
@@ -15,16 +16,14 @@
     <script src="../resources/js/aframe-look-at-component.js"></script>
 </head>
 
-<body>
-    <button onclick="playVid()" type="button">Play Video</button>
-    <button onclick="pauseVid()" type="button">Pause Video</button><br> 
-    
+<body>    
+     <div id="menu" class="menu"></div>
     <div hidden>
         <div id="lookattarget" class="bottomScreen">Look at the target ...</div>
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.8</h1>
+            <h1>AR Portfolio V1.9</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -46,7 +45,7 @@
 
         <a-assets>
             <a-asset-item id="vuforiakey" src="key.txt"></a-asset-item>
-            <video id="battleWithin" loop="true" src="video/battleWithinSilent.mp4" webkit-playsinline />
+            <video id="battleWithin" autoplay="false" loop="true" src="video/battleWithin.mp4" webkit-playsinline />
             <img id="logo" src="images/logoWhite.png">
         </a-assets>
 
@@ -69,6 +68,7 @@
     </ar-scene>
     <script src="app.js"></script>
     
+<!--
 <script> 
 var vid = document.getElementById("battleWithin"); 
 
@@ -80,7 +80,68 @@ function pauseVid() {
     vid.pause(); 
 } 
 </script> 
+-->
 
+    <script>
+      var arScene = document.querySelector('ar-scene');
+      var content = document.querySelector('#helloworld');
+    var vid = document.getElementById("battleWithin"); 
+
+      // the ar-camera has an argon reference frame attached, so when it gets it's first value,
+      // we'll get this event 
+      arScene.addEventListener("referenceframe-statuschanged", function () {
+        var camera = document.querySelector('ar-camera');
+        var vec = camera.object3D.getWorldDirection();
+        vec.multiplyScalar(-10);
+        vec.y -= 1;
+        content.setAttribute("position", {x: vec.x, y: vec.y, z: vec.z});
+      });
+
+      var panoramas = [
+        { text: 'Georgia Aquarium', name: 'aqui' },
+        { text: 'Centennial Park', name: 'cent' },
+        { text: 'High Museum', name: 'high' },
+        { text: 'Piedmont Park', name: 'pied'}
+      ];
+
+      var currentPanorama;
+      // get the menu element
+      var menu = document.getElementById('menu');
+      // add buttons to the menu for each panorama
+      panoramas.forEach(function (p) {
+          var button = document.createElement('button');
+          button.textContent = p.text;
+          menu.appendChild(button);
+          // when a button is tapped, have the reality fade in the corresponding panorama
+          button.addEventListener('click', function () {
+            vid.pause(); 
+              arScene.sceneEl.emit('showpanorama', { name: p.name });     
+          });
+      });
+
+      // doesn't work yet ...
+      //
+      // var button = document.createElement('button');
+      // button.textContent = "LIVE";
+      // menu.appendChild(button);
+      // // when a button is tapped, have the reality fade in the corresponding panorama
+      // button.addEventListener('click', function () {
+      //   arScene.removeAttribute("desiredreality");
+      // });
+      
+      arScene.addEventListener('argon-initialized', function(evt) {
+        arScene.sceneEl.hud.appendChild(menu);
+        arScene.sceneEl.argonApp.focusEvent.addEventListener(function () {
+            document.getElementById('menu').style.display = 'block';
+        });
+        arScene.sceneEl.argonApp.blurEvent.addEventListener(function () {
+            document.getElementById('menu').style.display = 'none';
+        });      
+      });
+    </script>
+    
+    
+    
 </body>
 
 </html>
