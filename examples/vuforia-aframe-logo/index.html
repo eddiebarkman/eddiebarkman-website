@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.12</h1>
+            <h1>AR Portfolio V1.14</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -41,6 +41,9 @@
               vuforiadataset__evr="src:url(../resources/datasets/EVR.xml);">
 -->
     <ar-scene vuforiakey="#vuforiakey" vuforiadataset__stonesandchips="src:url(../resources/datasets/StonesAndChips.xml);">
+        <a-camera>
+    <a-cursor></a-cursor>
+  </a-camera>
 
 
         <a-assets>
@@ -60,7 +63,7 @@
                 <a-animation attribute="visible" to="true" delay="10" dur="1"></a-animation>
 
                 <!--        <a-image src="#logo" width="200" height="100"></a-image>-->
-                <a-video src="#battleWithin" width="32" height="18" rotation="90 180 0" position="0 0 0"></a-video>
+                <a-video src="#battleWithin" width="32" height="18" rotation="-90 180 0" position="0 0 1"></a-video>
 
             </a-entity>
         </ar-frame>
