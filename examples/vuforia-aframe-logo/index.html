@@ -16,13 +16,13 @@
 </head>
 
 <body>
-    <button id='playVid'>Play</button>
+    <video autoplay muted playsinline webkit-playsinline id="battleWithin" loop="true" height="100" width="250" src="video/battleWithin.mp4"></video>
     <div hidden>
         <div id="lookattarget" class="bottomScreen">Look at the target ...</div>
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.3</h1>
+            <h1>AR Portfolio V1.4</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -44,7 +44,7 @@
 
         <a-assets>
             <a-asset-item id="vuforiakey" src="key.txt"></a-asset-item>
-            <video autoplay muted playsinline webkit-playsinline id="battleWithin" loop="true" src="video/battleWithin.mp4"></video>
+            <video autoplay muted playsinline webkit-playsinline id="battleWithin" loop="true" src="video/battleWithinSilent.mp4"></video>
             <img id="logo" src="images/logoWhite.png">
         </a-assets>
 
