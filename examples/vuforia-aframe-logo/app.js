@@ -83,4 +83,8 @@ arScene.addEventListener('exit-vr', function (evt) {
     hudElem.classList.remove("viewerMode");
     hudElem2.classList.remove("viewerMode");
 });
+
+ $('video').each(function () {
+ 	enableInlineVideo(this);
+ });
     
