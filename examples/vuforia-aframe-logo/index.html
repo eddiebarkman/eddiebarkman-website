@@ -28,14 +28,14 @@
     </div>
 
     <ar-scene vuforiakey="#vuforiakey"
-              vuforiadataset__EVR="src:url(/EVR.xml);">
+              vuforiadataset__stonesandchips="src:url(../resources/datasets/StonesAndChips.xml);">
       <a-assets>
          <a-asset-item id="vuforiakey" src="key.txt"></a-asset-item>
          <a-asset-item id="tree" src="../resources/models/tree1/tree1.dae"></a-asset-item>
       </a-assets>
 
       <!-- attach to stones target. x/y in the plane, z up -->
-      <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.EVR.qrcode" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">
+      <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.stonesandchips.stones" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">
         <a-entity id="logoscene"  scale="0.005 0.005 0.005" rotation="90 0 0" visible="false">
           <a-animation attribute="visible" to="false" dur="1"></a-animation>
           <a-animation attribute="visible" to="true" delay="10" dur="1"></a-animation>
@@ -59,6 +59,17 @@
                           position="0 15 0"></a-box>
                 </a-entity>
               </a-box>
+            </a-entity>
+
+            <!-- Cross-bar -->
+            <a-entity id="cross" rotation="-90 0 0" position="0 8 7.5" scale="1 0 1">
+              <a-animation attribute="scale" to="1 0 1" dur="1"></a-animation>
+              <a-animation attribute="scale" from="1 0 1" to="1 1 1" delay="800" dur="600"
+                          easing="ease-out"></a-animation>
+              <a-box width="12.45" depth=".1" height="14" color="#F2E646"
+                    position="0 7 .52" shader="flat"></a-box>
+              <a-box width="12.5" depth="1" height="14" color="#EF2D5E"
+                    position="0 7 0"></a-box>
             </a-entity>
 
             <!-- Clouds -->
