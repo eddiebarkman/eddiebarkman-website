@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.56</h1>
+            <h1>AR Portfolio V1.57</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -214,7 +214,7 @@
         
             <!--Illustration Portfolio Images-->
             <a-entity id="portfolioIllustrationPages" visible="false"  easing="ease-out" scale="35 35 35">
-                <a-animation begin="illustrationPageActive" attribute="position" from="0 -15 0" to="0 0 200 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                <a-animation begin="illustrationPageActive" attribute="position" from="0 -15 0" to="0 200 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
                 <a-animation begin="illustrationPageInActive" attribute="position" from="0 200 0" to="0 -1500 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
                 <a-animation attribute="rotation" to="0 -360 0" dur="10000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
                 
@@ -294,6 +294,9 @@
         var portfolioWebPage = document.querySelector('#portfolioWebPages')
     document.querySelector('#button1').addEventListener('click', function () {
             portfolioWebPage.setAttribute('visible', 'true');
+            document.querySelector('#portfolioMobilePages').setAttribute('visible', 'false');
+            document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'false')
+            
             document.querySelector('#portfolioWebPages').emit('webPageActive');
             document.querySelector('#portfolioMobilePages').emit('mobilePageInactive');
             document.querySelector('#portfolioillustrationPages').emit('illustrationPageInactive');
@@ -310,8 +313,10 @@
         
     document.querySelector('#button2').addEventListener('click', function () {
             document.querySelector('#portfolioMobilePages').setAttribute('visible', 'true');
-            document.querySelector('#portfolioMobilePages').emit('mobilePageActive');
+            document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'false')
+            portfolioWebPage.setAttribute('visible', 'false');
         
+            document.querySelector('#portfolioMobilePages').emit('mobilePageActive');
             document.querySelector('#portfolioWebPages').emit('webPageInactive');
             document.querySelector('#portfolioillustrationPages').emit('illustrationPageInactive');
         
@@ -326,6 +331,9 @@
         
         document.querySelector('#button3').addEventListener('click', function () {
             document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'true');
+            document.querySelector('#portfolioMobilePages').setAttribute('visible', 'false');
+            portfolioWebPage.setAttribute('visible', 'false');
+        
             document.querySelector('#portfolioIllustrationPages').emit('illustrationPageActive');
             document.querySelector('#portfolioWebPages').emit('webPageInactive');
             document.querySelector('#portfolioMobilePages').emit('mobilePageInactive');
