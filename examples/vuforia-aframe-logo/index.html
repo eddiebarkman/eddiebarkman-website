@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.52</h1>
+            <h1>AR Portfolio V1.53</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -191,6 +191,44 @@
                 </a-image>
 
             </a-entity>
+                  
+                   <!--Mobile Portfolio Images-->
+            <a-entity id="portfolioMobilePages" visible="false" : position="0 -15 0" easing="ease-out">
+                <a-animation begin="mobilePageActive" attribute="position" from="0 -15 0" to="0 0.3 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                <a-animation begin="mobilePageInActive" attribute="position" from="0 0.3 0" to="0 -15 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                <a-animation attribute="rotation" to="0 -360 0" dur="205000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
+
+                <a-curvedimage src="#mobile1" height="2.0" radius="1.5" theta-length="42" rotation="0 0 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+                <a-curvedimage src="#mobile2" height="2.0" radius="1.5" theta-length="42" rotation="0 60 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+                <a-curvedimage src="#mobile3" height="2.0" radius="1.5" theta-length="42" rotation="0 120 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+                <a-curvedimage src="#mobile4" height="2.0" radius="1.5" theta-length="42" rotation="0 180 0" scale="0.8 0.7 0.8"></a-curvedimage>
+                
+                <a-curvedimage src="#mobile5" height="2.0" radius="1.5" theta-length="42" rotation="0 240 0" scale="0.8 0.7 0.8"></a-curvedimage>
+                
+                <a-curvedimage src="#mobile6" height="2.0" radius="1.5" theta-length="42" rotation="0 300 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+            </a-entity>
+        
+            <!--Illustration Portfolio Images-->
+            <a-entity id="portfolioIllustrationPages" visible="false" : position="0 -15 0" easing="ease-out">
+                <a-animation begin="illustrationPageActive" attribute="position" from="0 -15 0" to="0 0 0.4 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                <a-animation begin="illustrationPageInActive" attribute="position" from="0 0.4 0" to="0 -15 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                <a-animation attribute="rotation" to="0 -360 0" dur="205000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
+                
+                <a-curvedimage src="#illustration2" height="5.0" radius="4.8" theta-length="42" rotation="0 0 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+                <a-curvedimage src="#illustration3" height="5.0" radius="4.8" theta-length="42" rotation="0 90 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+                <a-curvedimage src="#illustration4" height="5.0" radius="4.8" theta-length="42" rotation="0 180 0" scale="0.8 0.7 0.8"></a-curvedimage>
+                
+                <a-curvedimage src="#illustration5" height="5.8.0" radius="4.8" theta-length="42" rotation="0 270 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+
+            </a-entity>
+
                 
 
                 
@@ -262,6 +300,45 @@
             menu.emit('menuClose');
             document.querySelector('#portBubble').emit('portBubbleClose');
             document.querySelector('#startImg').emit('end');
+
+            document.querySelector('#closeButtonMenu').setAttribute('visible', 'true');
+            document.querySelector('#closeButtonMenu').emit('closeButtonActive');
+
+            setTimeout(function () {
+                document.querySelector('#portMenu').setAttribute('visible', 'false');
+                menu.setAttribute('visible', 'false')
+            }, 500);
+        });
+        
+        
+        
+        
+    document.querySelector('#button2').addEventListener('click', function () {
+            document.querySelector('#portfolioMobilePages').setAttribute('visible', 'true');
+            document.querySelector('#portfolioMobilePages').emit('mobilePageActive');
+            document.querySelector('#portMenu').emit('portMenuInactive');
+            menu.emit('menuClose');
+            document.querySelector('#portBubble').emit('portBubbleClose');
+            
+
+            document.querySelector('#closeButtonMenu').setAttribute('visible', 'true');
+            document.querySelector('#closeButtonMenu').emit('closeButtonActive');
+
+            setTimeout(function () {
+                document.querySelector('#portMenu').setAttribute('visible', 'false');
+                menu.setAttribute('visible', 'false')
+            }, 500);
+        });
+        
+        
+        
+        
+        document.querySelector('#button3').addEventListener('click', function () {
+            document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'true');
+            document.querySelector('#portfolioIllustrationPages').emit('illustrationPageActive');
+            document.querySelector('#portMenu').emit('portMenuInactive');
+            menu.emit('menuClose');
+            document.querySelector('#portBubble').emit('portBubbleClose');
 
             document.querySelector('#closeButtonMenu').setAttribute('visible', 'true');
             document.querySelector('#closeButtonMenu').emit('closeButtonActive');
