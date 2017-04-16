@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.22</h1>
+            <h1>AR Portfolio V1.23</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -36,11 +36,11 @@
 
     
 
-    <!--
+    
     <ar-scene vuforiakey="#vuforiakey"
               vuforiadataset__evr="src:url(../resources/datasets/EVR.xml);">
--->
-    <ar-scene vuforiakey="#vuforiakey" vuforiadataset__stonesandchips="src:url(../resources/datasets/StonesAndChips.xml);">
+
+<!--    <ar-scene vuforiakey="#vuforiakey" vuforiadataset__stonesandchips="src:url(../resources/datasets/StonesAndChips.xml);">-->
 
 
         <a-assets>
@@ -64,9 +64,8 @@
 
 
         <!-- attach to stones target. x/y in the plane, z up -->
-
-        <!--      <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.evr.qrcode" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">-->
-        <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.stonesandchips.stones" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">
+              <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.evr.qrcode" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">
+<!--        <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.stonesandchips.stones" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">-->
             <a-entity id="logoscene" scale="0.005 0.005 0.005" rotation="90 0 0" visible="false">
                 <a-animation attribute="visible" to="false" dur="1"></a-animation>
                 <a-animation attribute="visible" to="true" delay="10" dur="1"></a-animation>
@@ -76,10 +75,12 @@
         <a-image src="#logo" width="250" height="100" position="0 80 0" ></a-image>
         <a-image src="#dot" width="50" height="15" position="165 105 0"></a-image>
         <a-image src="#dot2" width="50" height="15" position="165 80 0"></a-image>
-        <a-image src="#dot3" width="50" height="15" position="165 55 0"></a-image>
+        <a-image src="#dot3" width="50" height="15" position="175 55 0"></a-image>
         <a-image src="#email" width="80" height="15" position="-75 15 10"></a-image>
         <a-image src="#tel" width="80" height="15" position="75 15 10"></a-image>
         <a-sphere color="#A61E34" radius="5" position="147 106 0.5" scale="1.8 1.8 1.8"></a-sphere>
+        <a-sphere color="#3DA649" radius="5" position="147 80 0.5" scale="1.8 1.8 1.8"></a-sphere>
+        <a-sphere color="#1F6981" radius="5" position="155 54 0.5" scale="1.8 1.8 1.8"></a-sphere>
                 
                 
                 
