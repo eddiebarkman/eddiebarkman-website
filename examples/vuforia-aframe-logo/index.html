@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.58</h1>
+            <h1>AR Portfolio V1.60</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -48,6 +48,7 @@
             <img id="dot3" src="images/dot2.png">
             <img id="email" src="images/email.png">
             <img id="tel" src="images/tel.png">
+            <img id="close" src="images/Close.png">
             
                             <!--Web Pages-->
                 <img id="site1" src="images/portfolio/site1.jpg">
@@ -78,7 +79,7 @@
         </a-assets>
 
          <ar-camera>
-        <a-entity id="myCursor" cursor="fuse:true; fuse-timeout: 1000"
+        <a-entity id="myCursor" cursor="fuse:true; fuse-timeout: 500"
                     position="0 0 -0.1"
                     geometry="primitive:ring; radiusInner: 0.001; radiusOuter: 0.0015"
                     material="color: #ff0000; opacity:0.3;">   
@@ -171,6 +172,10 @@
         <a-image src="#tel" width="80" height="15" position="75 15 100" onclick="telClick();" action="tel:+15595493439">
                 <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation>
             </a-image>
+                
+            <a-image src="#close" width="30" height="30" position="0 15 50" rotation="-80 0 0" onclick="closeClick();" visible="false">
+                <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation>
+            </a-image>
            
                 
                 
@@ -193,7 +198,7 @@
             </a-entity>
                   
                    <!--Mobile Portfolio Images-->
-            <a-entity id="portfolioMobilePages" visible="false"  easing="ease-out" scale="50 50 50">
+            <a-entity id="portfolioMobilePages" visible="false"  easing="ease-out" scale="100 100 100">
                 <a-animation begin="mobilePageActive" attribute="position" from="0 -15 0" to="0 200 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
                 <a-animation begin="mobilePageInActive" attribute="position" from="0 200 0" to="0 -1500 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
                 <a-animation attribute="rotation" to="0 -360 0" dur="10000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
@@ -249,11 +254,15 @@
         function emailClick () {
              window.open('mailto:eddiebarkman@gmail.com');
             
-        }    
+        }
+        
+        
+        
 
  
         var portfolioWebPage = document.querySelector('#portfolioWebPages')
     document.querySelector('#button1').addEventListener('click', function () {
+        document.querySelector('#close').setAttribute('visible', 'true');
             portfolioWebPage.setAttribute('visible', 'true');
             document.querySelector('#portfolioMobilePages').setAttribute('visible', 'false');
             document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'false')
@@ -273,6 +282,7 @@
         
         
     document.querySelector('#button2').addEventListener('click', function () {
+        document.querySelector('#close').setAttribute('visible', 'true');
             document.querySelector('#portfolioMobilePages').setAttribute('visible', 'true');
             document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'false')
             portfolioWebPage.setAttribute('visible', 'false');
@@ -291,6 +301,7 @@
         
         
         document.querySelector('#button3').addEventListener('click', function () {
+            document.querySelector('#close').setAttribute('visible', 'true');
             document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'true');
             document.querySelector('#portfolioMobilePages').setAttribute('visible', 'false');
             portfolioWebPage.setAttribute('visible', 'false');
@@ -304,6 +315,18 @@
                 document.querySelector('#portMenu').setAttribute('visible', 'false');
                 menu.setAttribute('visible', 'false')
             }, 500);
+        });
+        
+        
+        
+        
+        document.querySelector('#close').addEventListener('click', function () {
+
+            document.querySelector('#portfolioMobilePages').setAttribute('visible', 'false');
+            portfolioWebPage.setAttribute('visible', 'false');
+            document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'false');
+            document.querySelector('#close').setAttribute('visible', 'false');
+
         });
         
         
