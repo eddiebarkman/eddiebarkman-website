@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.32</h1>
+            <h1>AR Portfolio V1.33</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -39,9 +39,6 @@
     
     <ar-scene vuforiakey="#vuforiakey"
               vuforiadataset__evr="src:url(../resources/datasets/EVR.xml);">
-
-<!--    <ar-scene vuforiakey="#vuforiakey" vuforiadataset__stonesandchips="src:url(../resources/datasets/StonesAndChips.xml);">-->
-
 
         <a-assets>
             <a-asset-item id="vuforiakey" src="key.txt"></a-asset-item>
@@ -100,13 +97,13 @@
             
         <a-image src="#dot2" width="50" height="15">
             
-        <a-animation delay="800" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
-        <a-animation delay="800" attribute="position" begin="0" from="1000 105 0" to="165 80 0" repeat="0" dur="1000"></a-animation> 
+        <a-animation delay="1000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
+        <a-animation delay="1000" attribute="position" begin="0" from="1000 105 0" to="165 80 0" repeat="0" dur="1000"></a-animation> 
                 
         </a-image>
         <a-sphere color="#3DA649" radius="5" scale="1.8 1.8 1.8">
-        <a-animation delay="800" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
-        <a-animation delay="800" attribute="position" begin="0" from="1000 105 0" to="147 80 0.5" repeat="0"></a-animation> 
+        <a-animation delay="1000" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
+        <a-animation delay="1000" attribute="position" begin="0" from="1000 105 0" to="147 80 0.5" repeat="0"></a-animation> 
                 
         </a-sphere>
                 
@@ -114,8 +111,8 @@
                 
         <a-image src="#dot3" width="50" height="15">
                 
-        <a-animation delay="1100" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
-        <a-animation delay="1100" attribute="position" begin="0" from="1000 105 0" to="165 55 0" repeat="0" dur="1000"></a-animation> 
+        <a-animation delay="1500" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
+        <a-animation delay="1500" attribute="position" begin="0" from="1000 105 0" to="165 55 3" repeat="0" dur="1000"></a-animation> 
             
                 
         </a-image>
@@ -128,10 +125,10 @@
                 
                 
                 
-        <a-image src="#email" width="80" height="15" position="-75 15 10">
+        <a-image src="#email" width="80" height="15" position="-75 15 50">
                 <a-animation delay="1500" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
         </a-image>
-        <a-image src="#tel" width="80" height="15" position="75 15 10">
+        <a-image src="#tel" width="80" height="15" position="75 15 50">
                 <a-animation delay="1500" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation>
             </a-image>
                 
@@ -149,77 +146,6 @@
 
     </ar-scene>
     <script src="app.js"></script>
-    
-<script> 
-var vid = document.getElementById("battleWithin"); 
-
-function playVid() { 
-    vid.play(); 
-} 
-
-function pauseVid() { 
-    vid.pause(); 
-} 
-</script> 
-
-    <script>
-      var arScene = document.querySelector('ar-scene');
-      var content = document.querySelector('#helloworld');
-    var vid = document.getElementById("battleWithin"); 
-
-      // the ar-camera has an argon reference frame attached, so when it gets it's first value,
-      // we'll get this event 
-      arScene.addEventListener("referenceframe-statuschanged", function () {
-        var camera = document.querySelector('ar-camera');
-        var vec = camera.object3D.getWorldDirection();
-        vec.multiplyScalar(-10);
-        vec.y -= 1;
-        content.setAttribute("position", {x: vec.x, y: vec.y, z: vec.z});
-      });
-
-      var panoramas = [
-        { text: 'Georgia Aquarium', name: 'aqui' },
-        { text: 'Centennial Park', name: 'cent' },
-        { text: 'High Museum', name: 'high' },
-        { text: 'Piedmont Park', name: 'pied'}
-      ];
-
-      var currentPanorama;
-      // get the menu element
-      var menu = document.getElementById('menu');
-      // add buttons to the menu for each panorama
-      panoramas.forEach(function (p) {
-          var button = document.createElement('button');
-          button.textContent = p.text;
-          menu.appendChild(button);
-          // when a button is tapped, have the reality fade in the corresponding panorama
-          button.addEventListener('click', function () {
-            vid.play(); 
-              arScene.sceneEl.emit('showpanorama', { name: p.name });     
-          });
-      });
-
-      // doesn't work yet ...
-      //
-      // var button = document.createElement('button');
-      // button.textContent = "LIVE";
-      // menu.appendChild(button);
-      // // when a button is tapped, have the reality fade in the corresponding panorama
-      // button.addEventListener('click', function () {
-      //   arScene.removeAttribute("desiredreality");
-      // });
-      
-      arScene.addEventListener('argon-initialized', function(evt) {
-        arScene.sceneEl.hud.appendChild(menu);
-        arScene.sceneEl.argonApp.focusEvent.addEventListener(function () {
-            document.getElementById('menu').style.display = 'block';
-        });
-        arScene.sceneEl.argonApp.blurEvent.addEventListener(function () {
-            document.getElementById('menu').style.display = 'none';
-        });      
-      });
-    </script>
-    
     
     
 </body>
