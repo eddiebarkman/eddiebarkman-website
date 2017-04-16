@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.57</h1>
+            <h1>AR Portfolio V1.58</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -165,10 +165,10 @@
         </a-entity> 
                 
                 
-        <a-image src="#email" width="80" height="15" position="-75 15 50" onclick="emailClick();">
+        <a-image src="#email" width="80" height="15" position="-75 15 100" onclick="emailClick();" action="mailto:eddiebarkman@gmail.com">
                 <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
         </a-image>
-        <a-image src="#tel" width="80" height="15" position="75 15 50" onclick="telClick();">
+        <a-image src="#tel" width="80" height="15" position="75 15 100" onclick="telClick();" action="tel:+15595493439">
                 <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation>
             </a-image>
            
@@ -239,57 +239,18 @@
     </ar-scene>
     <script src="app.js"></script>
     
-    <script>
-//                var timer;
-//    document.querySelector('#button1').addEventListener('mouseenter', function () {
-//             timer = setTimeout(function () {
-//                window.location.href = "http://www.google.com";
-//                     }, 2000);
-//        }).on("mouseleave", "div", function(){
-//    clearTimeout(timer);
-//}); 
-//        
-//        
-    
-//            document.querySelector('#button1').addEventListener('mouseenter', function () {
-////            document.querySelector('#clickerShape').emit('clickStart');
-////            document.querySelector('#button1').emit('button1Enter');
-//                window.location.href = "http://www.google.com";
-//        });   
-//        
-//        document.querySelector('#email').addEventListener('mouseenter', function () {
-//                window.open('http://www.google.com');
-//        });      
-//        
-//        document.querySelector('#tel').addEventListener('mouseenter', function () {
-//               window.open('tel:15595493439');
-//        });
-//        
+    <script>   
         
+            function telClick () {
+             window.open('tel:+1-559-549-3439');
+            
+        }           
         
-        
-//            function telClick () {
-//             window.open('tel:15595493439');
-//            
-//        }           
-//        
-//        function emailClick () {
-//             window.open('mailto:eddiebarkman@gmail.com');
-//            
-//        }    
-//        
-//        function dotClick () {
-//             window.location.href = "http://www.google.com";
-//            
-//        }        
-//        function dot2Click () {
-//             window.location.href = "http://www.google.com";
-//            
-//        }        
-//        function dot3Click () {
-//             window.location.href = "http://www.google.com";
-//            
-//        }
+        function emailClick () {
+             window.open('mailto:eddiebarkman@gmail.com');
+            
+        }    
+
  
         var portfolioWebPage = document.querySelector('#portfolioWebPages')
     document.querySelector('#button1').addEventListener('click', function () {
