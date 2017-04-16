@@ -17,7 +17,6 @@
 </head>
 
 <body>    
-     <div id="menu" class="menu"></div>
     <div hidden>
         <div id="lookattarget" class="bottomScreen">Look at the target ...</div>
     </div>
@@ -102,22 +101,7 @@
               <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.evr.bcard" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">
             <a-entity id="logoscene" scale="0.005 0.005 0.005" rotation="90 0 0" visible="false">
                 <a-animation attribute="visible" to="false" dur="1"></a-animation>
-                <a-animation attribute="visible" to="true" delay="10" dur="1"></a-animation>
-<!--
-
-                
-                        
-        <a-image src="#logo" width="250" height="100" position="0 80 0" ></a-image>
-        <a-image src="#dot" width="50" height="15" position="165 105 0"></a-image>
-        <a-image src="#dot2" width="50" height="15" position="165 80 0"></a-image>
-        <a-image src="#dot3" width="50" height="15" position="165 55 0"></a-image>
-        <a-image src="#email" width="80" height="15" position="-75 15 10"></a-image>
-        <a-image src="#tel" width="80" height="15" position="75 15 10"></a-image>
-        <a-sphere color="#A61E34" radius="5" position="147 106 0.5" scale="1.8 1.8 1.8"></a-sphere>
-        <a-sphere color="#3DA649" radius="5" position="147 80 0.5" scale="1.8 1.8 1.8"></a-sphere>
-        <a-sphere color="#1F6981" radius="5" position="147 54 0.5" scale="1.8 1.8 1.8"></a-sphere>
--->
-                
+                <a-animation attribute="visible" to="true" delay="10" dur="1"></a-animation>           
                 
         <a-image src="#logo" width="250" height="100">
         <a-animation attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="300"></a-animation> 
@@ -175,15 +159,9 @@
             </a-image>
                 
                 
-         
-                
-                
-                
-                
-                
-                
             <a-image src="#close" width="30" height="30" position="0 15 50" rotation="-80 0 0" onclick="closeClick();" visible="true">
             </a-image>
+                
            
                 
                 
