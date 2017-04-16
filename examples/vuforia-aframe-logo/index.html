@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.31</h1>
+            <h1>AR Portfolio V1.32</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -84,11 +84,11 @@
                 
                 
         <a-image src="#logo" width="250" height="100">
-        <a-animation attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="200"></a-animation> 
+        <a-animation attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="300"></a-animation> 
+        <a-animation attribute="scale" begin="0" from="0 0 0" to="1 1 1" repeat="0" dur="400"></a-animation> 
         <a-animation attribute="position" begin="0" from="0 -100 0" to="0 80 0" repeat="0" dur="500"></a-animation> 
         
         </a-image>
-        <a-entity>
         <a-image src="#dot" width="50" height="15">
         <a-animation delay="500" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
         <a-animation delay="500" attribute="position" begin="0" from="1000 105 0" to="165 105 0" repeat="0" dur="1000"></a-animation> 
@@ -97,17 +97,43 @@
         <a-animation delay="500" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
         <a-animation delay="500" attribute="position" begin="0" from="1000 105 0" to="147 106 0.5" repeat="0"></a-animation> 
         </a-sphere>
-        </a-entity>
-        <a-image src="#dot2" width="50" height="15" position="165 80 0"></a-image>
-        <a-sphere color="#3DA649" radius="5" position="147 80 0.5" scale="1.8 1.8 1.8"></a-sphere>
+            
+        <a-image src="#dot2" width="50" height="15">
+            
+        <a-animation delay="800" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
+        <a-animation delay="800" attribute="position" begin="0" from="1000 105 0" to="165 80 0" repeat="0" dur="1000"></a-animation> 
                 
-        <a-image src="#dot3" width="50" height="15" position="165 55 0"></a-image>
-        <a-sphere color="#1F6981" radius="5" position="147 54 0.5" scale="1.8 1.8 1.8"></a-sphere>
+        </a-image>
+        <a-sphere color="#3DA649" radius="5" scale="1.8 1.8 1.8">
+        <a-animation delay="800" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
+        <a-animation delay="800" attribute="position" begin="0" from="1000 105 0" to="147 80 0.5" repeat="0"></a-animation> 
+                
+        </a-sphere>
                 
                 
                 
-        <a-image src="#email" width="80" height="15" position="-75 15 10"></a-image>
-        <a-image src="#tel" width="80" height="15" position="75 15 10"></a-image>
+        <a-image src="#dot3" width="50" height="15">
+                
+        <a-animation delay="1100" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
+        <a-animation delay="1100" attribute="position" begin="0" from="1000 105 0" to="165 55 0" repeat="0" dur="1000"></a-animation> 
+            
+                
+        </a-image>
+        <a-sphere color="#1F6981" radius="5" scale="1.8 1.8 1.8">
+                
+        <a-animation delay="1100" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
+        <a-animation delay="1100" attribute="position" begin="0" from="1000 105 0" to="147 54 0.5" repeat="0"></a-animation> 
+                
+        </a-sphere>
+                
+                
+                
+        <a-image src="#email" width="80" height="15" position="-75 15 10">
+                <a-animation delay="1500" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
+        </a-image>
+        <a-image src="#tel" width="80" height="15" position="75 15 10">
+                <a-animation delay="1500" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation>
+            </a-image>
                 
                 
                 
