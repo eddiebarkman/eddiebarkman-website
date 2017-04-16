@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.37</h1>
+            <h1>AR Portfolio V1.38</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -108,7 +108,8 @@
         </a-sphere>
                 
                 
-                
+           
+        <a-entity id="button1">        
         <a-image src="#dot3" width="50" height="15">
                 
         <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="1600"></a-animation> 
@@ -122,7 +123,7 @@
         <a-animation delay="3000" attribute="position" begin="0" from="1000 105 0" to="147 54 0.5" repeat="0" dur="1800"></a-animation> 
                 
         </a-sphere>
-                
+        </a-entity> 
                 
                 
         <a-image src="#email" width="80" height="15" position="-75 15 50">
@@ -146,6 +147,17 @@
 
     </ar-scene>
     <script src="app.js"></script>
+    
+    <script>
+    
+            document.querySelector('#button1').addEventListener('mouseenter', function () {
+//            document.querySelector('#clickerShape').emit('clickStart');
+//            document.querySelector('#button1').emit('button1Enter');
+                window.location.href = "http://www.google.com";
+        });
+    
+    
+    </script>
     
     
 </body>
