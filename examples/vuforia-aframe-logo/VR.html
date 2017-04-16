@@ -19,17 +19,40 @@
               
         </a-assets>
         
-        <a-image src="#logo" width="250" height="100" position="0 80 0" ></a-image>
-        <a-image src="#dot" width="50" height="15" position="165 105 0"></a-image>
+        <a-image src="#logo" width="250" height="100">
+        <a-animation attribute="position" begin="2000" from="0 -100 0" to="0 80 0" repeat="indefinite"></a-animation> 
+        
+        </a-image>
+        <a-entity>
+        <a-image src="#dot" width="50" height="15">
+        <a-animation attribute="opacity" begin="3000" from="0" to="1" repeat="indefinite"></a-animation> 
+        <a-animation attribute="position" begin="3100" from="500 105 0" to="165 105 0" repeat="indefinite"></a-animation> 
+        </a-image>    
+        <a-sphere color="#A61E34" radius="5" scale="1.8 1.8 1.8">
+        <a-animation attribute="opacity" begin="3000" from="0" to="1" repeat="indefinite"></a-animation> 
+        <a-animation attribute="position" begin="3100" from="500 105 0" to="147 106 0.5" repeat="indefinite"></a-animation> 
+        </a-sphere>
+        </a-entity>
         <a-image src="#dot2" width="50" height="15" position="165 80 0"></a-image>
+        <a-sphere color="#3DA649" radius="5" position="147 80 0.5" scale="1.8 1.8 1.8"></a-sphere>
         <a-image src="#dot3" width="50" height="15" position="175 55 0"></a-image>
+        <a-sphere color="#1F6981" radius="5" position="155 54 0.5" scale="1.8 1.8 1.8"></a-sphere>
         <a-image src="#email" width="80" height="15" position="-75 15 10"></a-image>
         <a-image src="#tel" width="80" height="15" position="75 15 10"></a-image>
-        <a-sphere color="#A61E34" radius="5" position="147 106 0.5" scale="1.8 1.8 1.8"></a-sphere>
-        <a-sphere color="#3DA649" radius="5" position="147 80 0.5" scale="1.8 1.8 1.8"></a-sphere>
-        <a-sphere color="#1F6981" radius="5" position="155 54 0.5" scale="1.8 1.8 1.8"></a-sphere>
+
+
         
       <a-sky color="#000000"></a-sky>
     </a-scene>
+      
+      
+      <script>
+      
+              document.querySelector('#button1').addEventListener('mouseenter', function () {
+            document.querySelector('#clickerShape').emit('clickStart');
+            document.querySelector('#button1').emit('button1Enter');
+        });
+          
+      </script>
   </body>
 </html>
