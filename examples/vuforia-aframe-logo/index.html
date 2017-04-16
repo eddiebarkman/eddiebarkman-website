@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.49</h1>
+            <h1>AR Portfolio V1.50</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -78,7 +78,7 @@
         </a-assets>
 
          <ar-camera>
-        <a-entity id="myCursor" cursor="fuse:true; fuse-timeout: 2000"
+        <a-entity id="myCursor" cursor="fuse:true; fuse-timeout: 1000"
                     position="0 0 -0.1"
                     geometry="primitive:ring; radiusInner: 0.001; radiusOuter: 0.0015"
                     material="color: #ff0000; opacity:0.3;">   
@@ -176,9 +176,9 @@
                 
                     <!--Website Portfolio Images-->
             <a-entity id="portfolioWebPages" visible="false" : position="0 -15 0" easing="ease-out" scale="40 40 40">
-                <a-animation begin="webPageActive" attribute="position" from="0 -15 0" to="0 60 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                <a-animation begin="webPageActive" attribute="position" from="0 -15 0" to="0 150 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
                 <a-animation begin="webPageInActive" attribute="position" from="0 0.3 0" to="0 -15 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
-                <a-animation attribute="rotation" to="0 -360 0" dur="205000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
+                <a-animation attribute="rotation" to="0 -360 0" dur="105000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
 
                 <a-curvedimage id="milkySite" src="#site1" height="3.0" radius="4.7" theta-length="72" rotation="0 0 0" scale="0.8 0.7 0.8"></a-curvedimage>
 
