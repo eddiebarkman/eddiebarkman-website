@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.45</h1>
+            <h1>AR Portfolio V1.46</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -48,6 +48,33 @@
             <img id="dot3" src="images/dot2.png">
             <img id="email" src="images/email.png">
             <img id="tel" src="images/tel.png">
+            
+                            <!--Web Pages-->
+                <img id="site1" src="images/portfolio/site1.jpg">
+                <img id="site2" src="images/portfolio/site2.jpg">
+                <img id="site3" src="images/portfolio/site3.jpg">
+                <img id="site4" src="images/portfolio/site4.jpg">
+                <img id="site5" src="images/portfolio/site5.jpg">
+                
+                <!--Mobile Pages-->
+                <img id="mobile1" src="images/portfolio/mobile1.png">
+                <img id="mobile2" src="images/portfolio/mobile2.png">
+                <img id="mobile3" src="images/portfolio/mobile3.png">
+                <img id="mobile4" src="images/portfolio/mobile4.png">
+                <img id="mobile5" src="images/portfolio/mobile5.png">
+                <img id="mobile6" src="images/portfolio/mobile6.png">
+                <img id="mobile7" src="images/portfolio/mobile7.png">
+                
+                <!--Illustration Pages-->
+                <img id="illustration1" src="images/portfolio/illustration9.jpg">
+                <img id="illustration2" src="images/portfolio/illustration2.jpg">
+                <img id="illustration3" src="images/portfolio/illustration3.jpg">
+                <img id="illustration4" src="images/portfolio/illustration4.jpg">
+                <img id="illustration5" src="images/portfolio/illustration5.jpg">
+                <img id="illustration6" src="images/portfolio/illustration6.jpg">
+                <img id="illustration7" src="images/portfolio/illustration7.jpg">   
+                <img id="illustration8" src="images/portfolio/illustration8.jpg"> 
+            
         </a-assets>
 
          <ar-camera>
@@ -92,6 +119,8 @@
         <a-animation attribute="position" begin="0" from="0 -100 0" to="0 80 0" repeat="0" dur="500"></a-animation> 
         
         </a-image>
+                
+         <a-entity id="button1" onclick="dotclick();">         
         <a-image src="#dot" width="50" height="15">
         <a-animation delay="1000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
         <a-animation delay="1000" attribute="position" begin="0" from="1000 105 0" to="165 105 0" repeat="0" dur="1000"></a-animation> 
@@ -100,7 +129,10 @@
         <a-animation delay="1000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
         <a-animation delay="1000" attribute="position" begin="0" from="1000 105 0" to="147 106 0.5" repeat="0" dur="1000"></a-animation> 
         </a-sphere>
+                </a-entity>
             
+                
+        <a-entity id="button2" onclick="dot2click();">          
         <a-image src="#dot2" width="50" height="15">
             
         <a-animation delay="2000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="1200"></a-animation> 
@@ -112,10 +144,11 @@
         <a-animation delay="2000" attribute="position" begin="0" from="1000 105 0" to="147 80 0.5" repeat="0" dur="1400"></a-animation> 
                 
         </a-sphere>
+                </a-entity>
                 
                 
            
-        <a-entity id="button1" onclick="emailClick();">     
+        <a-entity id="button1" onclick="dot3click();">     
         <a-image src="#dot3" width="50" height="15">
                 
         <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="1600"></a-animation> 
@@ -138,16 +171,30 @@
         <a-image src="#tel" width="80" height="15" position="75 15 50" onclick="telClick();">
                 <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation>
             </a-image>
+           
                 
                 
-                
-                
-                
-                
-                
-                
+                    <!--Website Portfolio Images-->
+            <a-entity id="portfolioWebPages" visible="false" : position="0 -15 0" easing="ease-out">
+                <a-animation begin="webPageActive" attribute="position" from="0 -15 0" to="0 0.3 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                <a-animation begin="webPageInActive" attribute="position" from="0 0.3 0" to="0 -15 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                <a-animation attribute="rotation" to="0 -360 0" dur="205000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
+
+                <a-curvedimage id="milkySite" src="#site1" height="3.0" radius="4.7" theta-length="72" rotation="0 0 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+                <a-curvedimage src="#site2" height="3.0" radius="4.7" theta-length="72" rotation="0 90 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+                <a-curvedimage src="#site5" height="3.0" radius="4.7" theta-length="72" rotation="0 180 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+                <a-curvedimage src="#site4" height="3.0" radius="4.7" theta-length="72" rotation="0 270 0" scale="0.8 0.7 0.8"></a-curvedimage>
+
+                </a-image>
+
+            </a-entity>
                 
 
+                
+                
             </a-entity>
         </ar-frame>
 
@@ -180,21 +227,51 @@
 //               window.open('tel:15595493439');
 //        });
 //        
-            function telClick () {
-             window.open('tel:15595493439');
-            
-        }           
         
-        function emailClick () {
-             window.open('mailto:eddiebarkman@gmail.com');
-            
-        }    
         
-        function dot1Click () {
-             window.location.href = "http://www.google.com";
-            
-        }
+        
+//            function telClick () {
+//             window.open('tel:15595493439');
+//            
+//        }           
+//        
+//        function emailClick () {
+//             window.open('mailto:eddiebarkman@gmail.com');
+//            
+//        }    
+//        
+//        function dotClick () {
+//             window.location.href = "http://www.google.com";
+//            
+//        }        
+//        function dot2Click () {
+//             window.location.href = "http://www.google.com";
+//            
+//        }        
+//        function dot3Click () {
+//             window.location.href = "http://www.google.com";
+//            
+//        }
  
+        var portfolioWebPage = document.querySelector('#portfolioWebPages')
+        var portfolioWebButton = document.querySelector('#websitePortButton')
+    document.querySelector('#button1').addEventListener('click', function () {
+            portfolioWebPage.setAttribute('visible', 'true');
+            document.querySelector('#portfolioWebPages').emit('webPageActive');
+            document.querySelector('#portMenu').emit('portMenuInactive');
+            menu.emit('menuClose');
+            document.querySelector('#portBubble').emit('portBubbleClose');
+            document.querySelector('#startImg').emit('end');
+
+            document.querySelector('#closeButtonMenu').setAttribute('visible', 'true');
+            document.querySelector('#closeButtonMenu').emit('closeButtonActive');
+
+            setTimeout(function () {
+                document.querySelector('#portMenu').setAttribute('visible', 'false');
+                menu.setAttribute('visible', 'false')
+            }, 500);
+        });
+        
         
     
     </script>
