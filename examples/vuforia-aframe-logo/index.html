@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.54</h1>
+            <h1>AR Portfolio V1.55</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -148,7 +148,7 @@
                 
                 
            
-        <a-entity id="button1" onclick="dot3click();">     
+        <a-entity id="button3" onclick="dot3click();">     
         <a-image src="#dot3" width="50" height="15">
                 
         <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="1600"></a-animation> 
@@ -193,7 +193,7 @@
             </a-entity>
                   
                    <!--Mobile Portfolio Images-->
-            <a-entity id="portfolioMobilePages" visible="false" : position="0 -15 0" easing="ease-out" scale="35 35 35">
+            <a-entity id="portfolioMobilePages" visible="false" : position="0 -15 0" easing="ease-out" scale="50 50 50">
                 <a-animation begin="mobilePageActive" attribute="position" from="0 -15 0" to="0 200 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
                 <a-animation begin="mobilePageInActive" attribute="position" from="0 0.3 0" to="0 -15 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
                 <a-animation attribute="rotation" to="0 -360 0" dur="10000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
@@ -292,21 +292,16 @@
 //        }
  
         var portfolioWebPage = document.querySelector('#portfolioWebPages')
-        var portfolioWebButton = document.querySelector('#websitePortButton')
     document.querySelector('#button1').addEventListener('click', function () {
             portfolioWebPage.setAttribute('visible', 'true');
             document.querySelector('#portfolioWebPages').emit('webPageActive');
-            document.querySelector('#portMenu').emit('portMenuInactive');
-            menu.emit('menuClose');
-            document.querySelector('#portBubble').emit('portBubbleClose');
-            document.querySelector('#startImg').emit('end');
+            document.querySelector('#portfolioMobilePages').emit('mobilePageInactive');
+            document.querySelector('#portfolioillustrationPages').emit('illustrationPageInactive');
 
-            document.querySelector('#closeButtonMenu').setAttribute('visible', 'true');
-            document.querySelector('#closeButtonMenu').emit('closeButtonActive');
 
             setTimeout(function () {
                 document.querySelector('#portMenu').setAttribute('visible', 'false');
-                menu.setAttribute('visible', 'false')
+
             }, 500);
         });
         
@@ -316,14 +311,10 @@
     document.querySelector('#button2').addEventListener('click', function () {
             document.querySelector('#portfolioMobilePages').setAttribute('visible', 'true');
             document.querySelector('#portfolioMobilePages').emit('mobilePageActive');
-            document.querySelector('#portMenu').emit('portMenuInactive');
-            menu.emit('menuClose');
-            document.querySelector('#portBubble').emit('portBubbleClose');
-            
-
-            document.querySelector('#closeButtonMenu').setAttribute('visible', 'true');
-            document.querySelector('#closeButtonMenu').emit('closeButtonActive');
-
+        
+            document.querySelector('#portfolioWebPages').emit('webPageInactive');
+            document.querySelector('#portfolioillustrationPages').emit('illustrationPageInactive');
+        
             setTimeout(function () {
                 document.querySelector('#portMenu').setAttribute('visible', 'false');
                 menu.setAttribute('visible', 'false')
@@ -336,14 +327,11 @@
         document.querySelector('#button3').addEventListener('click', function () {
             document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'true');
             document.querySelector('#portfolioIllustrationPages').emit('illustrationPageActive');
-            document.querySelector('#portMenu').emit('portMenuInactive');
-            menu.emit('menuClose');
-            document.querySelector('#portBubble').emit('portBubbleClose');
-
-            document.querySelector('#closeButtonMenu').setAttribute('visible', 'true');
-            document.querySelector('#closeButtonMenu').emit('closeButtonActive');
-
-            setTimeout(function () {
+            document.querySelector('#portfolioWebPages').emit('webPageInactive');
+            document.querySelector('#portfolioMobilePages').emit('mobilePageInactive');
+            
+            
+          setTimeout(function () {
                 document.querySelector('#portMenu').setAttribute('visible', 'false');
                 menu.setAttribute('visible', 'false')
             }, 500);
