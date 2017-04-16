@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.21</h1>
+            <h1>AR Portfolio V1.22</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -47,6 +47,11 @@
             <a-asset-item id="vuforiakey" src="key.txt"></a-asset-item>
             <video webkit-playsinline playsinline onclick="playVid();" id="battleWithin" loop="true" src="video/battleWithin.mp4"></video>
             <img id="logo" src="images/logoWhite.png">
+            <img id="dot" src="images/dot.png">
+            <img id="dot2" src="images/dot1.png">
+            <img id="dot3" src="images/dot2.png">
+            <img id="email" src="images/email.png">
+            <img id="tel" src="images/tel.png">
         </a-assets>
 
          <ar-camera>
@@ -66,8 +71,18 @@
                 <a-animation attribute="visible" to="false" dur="1"></a-animation>
                 <a-animation attribute="visible" to="true" delay="10" dur="1"></a-animation>
 
-                <!--        <a-image src="#logo" width="200" height="100"></a-image>-->
-                <a-video src="#battleWithin" width="32" height="18" rotation="90 180 180" position="0 0 0"></a-video>
+                
+                        
+        <a-image src="#logo" width="250" height="100" position="0 80 0" ></a-image>
+        <a-image src="#dot" width="50" height="15" position="165 105 0"></a-image>
+        <a-image src="#dot2" width="50" height="15" position="165 80 0"></a-image>
+        <a-image src="#dot3" width="50" height="15" position="165 55 0"></a-image>
+        <a-image src="#email" width="80" height="15" position="-75 15 10"></a-image>
+        <a-image src="#tel" width="80" height="15" position="75 15 10"></a-image>
+        <a-sphere color="#A61E34" radius="5" position="147 106 0.5" scale="1.8 1.8 1.8"></a-sphere>
+                
+                
+                
 
             </a-entity>
         </ar-frame>
