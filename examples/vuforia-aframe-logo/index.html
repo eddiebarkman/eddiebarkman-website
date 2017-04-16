@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.42</h1>
+            <h1>AR Portfolio V1.43</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -129,7 +129,7 @@
         <a-image src="#email" width="80" height="15" position="-75 15 50">
                 <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
         </a-image>
-        <a-image src="#tel" width="80" height="15" position="75 15 50">
+        <a-image src="#tel" width="80" height="15" position="75 15 50" onclick ="buttonPress();">
                 <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation>
             </a-image>
                 
@@ -150,19 +150,24 @@
     
     <script>
     
-            document.querySelector('#button1').addEventListener('onclick', function () {
+            document.querySelector('#button1').addEventListener('mouseenter', function () {
 //            document.querySelector('#clickerShape').emit('clickStart');
 //            document.querySelector('#button1').emit('button1Enter');
                 window.location.href = "http://www.google.com";
         });   
         
-        document.querySelector('#email').addEventListener('onClick', function () {
+        document.querySelector('#email').addEventListener('mouseenter', function () {
                 window.open('http://www.google.com');
         });      
         
         document.querySelector('#tel').addEventListener('mouseenter', function () {
                window.open('tel:15595493439');
         });
+        
+        function buttonPress () {
+             window.location.href = "http://www.google.com";
+            
+        }
     
     
     </script>
