@@ -23,7 +23,7 @@
     </div>
     <div id="loader-wrapper">
         <div class="splashtext">
-            <h1>AR Portfolio V1.30</h1>
+            <h1>AR Portfolio V1.31</h1>
             <h2 id="status">loading scripts...</h2>
         </div>
 
@@ -64,7 +64,6 @@
 
         <!-- attach to stones target. x/y in the plane, z up -->
               <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.evr.bcard" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">
-<!--        <ar-frame id="frame" trackvisibility="true" visible="false" parent="vuforia.stonesandchips.stones" position="0 0 0" rotation="0 0 0" trigger="radius:0.35;event:target_trigger">-->
             <a-entity id="logoscene" scale="0.005 0.005 0.005" rotation="90 0 0" visible="false">
                 <a-animation attribute="visible" to="false" dur="1"></a-animation>
                 <a-animation attribute="visible" to="true" delay="10" dur="1"></a-animation>
@@ -85,17 +84,18 @@
                 
                 
         <a-image src="#logo" width="250" height="100">
-        <a-animation attribute="position" begin="0" from="0 -100 0" to="0 80 0" repeat="0"></a-animation> 
+        <a-animation attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="200"></a-animation> 
+        <a-animation attribute="position" begin="0" from="0 -100 0" to="0 80 0" repeat="0" dur="500"></a-animation> 
         
         </a-image>
         <a-entity>
         <a-image src="#dot" width="50" height="15">
-        <a-animation attribute="opacity" begin="500" from="0" to="1" repeat="0"></a-animation> 
-        <a-animation attribute="position" begin="600" from="500 105 0" to="165 105 0" repeat="0"></a-animation> 
+        <a-animation delay="500" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation> 
+        <a-animation delay="500" attribute="position" begin="0" from="1000 105 0" to="165 105 0" repeat="0" dur="1000"></a-animation> 
         </a-image>    
         <a-sphere color="#A61E34" radius="5" scale="1.8 1.8 1.8">
-        <a-animation attribute="opacity" begin="500" from="0" to="1" repeat="0"></a-animation> 
-        <a-animation attribute="position" begin="600" from="500 105 0" to="147 106 0.5" repeat="0"></a-animation> 
+        <a-animation delay="500" attribute="opacity" begin="0" from="0" to="1" repeat="0"></a-animation> 
+        <a-animation delay="500" attribute="position" begin="0" from="1000 105 0" to="147 106 0.5" repeat="0"></a-animation> 
         </a-sphere>
         </a-entity>
         <a-image src="#dot2" width="50" height="15" position="165 80 0"></a-image>
