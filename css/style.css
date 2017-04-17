@@ -365,11 +365,84 @@ a {
             z-index: 10;
             color: #fff;
             position: absolute;
-            width: 450px;
+            width: 23.5vw;
             height: 300px;
             text-align: center;
-            top: 100px;
+            top:14vh;
         }
+@media screen and (max-width: 1330px) {
+    .caption-style-1 .caption-text h1 {
+        font-size: 1.5em;
+    }
+    .caption-style-1 .caption-text p {
+        font-size: 1em;
+    }
+    .caption-style-1 .caption-text {
+        top: 12vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .caption-style-1 .caption-text h1 {
+        font-size: 1em;
+    }
+    .caption-style-1 .caption-text p {
+        font-size: 0.7em;
+    }
+    .caption-style-1 .caption-text {
+        top: 8vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .caption-style-1 .caption-text h1 {
+        font-size: 1.5em;
+    }
+    .caption-style-1 .caption-text p {
+        font-size: 1em;
+    }
+    .caption-style-1 .caption-text {
+        width: 31.5vw;
+        top: 8vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .caption-style-1 .caption-text h1 {
+        font-size: 1em;
+    }
+    .caption-style-1 .caption-text p {
+        font-size: 0.8em;
+    }
+    .caption-style-1 .caption-text {
+        width: 31.5vw;
+        top: 8vh;
+    }
+    @media screen and (max-width: 700px) {
+        .caption-style-1 .caption-text h1 {
+            font-size: 1.5em;
+        }
+        .caption-style-1 .caption-text p {
+            font-size: 1em;
+        }
+        .caption-style-1 .caption-text {
+            width: 46vw;
+            top: 8vh;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .caption-style-1 .caption-text h1 {
+            font-size: 2.5em;
+        }
+        .caption-style-1 .caption-text p {
+            font-size: 1em;
+        }
+        .caption-style-1 .caption-text {
+            width: 98vw;
+            top: 15vh;
+        }
+    }
+}
 
 
 
