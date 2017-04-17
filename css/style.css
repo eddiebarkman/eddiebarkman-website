@@ -303,7 +303,7 @@ a {
   background-repeat: no-repeat;
   z-index: 1; }
 
-
+/*portfolio image captions*/
   .caption-style-1 {
             list-style-type: none;
             margin: 0px;
@@ -342,7 +342,7 @@ a {
         .caption-style-1 .blur {
             background-color: rgba(0, 0, 0, 0.65);
             height: 300px;
-            width: 400px;
+            width: 500px;
             z-index: 5;
             position: absolute;
         }
@@ -365,7 +365,7 @@ a {
             z-index: 10;
             color: #fff;
             position: absolute;
-            width: 350px;
+            width: 450px;
             height: 300px;
             text-align: center;
             top: 100px;
@@ -553,9 +553,9 @@ button + label {
   -webkit-column-count: 5;
   -webkit-column-gap: 10px;
   -moz-column-count: 5;
-  -moz-column-gap: 10px;
-  column-count: 5;
-  column-gap: 10px;
+  -moz-column-gap: 0px;
+  column-count: 4;
+  column-gap: 0px;
   -webkit-backface-visibility: hidden; }
 
 .container img {
@@ -565,7 +565,7 @@ button + label {
 .container .mix {
   text-align: left;
   background: transparent;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   display: none;
   vertical-align: middle;
   overflow: visible; }
