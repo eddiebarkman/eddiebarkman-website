@@ -5,11 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cache-control" content="max-age=0" /><!--supposed to help with caching but doesn't seem to do anything-->
-    <meta http-equiv="cache-control" content="no-cache" /><!--supposed to help with caching but doesn't seem to do anything-->
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <!--supposed to help with caching but doesn't seem to do anything-->
+    <meta http-equiv="cache-control" content="no-cache" />
+    <!--supposed to help with caching but doesn't seem to do anything-->
     <meta name="description" content="Hello, I'm Eddie Barkman. I'm a multimedia artist. I like creating things! I specialize in web development and video creation.">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><!--My goodness, when did favicons take up so much extra spam-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!--My goodness, when did favicons take up so much extra spam-->
     <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
@@ -19,20 +22,90 @@
     <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16"><!--What is all this!?-->
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <!--What is all this!?-->
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
     <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
     <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
     <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
-    <meta name="msapplication-square310x310logo" content="images/largetile.png" /><!--Do we really need all these extra sizes?-->
+    <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+    <!--Do we really need all these extra sizes?-->
 
     <title>Eddie Barkman | Multimedia Artist</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/grid.min.css" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Anton|Khand:300,600,400' rel='stylesheet' type='text/css'><!--KHAAAAAAAAAAAAAAN...D-->
+    <link href='https://fonts.googleapis.com/css?family=Anton|Khand:300,600,400' rel='stylesheet' type='text/css'>
+    <!--KHAAAAAAAAAAAAAAN...D-->
+
+    <style type="text/css">
+        .caption-style-1 {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .caption-style-1 li {
+            float: left;
+            padding: 0px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .caption-style-1 li:hover .caption {
+            opacity: 1;
+        }
+        
+        .caption-style-1 img {
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            z-index: 4;
+        }
+        
+        .caption-style-1 .caption {
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            -webkit-transition: all 0.45s ease-in-out;
+            -moz-transition: all 0.45s ease-in-out;
+            -o-transition: all 0.45s ease-in-out;
+            -ms-transition: all 0.45s ease-in-out;
+            transition: all 0.45s ease-in-out;
+        }
+        
+        .caption-style-1 .blur {
+            background-color: rgba(0, 0, 0, 0.65);
+            height: 300px;
+            width: 400px;
+            z-index: 5;
+            position: absolute;
+        }
+        
+        .caption-style-1 .caption-text h1 {
+            text-transform: uppercase;
+            font-size: 2em;
+        }
+        
+        .caption-style-1 .caption-text p {
+            text-transform: uppercase;
+            font-size: 1em;
+            line-height: 3em;
+        }
+        
+        .caption-style-1 .caption-text {
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            width: 350px;
+            height: 300px;
+            text-align: center;
+            top: 100px;
+        }
+    </style>
+
 
 
 </head>
@@ -44,7 +117,8 @@
 
     <div class="topNav col-no-padding">
 
-        <div class="desktopMenu mobileHide animatedParent"> <!--This awful thing is the mobile menu-->
+        <div class="desktopMenu mobileHide animatedParent">
+            <!--This awful thing is the mobile menu-->
             <br>
             <ul class="animated fadeIn">
                 <li id="homeButt"><a href="#page1"><i class="fa fa-home"></i>Home</a></li>
@@ -59,11 +133,13 @@
 
         </div>
 
-        <div class=" mobileShow menuButton"><i class="fa fa-bars" data-target='clickExample'></i></div> <!--Hamburger yum-->
+        <div class=" mobileShow menuButton"><i class="fa fa-bars" data-target='clickExample'></i></div>
+        <!--Hamburger yum-->
     </div>
 
 
-    <div class="menu"><!--this is that kind of terrible looking menu in the top right corner-->
+    <div class="menu">
+        <!--this is that kind of terrible looking menu in the top right corner-->
         <br>
 
 
@@ -123,8 +199,10 @@
     <div id="page2" class="fullPage">
         <div class="col-span-1 col-style col-collapse"></div>
         <div class="col-span-5 col-style content aboutLeft animatedParent animateOnce">
-            <h1 class="aboutBubble animated bounceInUp delay-250">Hello, I'm Eddie Barkman.</h1><!--Timed to come in after the image-->
-            <div class="aboutPic animated bounceInLeft"></div> <!--Have you guys noticed the animations yet? I really enjoy the animations. They are fun-->
+            <h1 class="aboutBubble animated bounceInUp delay-250">Hello, I'm Eddie Barkman.</h1>
+            <!--Timed to come in after the image-->
+            <div class="aboutPic animated bounceInLeft"></div>
+            <!--Have you guys noticed the animations yet? I really enjoy the animations. They are fun-->
         </div>
         <div class="col-span-1 col-style col-collapse"></div>
         <div class="col-span-5 col-style content noMargin animatedParent">
@@ -145,134 +223,365 @@
                 <mySkill>(If you check out my portfolio, I have a ton!)</mySkill>.
                 <br>
                 <br> I've also been working on Virtual and Augmented Reality design. Check out a couple of my examples <a href="http://www.eddiebarkman.com/VR/VRDesignPortfolio">here</a> and <a href="http://www.eddiebarkman.com/VR/starCrossed">here</a>.
-                <br><br>
-                <myskill>Due to unforseen circumstances I currently do not have a contact page so if you'd like to get in touch with me, send an email to</myskill> <a href="mailto:info@eddiebarkman.com">info@eddiebarkman.com</a><myskill> or leave me a voicemail</myskill> at 559.549.3439
-                
+                <br>
+                <br>
+                <myskill>Due to unforseen circumstances I currently do not have a contact page so if you'd like to get in touch with me, send an email to</myskill> <a href="mailto:info@eddiebarkman.com">info@eddiebarkman.com</a>
+                <myskill> or leave me a voicemail</myskill> at 559.549.3439
+
             </p>
-        </div><!--Could this guy be any more long winded, at least I left out my sarcastic side-->
-        <div class="col-span-1 col-style col-collapse"></div><!--What the heck is this for?--><!--UPDATE: keeps the website from collapsing in on itself-->
+        </div>
+        <!--Could this guy be any more long winded, at least I left out my sarcastic side-->
+        <div class="col-span-1 col-style col-collapse"></div>
+        <!--What the heck is this for?-->
+        <!--UPDATE: keeps the website from collapsing in on itself-->
         <div class="col-span-12 col-style socialIcons">
-            <a href="https://www.facebook.com/eddiebarkman" target="_blank"><i class="fa fa-facebook-official"></i></a><!--Please note I rarely login to facebook, I'm not that social'-->
-            <a href="https://www.linkedin.com/in/eddiebarkman" target="_blank"><i class="fa fa-linkedin"></i></a> <!--If you came here from my Linkedin, can I has job please?-->
-            <a href="https://twitter.com/eddiefb3" target="_blank"><i class="fa fa-twitter"></i></a> <!--Oh look, another social media account that I do nothing with-->
-            <a href="https://www.behance.net/eddiebarkman" target="_blank"><i class="fa fa-behance"></i></a><!--Man this place is nice, I should just give up the horrible looking portfolio below and move to Behance-->
-            <a href="https://www.youtube.com/channel/UCOz0-HmNpGUt_nEROur7U-A" target="_blank"><i class="fa fa-youtube-play"></i></a><!--Where all the best vids live-->
-            <a href="#" target="_blank"><i class="fa fa-vimeo"></i></a><!--Ha, like I remember what my vimeo is-->
-            <a href="https://www.flickr.com/photos/137155563@N07/" target="_blank"> <i class="fa fa-flickr"></i></a> <!--For that one time I tried learning how to use a camera-->
-            <a href="#" target="_blank"> <i class="fa fa-steam"></i></a><!--Why is this here if I don't have a link? Oh that's because I like the number 8 more than 7.-->
+            <a href="https://www.facebook.com/eddiebarkman" target="_blank"><i class="fa fa-facebook-official"></i></a>
+            <!--Please note I rarely login to facebook, I'm not that social'-->
+            <a href="https://www.linkedin.com/in/eddiebarkman" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <!--If you came here from my Linkedin, can I has job please?-->
+            <a href="https://twitter.com/eddiefb3" target="_blank"><i class="fa fa-twitter"></i></a>
+            <!--Oh look, another social media account that I do nothing with-->
+            <a href="https://www.behance.net/eddiebarkman" target="_blank"><i class="fa fa-behance"></i></a>
+            <!--Man this place is nice, I should just give up the horrible looking portfolio below and move to Behance-->
+            <a href="https://www.youtube.com/channel/UCOz0-HmNpGUt_nEROur7U-A" target="_blank"><i class="fa fa-youtube-play"></i></a>
+            <!--Where all the best vids live-->
+            <a href="#" target="_blank"><i class="fa fa-vimeo"></i></a>
+            <!--Ha, like I remember what my vimeo is-->
+            <a href="https://www.flickr.com/photos/137155563@N07/" target="_blank"> <i class="fa fa-flickr"></i></a>
+            <!--For that one time I tried learning how to use a camera-->
+            <a href="#" target="_blank"> <i class="fa fa-steam"></i></a>
+            <!--Why is this here if I don't have a link? Oh that's because I like the number 8 more than 7.-->
 
-        </div> <!--end Social icons-->
+        </div>
+        <!--end Social icons-->
 
-    </div> <!--End of Page 2-->
+    </div>
+    <!--End of Page 2-->
 
     <!--Page 3:The chaos begins-->
-    <div id="page3" class="fullPage"> <!--Seriously it is really hard to make a portfolio-->
+    <div id="page3" class="fullPage">
+        <!--Seriously it is really hard to make a portfolio-->
         <div id="portfolio">
-            <div class="controls"><!--These are the filter buttons for filtering things-->
-                <label>Filter:</label> 
+            <div class="controls">
+                <!--These are the filter buttons for filtering things-->
+                <label>Filter:</label>
 
-                <button class="filter" data-filter="all">All</button><!--Too many items, run away!-->
-                <button class="filter" data-filter=".featured">Featured</button><!--Where the best things go-->
-                <button class="filter" data-filter=".websites">Websites</button> <!--plural, multiple websites, including this one-->
-                <button class="filter" data-filter=".apps">Apps</button><!--I built an app once, or twice-->
-                <button class="filter" data-filter=".illustrations">Illustrations</button><!--If I could draw I would-->
-                <button class="filter" data-filter=".videos">Videos</button><!--Remeber when Flash was a thing?-->
+                <button class="filter" data-filter="all">All</button>
+                <!--Too many items, run away!-->
+                <button class="filter" data-filter=".featured">Featured</button>
+                <!--Where the best things go-->
+                <button class="filter" data-filter=".websites">Websites</button>
+                <!--plural, multiple websites, including this one-->
+                <button class="filter" data-filter=".apps">Apps</button>
+                <!--I built an app once, or twice-->
+                <button class="filter" data-filter=".illustrations">Illustrations</button>
+                <!--If I could draw I would-->
+                <button class="filter" data-filter=".videos">Videos</button>
+                <!--Remeber when Flash was a thing?-->
             </div>
-            <div id="Container" class="container"><!--Why did you use the extremely generic Container tag here of all places? Was it not confusing enough?-->
-                <div class="mix websites featured" data-myorder="25"><!--Okay so this is important. You put your tags in the classes. For example, this one has the websites and featured tag. Therefore it appears in both categories. Don't forget to put mix in t here too-->
-                    <a class="modalButton" href="portfolioPages/milky.html"><img src="images/portfolio/thumbnails/web2.jpg"></a>
-                </div>
-                <div class="mix websites" data-myorder="2">
-                    <a class="modalButton" href="portfolioPages/gina.html"><img src="images/portfolio/thumbnails/web3.jpg"></a>
-                </div>
-                <div class="mix websites" data-myorder="3">
-                    <a class="modalButton" href="portfolioPages/cow.html"><img src="images/portfolio/thumbnails/web1.jpg"></a><!--Do you see the modalButton class? That means clicking on this image triggers my javasript that makes magical animations happen to reveal a new page relevant to the image clicked. In other words it uses Ajax to load another page so I don't have to spam this index file-->
-                </div>
-                <div class="mix websites" data-myorder="4">
-                    <a class="modalButton" href="portfolioPages/rtRecipes.html"><img src="images/portfolio/thumbnails/web4.jpg"></div>
-                </a>
-                <div class="mix websites featured" data-myorder="24">
-                    <a class="modalButton" href="portfolioPages/mont.html"><img src="images/portfolio/thumbnails/web5.jpg"></div>
-                </a>
-                
-                <div class="mix websites featured" data-myorder="25">
-                    <a class="modalButton" href="portfolioPages/ARCard.html"><img src="images/portfolio/thumbnails/AR1.jpg"></div>
-                </a>
-                
-                <div class="mix websites featured" data-myorder="1">
-                    <a class="modalButton" href="portfolioPages/VRWeb.html"><img src="images/portfolio/thumbnails/web6.jpg"></div>
-                </a>
+            <div id="Container" class="container">
+                <!--Why did you use the extremely generic Container tag here of all places? Was it not confusing enough?-->
 
-                <div class="mix apps featured" data-myorder="5">
-                    <a class="modalButton" href="portfolioPages/gottfridApp.html"><img src="images/portfolio/thumbnails/App1.jpg"></a>
-                </div>
-                <div class="mix apps" data-myorder="6">
-                    <a class="modalButton" href="portfolioPages/kob.html"><img src="images/portfolio/thumbnails/App2.jpg"></a>
-                </div>
-                <div class="mix apps featured" data-myorder="7">
-                    <a class="modalButton" href="portfolioPages/remember.html" target="_blank"><img src="images/portfolio/thumbnails/App3.jpg"></a>
-                </div>
-                <div class="mix apps" data-myorder="8">
-                    <a class="modalButton" href="portfolioPages/rtRecipes.html"><img src="images/portfolio/thumbnails/App4.jpg"></a>
-                </div>
+                <ul class="caption-style-1">
+                    <div class="mix websites featured" data-myorder="25">
+                        <!--Okay so this is important. You put your tags in the classes. For example, this one has the websites and featured tag. Therefore it appears in both categories. Don't forget to put mix in t here too-->
+                        <a class="modalButton" href="portfolioPages/milky.html">
+                            <li>
+                                <img src="images/portfolio/thumbnails/web2.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Milky Potato</h1>
+                                        <br>
+                                        <p>Custom Website and Wordpress Theme</p>
+                                    </div>
+                                </div>
+                            </li>
 
-                <div class="mix videos" data-myorder="9">
-                    <a class="modalButton" href="portfolioPages/dog.html"><img src="images/portfolio/thumbnails/mov1.jpg"></a><!--This spam is still going-->
-                </div>
-                <div class="mix videos featured" data-myorder="10">
-                    <a class="modalButton" href="portfolioPages/battlevid.html"><img src="images/portfolio/thumbnails/mov2.jpg"></a>
-                </div>
-                <div class="mix videos" data-myorder="11">
-                    <a class="modalButton" href="portfolioPages/prp.html"><img src="images/portfolio/thumbnails/mov3.jpg"></a>
-                </div>
-                <div class="mix videos featured" data-myorder="12">
-                    <a class="modalButton" href="portfolioPages/hen.html"><img src="images/portfolio/thumbnails/mov4.jpg"></a>
-                </div>
+                        </a>
+                    </div>
+                    <div class="mix websites" data-myorder="2">
+                        <a class="modalButton" href="portfolioPages/gina.html">
+
+                            <li><img src="images/portfolio/thumbnails/web3.jpg"></a>
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Author Website</h1>
+                                <br>
+                                <p>A concept for an author's site.</p>
+                            </div>
+                        </div>
+                        </li>
+                    </div>
+                    <div class="mix websites" data-myorder="3">
+                        <a class="modalButton" href="portfolioPages/cow.html">
+                            <li><img src="images/portfolio/thumbnails/web1.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Monochrome Cow</h1>
+                                        <br>
+                                        <p>A website design for a cosplay photography group.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <!--Do you see the modalButton class? That means clicking on this image triggers my javasript that makes magical animations happen to reveal a new page relevant to the image clicked. In other words it uses Ajax to load another page so I don't have to spam this index file-->
+                    </div>
+                    <div class="mix websites" data-myorder="4">
+
+                        <a class="modalButton" href="portfolioPages/rtRecipes.html">
+                            <li><img src="images/portfolio/thumbnails/web4.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Real Time Recipes</h1>
+                                        <br>
+                                        <p>App Concept and Promo Website</p>
+                                    </div>
+                                </div>
+                            </li>
+                    </div>
+                    </a>
+
+                    <div class="mix websites featured" data-myorder="24">
+                        <a class="modalButton" href="portfolioPages/mont.html">
+                            <li> <img src="images/portfolio/thumbnails/web5.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Montico Inc</h1>
+                                        <br>
+                                        <p>A Customized Wordpress theme.</p>
+                                    </div>
+                                </div>
+                            </li>
+                    </div>
+                    </a>
+
+                    <div class="mix websites featured" data-myorder="25">
+                        <a class="modalButton" href="portfolioPages/ARCard.html">
+
+                            <li><img src="images/portfolio/thumbnails/AR1.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Augmented Reality Card</h1>
+                                        <br>
+                                        <p>A business card with a portfolio built in.</p>
+                                    </div>
+                                </div>
+                            </li>
+                    </div>
+                    </a>
+
+                    <div class="mix websites featured" data-myorder="1">
+                        <a class="modalButton" href="portfolioPages/VRWeb.html">
+                            <li><img src="images/portfolio/thumbnails/web6.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>VRWebi.IO</h1>
+                                        <br>
+                                        <p>Virtual Reality Wordpress Theme.</p>
+                                    </div>
+                                </div>
+                            </li>
+                    </div>
+                    </a>
+
+                    <div class="mix apps featured" data-myorder="5">
+                        <a class="modalButton" href="portfolioPages/gottfridApp.html">
+                            <li><img src="images/portfolio/thumbnails/App1.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Gottfrid's Adventure</h1>
+                                        <br>
+                                        <p>An HTML5 based game.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="mix apps" data-myorder="6">
+                        <a class="modalButton" href="portfolioPages/kob.html">
+                            <li><img src="images/portfolio/thumbnails/App2.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>King of Block</h1>
+                                        <br>
+                                        <p>An HTML5 based puzzle game.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="mix apps featured" data-myorder="7">
+                        <a class="modalButton" href="portfolioPages/remember.html" target="_blank">
+                            <li>><img src="images/portfolio/thumbnails/App3.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Remember Me with a Tree</h1>
+                                        <br>
+                                        <p>A PHP MySQL web app.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="mix apps" data-myorder="8">
+                        <a class="modalButton" href="portfolioPages/rtRecipes.html">
+                            <li><img src="images/portfolio/thumbnails/App4.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Real Time Recipes App</h1>
+                                        <br>
+                                        <p>A concept App made with mockups</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+
+                    <div class="mix videos" data-myorder="9">
+                        <a class="modalButton" href="portfolioPages/dog.html">
+                            <li><img src="images/portfolio/thumbnails/mov1.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>History of Dogs</h1>
+                                        <br>
+                                        <p>An animated video about dogs.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <!--This spam is still going-->
+                    </div>
+                    <div class="mix videos featured" data-myorder="10">
+                        <a class="modalButton" href="portfolioPages/battlevid.html">
+
+                            <li><img src="images/portfolio/thumbnails/mov2.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Battle Within</h1>
+                                        <br>
+                                        <p>An animated short with original music.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="mix videos" data-myorder="11">
+                        <a class="modalButton" href="portfolioPages/prp.html">
+
+                            <li><img src="images/portfolio/thumbnails/mov3.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Pride and Prejudice</h1>
+                                        <br>
+                                        <p>on Social Media animation.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="mix videos featured" data-myorder="12">
+                        <a class="modalButton" href="portfolioPages/hen.html">
+                            <li><img src="images/portfolio/thumbnails/mov4.jpg">
+                                <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Speckled Hen</h1>
+                                        <br>
+                                        <p>Voice acted animated short.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
 
 
-                <div class="mix illustrations" data-myorder="13">
-                    <a href="images/portfolio/G2.jpg" data-lity><img src="images/portfolio/thumbnails/ill1.jpg"></a>
-                </div>
-                <div class="mix illustrations" data-myorder="14">
-                    <a href="images/portfolio/G15.jpg" data-lity><img src="images/portfolio/thumbnails/ill2.jpg"></a>
-                </div>
-                <div class="mix illustrations" data-myorder="15">
-                    <a href="images/portfolio/G16.jpg" data-lity><img src="images/portfolio/thumbnails/ill3.jpg"></a>
-                </div>
-                <div class="mix illustrations featured" data-myorder="16">
-                    <a href="images/portfolio/grandma.jpg" data-lity><img src="images/portfolio/thumbnails/ill4.jpg"></a>
-                </div>
-                <div class="mix illustrations featured" data-myorder="17">
-                    <a href="images/portfolio/I1-2.jpg" data-lity><img src="images/portfolio/thumbnails/ill5.jpg"></a>
-                </div>
-                <div class="mix illustrations" data-myorder="18">
-                    <a href="images/portfolio/Tipton.jpg" data-lity><img src="images/portfolio/thumbnails/ill6.jpg"></a><!--Almost at the end-->
-                </div>
-                <div class="mix illustrations featured" data-myorder="19">
-                    <a href="images/portfolio/kin1.jpg" data-lity><img src="images/portfolio/thumbnails/ill7.jpg"></a>
-                </div>
-                <div class="mix illustrations" data-myorder="20">
-                    <a href="images/portfolio/I10.jpg" data-lity><img src="images/portfolio/thumbnails/ill8.jpg"></a>
-                </div>
-                <div class="mix illustrations" data-myorder="21">
-                    <a href="images/portfolio/I8.jpg" data-lity><img src="images/portfolio/thumbnails/ill9.jpg"></a>
-                </div>
-                <div class="mix illustrations" data-myorder="22">
-                    <a href="images/portfolio/I9.jpg" data-lity><img src="images/portfolio/thumbnails/ill10.jpg"></a>
-                </div>
-                <div class="mix illustrations featured" data-myorder="23">
-                    <a href="images/portfolio/I11.jpg" data-lity><img src="images/portfolio/thumbnails/ill11.jpg"></a>
-                </div>
-                <div class="gap"></div><!--Not the store-->
-                <div class="gap"></div><!--Wait maybe it is... No it's not.-->
+                    <div class="mix illustrations" data-myorder="13">
+                        <a href="images/portfolio/G2.jpg" data-lity>
+                        <li><img src="images/portfolio/thumbnails/ill1.jpg">
+                                                        <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>Breaking Hyrule</h1>
+                                        <br>
+                                        <p>Breaking Bad Legend of Zelda mashup</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="mix illustrations" data-myorder="14">
+                        <a href="images/portfolio/G15.jpg" data-lity>
+                            <li><img src="images/portfolio/thumbnails/ill2.jpg">
+                                                            <div class="caption">
+                                    <div class="blur"></div>
+                                    <div class="caption-text">
+                                        <h1>All Hail Pikachu</h1>
+                                        <br>
+                                        <p>Pikachu Propaganda</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="mix illustrations" data-myorder="15">
+                        <a href="images/portfolio/G16.jpg" data-lity><img src="images/portfolio/thumbnails/ill3.jpg"></a>
+                    </div>
+                    <div class="mix illustrations featured" data-myorder="16">
+                        <a href="images/portfolio/grandma.jpg" data-lity><img src="images/portfolio/thumbnails/ill4.jpg"></a>
+                    </div>
+                    <div class="mix illustrations featured" data-myorder="17">
+                        <a href="images/portfolio/I1-2.jpg" data-lity><img src="images/portfolio/thumbnails/ill5.jpg"></a>
+                    </div>
+                    <div class="mix illustrations" data-myorder="18">
+                        <a href="images/portfolio/Tipton.jpg" data-lity><img src="images/portfolio/thumbnails/ill6.jpg"></a>
+                        <!--Almost at the end-->
+                    </div>
+                    <div class="mix illustrations featured" data-myorder="19">
+                        <a href="images/portfolio/kin1.jpg" data-lity><img src="images/portfolio/thumbnails/ill7.jpg"></a>
+                    </div>
+                    <div class="mix illustrations" data-myorder="20">
+                        <a href="images/portfolio/I10.jpg" data-lity><img src="images/portfolio/thumbnails/ill8.jpg"></a>
+                    </div>
+                    <div class="mix illustrations" data-myorder="21">
+                        <a href="images/portfolio/I8.jpg" data-lity><img src="images/portfolio/thumbnails/ill9.jpg"></a>
+                    </div>
+                    <div class="mix illustrations" data-myorder="22">
+                        <a href="images/portfolio/I9.jpg" data-lity><img src="images/portfolio/thumbnails/ill10.jpg"></a>
+                    </div>
+                    <div class="mix illustrations featured" data-myorder="23">
+                        <a href="images/portfolio/I11.jpg" data-lity><img src="images/portfolio/thumbnails/ill11.jpg"></a>
+                    </div>
+                </ul>
+
+                <div class="gap"></div>
+                <!--Not the store-->
+                <div class="gap"></div>
+                <!--Wait maybe it is... No it's not.-->
             </div>
-        </div><!--End page 3 Portfolio finally!-->
+        </div>
+        <!--End page 3 Portfolio finally!-->
 
 
         <a href="#page3">
-            <div id="modalCloseButton"><i class="fa fa-times"></i></div><!--This is that horribly off-centered X button that closes the modal Ajax page-->
+            <div id="modalCloseButton"><i class="fa fa-times"></i></div>
+            <!--This is that horribly off-centered X button that closes the modal Ajax page-->
         </a>
-        <div id="modal" class="fullScreenModal"></div><!--This is the full screen modal that loads in the portfolio pages-->
+        <div id="modal" class="fullScreenModal"></div>
+        <!--This is the full screen modal that loads in the portfolio pages-->
     </div>
 
 
@@ -295,20 +604,28 @@
 
 
 
-<!--Script time! Where all the other magic happens-->
+    <!--Script time! Where all the other magic happens-->
     <script>
         $(function () {
             FastClick.attach(document.body);
         });
-    </script><!--This script is for mobile phones to remove the delay from clicks-->
+    </script>
+    <!--This script is for mobile phones to remove the delay from clicks-->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script><!--Jquery because you can't not have JQUERY-->
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script><!--Angular because...what did I use Angular for-->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script><!--Modernizr for...modernizing...-->
-    <script src="js/css3-animate-it.js" type="text/javascript"></script><!--All those cool animations would not exist without this-->
-    <script src="js/jquery.mixitup.min.js" type="text/javascript"></script> <!--powers the awful looking portfolio-->
-    <script src="js/lity.min.js" type="text/javascript"></script> <!--The lightbox that displays images, modals things like that-->
-    <script src="js/ed.js" type="text/javascript"></script> <!--Don't even go here. This is where my custom javascript comes from-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <!--Jquery because you can't not have JQUERY-->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
+    <!--Angular because...what did I use Angular for-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <!--Modernizr for...modernizing...-->
+    <script src="js/css3-animate-it.js" type="text/javascript"></script>
+    <!--All those cool animations would not exist without this-->
+    <script src="js/jquery.mixitup.min.js" type="text/javascript"></script>
+    <!--powers the awful looking portfolio-->
+    <script src="js/lity.min.js" type="text/javascript"></script>
+    <!--The lightbox that displays images, modals things like that-->
+    <script src="js/ed.js" type="text/javascript"></script>
+    <!--Don't even go here. This is where my custom javascript comes from-->
 
 </body>
 
