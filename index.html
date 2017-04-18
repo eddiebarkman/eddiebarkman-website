@@ -48,8 +48,8 @@
         
         body{
             overflow-x: hidden;
-            
         }
+        
     </style><!--Dont judge me...I'm testing things out....-->
     
 
@@ -66,7 +66,15 @@
             <!--  <li><a href="mailto:eddiebarkman@gmail.com"><i class="fa fa-comment"></i> Contact</a></li>-->
             <li class=""><a href="tel:+15595493439"><i class="fa fa-phone"></i> 1.559.549.3439</a></li>
             <li class=""><a href="mailto:eddiebarkman@gmail.com"><i class="fa fa-envelope"></i> eddiebarkman@gmail.com</a></li>
+<!--
+            
+                                    
+            <li class="half"><a href="#page2" onclick="closeNav();"><i class="fa fa-child"></i> Resume</a></li>
+            <li class="half"><a href="#page2" onclick="closeNav();"><i class="fa fa-child"></i> PDF Portfilio</a></li>
+-->
+
             <li><a href="javascript:void(0)" onclick="closeNav();"><i class="fa fa-close"></i> Close</a></li>
+            
 
         </ul>
     </div>
@@ -689,7 +697,11 @@
     <!--Don't even go here. This is where my custom javascript comes from-->
 
     <script>
-        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        
+        
+        
+
+    if (document.documentElement.clientWidth > 700) {//Larger than 700px
         function openNav() {
             document.getElementById("mySidenav").style.left = "0em";
             document.getElementById("main").style.marginLeft = "25em";
@@ -701,7 +713,7 @@
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.left = "-25em";
+            document.getElementById("mySidenav").style.left = "-30em";
             document.getElementById("main").style.marginLeft = "0em";
             document.getElementById("hambuggah").style.left = "0.5em";
             document.getElementById("hambuggah").style.transform = "rotate(0deg)";
@@ -710,14 +722,35 @@
 //            $("i.ham").addClass("fa-bars");
 
         }   
-
         
-//
-//        $("#Container").load( "site/index.html", function() {
-//        $("#Container a").removeAttr("href");
-//        $("#Container a").removeAttr("class")
-//            
-//});
+    }
+        
+    
+            if (document.documentElement.clientWidth < 700) {//smaller than 700 px
+        function openNav() {
+            document.getElementById("mySidenav").style.left = "0em";
+            document.getElementById("main").style.marginLeft = "20em";
+            document.getElementById("hambuggah").style.left = "9em";
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("hambuggah").style.transform = "rotate(90deg)";
+//            $("i.ham").removeClass("fa-bars");
+//            $("i.ham").addClass("fa-close");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.left = "-30em";
+            document.getElementById("main").style.marginLeft = "0em";
+            document.getElementById("hambuggah").style.left = "0.5em";
+            document.getElementById("hambuggah").style.transform = "rotate(0deg)";
+            document.getElementById("overlay").style.display = "none";
+//            $("i.ham").removeClass("fa-close");
+//            $("i.ham").addClass("fa-bars");
+
+        }   
+        
+    }
+        
+
     </script>
 
 </body>

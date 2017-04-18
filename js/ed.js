@@ -71,7 +71,7 @@
 
 
 
-if ($(window).width() > 700) {//No Modal on Mobile
+    if (document.documentElement.clientWidth > 600) {
 
 
         //ModalShowHide
