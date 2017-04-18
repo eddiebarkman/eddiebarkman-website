@@ -835,6 +835,7 @@ a {
     padding: 2%;
     background: #333;
     color: #eee;
+    text-align: center;
 }
 
 label {
@@ -852,10 +853,16 @@ button {
     font-weight: 300;
     border-radius: 4px;
     cursor: pointer;
+    transition:0.2s;
+}
+
+button:hover{
+background: #000;
+    
 }
 
 button.active {
-    background: #1E6982;
+    background: #3BA548;
 }
 
 button:focus {
