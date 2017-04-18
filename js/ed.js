@@ -56,7 +56,7 @@
 
             },
             load: {
-//                sort: 'random',
+               sort: 'random',
                filter: '.featured' 
             }
 
@@ -71,13 +71,15 @@
 
 
 
+if ($(window).width() > 700) {//No Modal on Mobile
+
 
         //ModalShowHide
         $(".modalButton").click(function (e) {
             e.stopPropagation();
             $('html, body').animate({
                 scrollTop: $("#page3").offset().top
-            }, 500);
+            }, 0);
             $('#portfolio').slideUp();
             $('#modal').delay(800).slideDown();
             $('#modalCloseButton').delay(800).fadeIn();
@@ -101,7 +103,7 @@
     }
 });       
 
-
+};//No Modal on Mobile
 
 //menuHighlight
 

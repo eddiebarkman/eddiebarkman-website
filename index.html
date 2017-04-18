@@ -73,7 +73,7 @@
     <div id="overlay" onclick="closeNav();"></div>
     <div id="main">
 
-        <i id="hambuggah" class="fa fa-bars" onClick="openNav();"></i>
+        <i id="hambuggah" class="ham fa fa-bars" onClick="openNav();"></i>
 
 
         <div class="se-pre-con"></div>
@@ -695,22 +695,27 @@
             document.getElementById("main").style.marginLeft = "25em";
             document.getElementById("hambuggah").style.left = "9em";
             document.getElementById("overlay").style.display = "block";
-
+            document.getElementById("hambuggah").style.transform = "rotate(90deg)";
+//            $("i.ham").removeClass("fa-bars");
+//            $("i.ham").addClass("fa-close");
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.left = "-25em";
             document.getElementById("main").style.marginLeft = "0em";
             document.getElementById("hambuggah").style.left = "0.5em";
+            document.getElementById("hambuggah").style.transform = "rotate(0deg)";
             document.getElementById("overlay").style.display = "none";
+//            $("i.ham").removeClass("fa-close");
+//            $("i.ham").addClass("fa-bars");
 
-        }       
-        
+        }   
+
         
 //
-//        $("#Container").load( "site/index.htm", function() {
+//        $("#Container").load( "site/index.html", function() {
 //        $("#Container a").removeAttr("href");
-//        $(".mix a").removeClass("modalButton")
+//        $("#Container a").removeAttr("class")
 //            
 //});
     </script>

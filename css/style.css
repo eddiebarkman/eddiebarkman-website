@@ -107,12 +107,23 @@ a {
     position: fixed;
     font-size: 3em;
     transition: 0.5s;
-    top: 0.5em;
+    top: 0.2em;
     left: 0.5em;
     background-color: transparent;
     z-index: 4;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
+
+/*
+
+#hambuggah:hover{
+        -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    
+    
+}
+*/
 
 #overlay {
     position: fixed;
@@ -389,14 +400,13 @@ a {
     padding-bottom: .2em;
     padding-left: .1em;
     padding-right: .1em;
-    border-radius: 50%;
+
     vertical-align: middle;
     text-align: center;
-    background-color: #666;
+
     opacity: 0.6;
     display: none;
     z-index: 100;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .appearOnScroll {
@@ -844,7 +854,7 @@ a {
 }
 
 .controls {
-    padding: 2%;
+    padding: 1%;
     background: #333;
     color: #eee;
     text-align: center;
@@ -1035,6 +1045,20 @@ button + label {
         -webkit-column-count: 2;
         column-count: 2;
     }
+    
+    button {
+    padding: .4em .8em;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+        }
+    
+    .controls{
+    
+        padding-left:4em;
+        padding-right:4em;
+        
+    }
 }
 
 @media (max-width: 500px) {
@@ -1053,6 +1077,11 @@ button + label {
     #VRIcon {
         height: 4em;
         width: 4em;
+    }
+    
+    .controls{
+        display:none;
+        
     }
 }
 
