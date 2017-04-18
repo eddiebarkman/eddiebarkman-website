@@ -436,7 +436,6 @@ a {
     transition: 0.3s
 }
 
-
 /* When you mouse over the navigation links, change their color */
 
 .sidenav a:hover,
@@ -448,12 +447,13 @@ a {
 /* Position and style the close button (top right corner) */
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0em;
-    font-size: 4em;
-    margin-left: 50px;
-    display: none;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
 }
 
 .sidenav img {
@@ -483,10 +483,6 @@ a {
 .half {
     width: 50%;
     font-size: 0.5em;
-}
-
-.abButt:hover {
-    color: blue;
 }
 
 
