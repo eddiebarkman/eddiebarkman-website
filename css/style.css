@@ -454,7 +454,7 @@ a {
 /* The navigation menu links */
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 0px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -473,7 +473,7 @@ a {
 /* Position and style the close button (top right corner) */
 
 .sidenav .closebtn {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -498,7 +498,9 @@ a {
     width: 100%;
     background-color: transparent;
     border-top: 3px solid #000;
-    transition: 0.3s
+    transition: 0.3s;
+    display: block;
+    margin:auto;
 }
 
 .sidenav li:hover {
@@ -671,6 +673,11 @@ a {
         .caption-style-1 .caption-text {
             width: 98vw;
             top: 15vh;
+        }
+        
+        .sidenav{
+            width:17em;
+            
         }
     }
 }
