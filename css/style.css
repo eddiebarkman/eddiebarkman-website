@@ -60,6 +60,7 @@ a {
 
 #page2 .aboutLeft {
     padding: 2em;
+    text-align: center;
 }
 
 #page3 {
@@ -335,11 +336,12 @@ a {
     width: 13em;
     height: 1.2em;
     padding: 0.4em;
-    background: #3BA548;
+    background: #fff;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    color: #000;
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);*/
 }
 
 .aboutBubble:after {
@@ -347,7 +349,7 @@ a {
     position: absolute;
     border-style: solid;
     border-width: 15px 15px 0;
-    border-color: #3BA548 transparent;
+    border-color: #fff transparent;
     display: block;
     width: 0;
     z-index: 1;
@@ -889,6 +891,36 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition:0.2s;
+    
+}
+
+.aboutButton{
+    background-color:#fff;
+    color:#000;
+    width:45%;
+    height:2em;
+    margin-top:1em;
+    margin-left:1em;
+    font-family: "Anton", sans-serif;
+    transition:.2s ease-in-out;
+    font-size:1em;
+    vertical-align: middle;
+    padding-bottom:2em;
+    opacity:0.7;
+    
+     
+}
+
+.aboutButton:hover{
+    background:#666;
+    color:#fff;
+    opacity:1;
+    
+}
+
+.aboutButton i{
+    font-size:1.5em;
+    
 }
 
 button:hover{
@@ -1042,6 +1074,13 @@ button + label {
         -webkit-column-count: 4;
         column-count: 4;
     }
+    
+    .aboutButton{
+        width:48%;
+        margin-left:0;
+        font-size:0.6em;
+        
+    }
 }
 
 @media (max-width: 800px) {
@@ -1049,6 +1088,12 @@ button + label {
         -moz-column-count: 3;
         -webkit-column-count: 3;
         column-count: 3;
+    }
+    
+    .aboutButton{
+        font-size:0.7em;
+        width:48%;
+        
     }
 }
 
@@ -1065,6 +1110,12 @@ button + label {
     font-weight: 300;
     cursor: pointer;
         }
+    
+    .aboutButton{
+        width:48%;
+        
+        
+    }
     
     .controls{
     
@@ -1094,6 +1145,12 @@ button + label {
     
     .controls{
         display:none;
+        
+    }
+    
+    .aboutButton{
+        width:100%;
+        font-size:0.7em;
         
     }
 }
