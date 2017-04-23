@@ -41,6 +41,8 @@ a {
 .bottomText{
     text-align: center;
     font-size:0.8em;
+    padding-top:1em;
+    padding-bottom:0.5em;
     
 }
 
@@ -74,6 +76,84 @@ a {
 #page4 .content {
     text-align: center;
 }
+
+#page4 ul{
+
+    text-align: center;
+    padding-right:2em;
+    padding-top:2em;
+    
+    
+}
+
+#page4 li a{
+    padding-top:0.2em;
+        text-decoration: none;
+    transition: 0.3s;
+}
+
+#page4 li a:hover{
+    color:#888;
+    padding-left:2em;
+
+    
+}
+
+#page4 ul i{
+    padding-left:0.5em;
+}
+
+form {
+    text-align: center;
+    padding-top:1em;
+    
+}
+
+input{
+    width:80%;
+    height:2em;
+    margin-bottom:1em;
+    padding:0.3em;
+    border-radius:0.3em;
+    font-family: "Khand", sans-serif;
+    font-size:1em;
+    
+}
+
+.inputText{
+    width:10%;
+    
+}
+
+textarea{
+    width:80%;
+    height:10em;
+    border-radius:0.3em;
+    padding:0.3em;
+    font-family: "Khand", sans-serif;
+        font-size:1em;
+    
+}
+
+.submitButton{
+    width:40%;
+    height:2em;
+    margin-top:1em;
+    color:#fff;
+    background-color:#3BA548;
+    border:none;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+.submitButton:hover{
+    background-color:#666;
+    
+    
+}
+
+
 
 .content {
     margin-top: 4em;
@@ -375,6 +455,21 @@ a {
 .socialIcons i:hover {
     color: darkgray;
 }
+
+.downButton{
+    opacity:0.5;
+    font-size:3em;
+    text-align: center;
+    transition: 0.3s;
+    color:#fff;
+}
+
+.downButton:hover{
+    opacity:1;
+    color:#fff;
+    
+}
+
 
 #siteloader {
     width: 100%;
@@ -685,6 +780,11 @@ a {
         
         .sidenav{
             width:20em;
+            
+        }
+        
+        .submitButton{
+            width:70%;
             
         }
     }
