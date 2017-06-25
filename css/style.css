@@ -12,6 +12,12 @@ body {
     font-family: "Khand", sans-serif;
 }
 
+.modal-container{
+    background-color:#000!important;
+    border-radius:1em;
+}
+    
+
 a {
     color: #fff;
     text-align: center;
@@ -201,7 +207,7 @@ textarea{
 }
 
 #hambuggah2 {
-    position: fixed;
+    position: absolute;
     font-size: 3em;
     transition: 0.5s;
     top: 0.2em;
@@ -1117,6 +1123,67 @@ button + label {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #646464;
     transition-duration: 1s;
 }
+
+.wannaChat{
+    position: absolute;
+    bottom:2em;
+    right:2em;
+    height:140px;
+    width:140px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.chatIcon{
+    margin-top:1.5em;
+    height:80px;
+    width:80px;
+    border-style: solid;
+    border-color: transparent;
+    border-width:0.2em;
+    border-radius:0.3em;
+}
+
+.chatIcon:hover{
+    margin-top:1.5em;
+    height:80px;
+    width:80px;
+    border-style: solid;
+    border-color: white;
+    border-width:0.2em;
+    border-radius:0.3em;
+    transition-duration: 0.3s;
+}
+
+.bubble 
+{
+position: relative;
+width: 140px;
+height: 35px;
+padding: 0px;
+line-height: 35px;
+background: #3BA548;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #3BA548 transparent;
+display: block;
+width: 0;
+z-index: 1;
+margin-left: -15px;
+bottom: -15px;
+left: 50%;
+}
+
+
 
 @media screen and (max-width: 700px) {
     /*Small Screen*/
