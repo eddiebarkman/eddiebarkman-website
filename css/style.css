@@ -197,6 +197,7 @@ textarea{
 
 #hambuggah {
     position: fixed;
+    cursor: pointer;
     font-size: 3em;
     transition: 0.5s;
     top: 0.2em;
@@ -1125,34 +1126,31 @@ button + label {
 }
 
 .wannaChat{
-    position: absolute;
-    bottom:2em;
+    position: fixed;
+    bottom:0;
     right:2em;
-    height:140px;
-    width:140px;
-    text-align: center;
+    height:3em;
+    width:15em;
     cursor: pointer;
+    background-color: #3BA548;
+    border-radius: 1em 0em 0em 1em;
 }
 
 .chatIcon{
-    margin-top:1.5em;
-    height:80px;
-    width:80px;
-    border-style: solid;
-    border-color: transparent;
-    border-width:0.2em;
-    border-radius:0.3em;
+    height:3em;
+    width:3em;
+    float: left;
 }
 
 .chatIcon:hover{
-    margin-top:1.5em;
-    height:80px;
-    width:80px;
-    border-style: solid;
-    border-color: white;
-    border-width:0.2em;
-    border-radius:0.3em;
-    transition-duration: 0.3s;
+
+}
+
+.chatText{
+    text-align: center;
+    vertical-align:middle;
+    line-height: 3em;
+    
 }
 
 .bubble 

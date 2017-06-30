@@ -35,6 +35,7 @@
 
     <title>Eddie Barkman | Multimedia Artist</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/grid.min.css" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Anton|Khand:300,600,400' rel='stylesheet' type='text/css'>
@@ -245,7 +246,7 @@
                         <div class="mix websites" data-myorder="2">
                             <a class="modalButton" href="portfolioPages/gina.html">
 
-                                <li><img src="images/portfolio/thumbnails/web3.jpg" alt=“thumbnail for Gina Barkman Website” title=“Gina Barkman Website”></a>
+                                <li><img src="images/portfolio/thumbnails/web3.jpg" alt=“thumbnail for Gina Barkman Website” title=“Gina Barkman Website”>
                             <div class="caption">
                                 <div class="blur"></div>
                                 <div class="caption-text">
@@ -255,6 +256,7 @@
                                 </div>
                             </div>
                             </li>
+                                </a>
                         </div>
                         <div class="mix websites" data-myorder="3">
                             <a class="modalButton" href="portfolioPages/cow.html">
@@ -318,6 +320,23 @@
                         </div>
                         </a>
 
+                        <div class="mix websites featured" data-myorder="26">
+                            <a class="modalButton" href="portfolioPages/bear.html">
+
+                                <li><img src="images/portfolio/thumbnails/web7.jpg"  alt=“Thumbnail for Augmented Reality Business Card” title=“Augmented Reality Business card”>
+                                    <div class="caption">
+                                        <div class="blur"></div>
+                                        <div class="caption-text">
+                                            <h1>Bears Love Potatoes</h1>
+                                            <br>
+                                            <p>Virtual Greeting Card Site</p>
+                                        </div>
+                                    </div>
+                                </li>
+                        </div>
+                        </a>
+                        
+                        
                         <div class="mix websites featured" data-myorder="1">
                             <a class="modalButton" href="portfolioPages/VRWeb.html">
                                 <li><img src="images/portfolio/thumbnails/web6.jpg"  alt=“Thumbnail for VRWebIO” title=“VRWebIO Website”>
@@ -546,7 +565,7 @@
                             </a>
                             <!--Almost at the end-->
                         </div>
-                        <div class="mix illustrations featured" data-myorder="19">
+                        <div class="mix illustrations" data-myorder="19">
                             <a href="images/portfolio/kin1.jpg" data-lity>
                                 <li><img src="images/portfolio/thumbnails/ill7.jpg" alt=“Vector illustration of a goggle wearing pilot” title=“Goggle Pilot”>
                                     <div class="caption">
@@ -746,69 +765,16 @@
     <script src="js/ed.js" type="text/javascript"></script>
     <!--Don't even go here. This is where my custom javascript comes from-->
 
-    <script>
-        
-        
-        
 
-    if (document.documentElement.clientWidth > 700) {//Larger than 700px
-        function openNav() {
-            document.getElementById("mySidenav").style.left = "0em";
-            document.getElementById("main").style.marginLeft = "25em";
-            document.getElementById("hambuggah").style.left = "9em";
-            document.getElementById("overlay").style.display = "block";
-            document.getElementById("hambuggah").style.transform = "rotate(90deg)";
-//            $("i.ham").removeClass("fa-bars");
-//            $("i.ham").addClass("fa-close");
-        }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.left = "-30em";
-            document.getElementById("main").style.marginLeft = "0em";
-            document.getElementById("hambuggah").style.left = "0.5em";
-            document.getElementById("hambuggah").style.transform = "rotate(0deg)";
-            document.getElementById("overlay").style.display = "none";
-//            $("i.ham").removeClass("fa-close");
-//            $("i.ham").addClass("fa-bars");
-
-        }   
-        
-    }
-        
+    <!--This is my little interview chatbot-->
+<div onclick="motionAI_Open()" class="wannaChat animated fadeInUp mobileHide">
     
-            if (document.documentElement.clientWidth < 700) {//smaller than 700 px
-        function openNav() {
-            document.getElementById("mySidenav").style.left = "0em";
-            document.getElementById("main").style.marginLeft = "20em";
-            document.getElementById("hambuggah").style.left = "9em";
-            document.getElementById("overlay").style.display = "block";
-            document.getElementById("hambuggah").style.transform = "rotate(90deg)";
-//            $("i.ham").removeClass("fa-bars");
-//            $("i.ham").addClass("fa-close");
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.left = "-30em";
-            document.getElementById("main").style.marginLeft = "0em";
-            document.getElementById("hambuggah").style.left = "0.5em";
-            document.getElementById("hambuggah").style.transform = "rotate(0deg)";
-            document.getElementById("overlay").style.display = "none";
-//            $("i.ham").removeClass("fa-close");
-//            $("i.ham").addClass("fa-bars");
-
-        }   
-        
-    }
-        
-
-    </script>
-
-
-<div onclick="motionAI_Open()" class="wannaChat animatedParent mobileHide   ">
-    <div class="bubble animated fadeInUpShort">Wanna chat?</div>
-    <img class="chatIcon animated fadeIn" src="images/icon.png">
+    <img class="chatIcon" src="images/icon.png">
+    <div class="chatText">Hey, wanna chat?</div>
     
 </div>
+
 <link href="https://api.motion.ai/sdk/webchat.css" rel="stylesheet" type="text/css">
 <script src="https://api.motion.ai/sdk/webchat.js"></script>
 <script>
