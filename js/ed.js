@@ -155,3 +155,61 @@
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
+
+
+
+//Hamburger Menu
+
+
+ 
+        
+
+    if (document.documentElement.clientWidth > 700) {//Larger than 700px
+        function openNav() {
+            document.getElementById("mySidenav").style.left = "0em";
+            document.getElementById("main").style.marginLeft = "25em";
+            document.getElementById("hambuggah").style.left = "9em";
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("hambuggah").style.transform = "rotate(90deg)";
+//            $("i.ham").removeClass("fa-bars");
+//            $("i.ham").addClass("fa-close");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.left = "-30em";
+            document.getElementById("main").style.marginLeft = "0em";
+            document.getElementById("hambuggah").style.left = "0.5em";
+            document.getElementById("hambuggah").style.transform = "rotate(0deg)";
+            document.getElementById("overlay").style.display = "none";
+//            $("i.ham").removeClass("fa-close");
+//            $("i.ham").addClass("fa-bars");
+
+        }   
+        
+    }
+        
+    
+            if (document.documentElement.clientWidth < 700) {//smaller than 700 px
+        function openNav() {
+            document.getElementById("mySidenav").style.left = "0em";
+            document.getElementById("main").style.marginLeft = "20em";
+            document.getElementById("hambuggah").style.left = "9em";
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("hambuggah").style.transform = "rotate(90deg)";
+//            $("i.ham").removeClass("fa-bars");
+//            $("i.ham").addClass("fa-close");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.left = "-30em";
+            document.getElementById("main").style.marginLeft = "0em";
+            document.getElementById("hambuggah").style.left = "0.5em";
+            document.getElementById("hambuggah").style.transform = "rotate(0deg)";
+            document.getElementById("overlay").style.display = "none";
+//            $("i.ham").removeClass("fa-close");
+//            $("i.ham").addClass("fa-bars");
+
+        }   
+        
+    }
+        
