@@ -1,0 +1,1 @@
+This directory is for QR codes on my printed portfolio. Each index page in each folder can be altered to lead to a different URL when visited. This allows me to update it whenever I need without altering the printed QR codes.
