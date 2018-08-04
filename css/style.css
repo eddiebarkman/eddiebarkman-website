@@ -1750,6 +1750,27 @@ body.blog .pagination li a i {
    border: 1px solid transparent;
 }
 
+/* Corner Banner */
+
+.banner {
+  position: fixed;
+  right: -54px;
+  bottom: 35px;
+  z-index: 1;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #333;
+  color: #fff;
+    font-size:0.8em;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  }
+
 /* [ RESPONSIVE DESIGN STYLES ] */
 
 
@@ -1847,6 +1868,10 @@ body.blog .pagination li a i {
 		padding-top: 23px !important;
 		padding: 20px !important;
 	}
+    
+    .banner{
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -2008,4 +2033,3 @@ body.blog .pagination li a i {
 	}
 	
 }
-
