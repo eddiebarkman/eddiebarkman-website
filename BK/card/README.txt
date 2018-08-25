@@ -1,1 +1,0 @@
-The QR code on my business card leads to this directory. The index file is used to redirect the user to any URL I want to change it to.

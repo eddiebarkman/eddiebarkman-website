@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?7wajoi');
+  src:  url('../fonts/icomoon.eot?7wajoi#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7wajoi') format('truetype'),
+    url('../fonts/icomoon.woff?7wajoi') format('woff'),
+    url('../fonts/icomoon.svg?7wajoi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 3;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-html5{
+    color:orangered;
+}
+
+.fa-wordpress{
+    
+}
+.fa-css3{
+  
+}
+
+.icon-document-file-php:before {
+  content: "\e901";
+}
+.icon-document-file-php2:before {
+  content: "\e902";
+}
+.icon-file-php:before {
+  content: "\e903";
+}
+.icon-file-php2:before {
+  content: "\e904";
+}
+.icon-document-file-css:before {
+  content: "\e905";
+
+}
+.icon-document-file-css2:before {
+  content: "\e906";
+}
+.icon-file-css:before {
+  content: "\e907";
+}
+.icon-file-css2:before {
+  content: "\e908";
+}
+.icon-document-file-html:before {
+  content: "\e909";
+}
+.icon-document-file-html2:before {
+  content: "\e90a";
+}
+.icon-file-html:before {
+  content: "\e90b";
+}
+.icon-file-html2:before {
+  content: "\e90c";
+}
+.icon-mysql:before {
+  content: "\e90d";
+
+}
+.icon-javascript:before {
+  content: "\e90e";
+
+}
+.icon-adobephotoshop2:before {
+  content: "\e90f";
+
+}
+.icon-adobeindesign2:before {
+  content: "\e910";
+
+}
+.icon-adobeillustrator2:before {
+  content: "\e911";
+
+}
+.icon-adobedreamweaver:before {
+  content: "\e912";
+
+}
+.icon-adobeaftereffects2:before {
+  content: "\e913";
+
+}
+.icon-adobeacrobatreader:before {
+  content: "\e914";
+  
+}
+.icon-adobe:before {
+  content: "\e915";
+
+}
+.icon-adobeindesign:before {
+  content: "\e916";
+
+}
+.icon-adobeaftereffects:before {
+  content: "\e917";
+
+}
+.icon-adobeillustrator:before {
+  content: "\e918";
+
+}
+.icon-adobephotoshop:before {
+  content: "\e919";
+
+}
+.icon-kickstarter:before {
+  content: "\e900";
+
+}

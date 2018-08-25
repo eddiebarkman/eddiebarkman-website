@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The Bitwise Hive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--Style sheets-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/hive.js"></script>
+</head>
+
+<body>
+    <!--The box shadow is to close the modal-->
+    <span id="boxShadow"></span>
+
+    <ul id="nav">
+        <li class="bars">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </li>
+        <span id="desktopNav" class="wow fadeInDown" data-wow-delay="1.25s">
+            <li class="hvr-underline-from-center"><a class="goHome" href="#">HOME</a></li>
+            <li class="hvr-underline-from-center"><a href="#about">ABOUT</a></li>
+            <li class="hvr-underline-from-center"><a href="#contact">CONTACT</a></li>
+            </span>
+
+        <span id="mobileNav">
+            <li><a class="closeMenuBtn" class="goHome" href="#">HOME</a></li>
+            <li><a class="closeMenuBtn" href="#about">ABOUT</a></li>
+            <li><a class="closeMenuBtn" href="#contact">CONTACT</a></li>
+            <li><a class="closeMenuBtn menuContact" href="">555.555.5555</a></li>
+            <li><a class="closeMenuBtn menuContact" href="">email@domainame.com</a></li>
+                
+            </span>
+    </ul>
+
+    <div id="home" class="container">
+        <!--These are the modals that pop up when the first 5 hexagons with images are clicked-->
+        <li class="hex hexModal">
+
+            <div id="modal1" class="hexIn">
+                <a class="hexLink">
+            <img src="https://placebear.com/g/800/520" alt="" />
+                          <h1>Slide 1</h1>
+            <p>Could put some text here or just get rid of this entirely.</p>
+          </a>
+            </div>
+
+            <div id="modal2" class="hexIn">
+                <a class="hexLink">
+            <img src="https://placeimg.com/1000/800/arch" alt="" />
+                          <h1>Slide 2</h1>
+            <p>Some more sample text here.</p>
+          </a>
+            </div>
+
+            <div id="modal3" class="hexIn">
+                <a class="hexLink">
+            <img src="images/the-hive-grand-opening-hero.jpg" alt="" />
+                          <h1>Slide 3</h1>
+            <p>A subtitle saying something about the image.</p>
+          </a>
+            </div>
+
+            <div id="modal4" class="hexIn">
+                <a class="hexLink">
+            <img src="https://placeimg.com/1000/800/tech" alt="" />
+                          <h1>Slide 4</h1>
+            <p>Sample text can go here under the title.</p>
+          </a>
+            </div>
+
+            <div id="modal5" class="hexIn">
+                <a class="hexLink">
+            <img src="https://placebear.com/g/800/600" alt="" />
+                          <h1>Slide 5</h1>
+            <p>Placebear.com is a fun place to get images</p>
+          </a>
+            </div>
+
+        </li>
+
+        <!--The grid of hexagons begin-->
+        <ul id="hexGrid">
+
+            <li class="hex hvr-push hexWow bounceIn" data-wow-delay="1s">
+                <div class="hexIn">
+                    <a class="hexLink hexLinkAlt">
+                    </a>
+                </div>
+            </li>
+
+            <!--Logo for 3 hexagon row-->
+            <li id="hexLogo2" class="hex hvr-push hexWow bounceIn" data-wow-delay="0.4s">
+                <div class="hexIn">
+                    <a class="hexLink hexLink Logo">
+
+            <img class="logo3" src="images/hive-logo-2.png" alt="" />
+          </a>
+                </div>
+            </li>
+
+            <!--Logo for Five and Two hexagon row-->
+            <li id="hexLogo1" class="hex wow bounceIn hvr-push">
+                <div class="hexIn">
+                    <a class="hexLink hexLinkAltToggle hexLinkLogo">
+            <img class="logo1" src="images/hive-logo-2.png" alt="" />
+          </a>
+                </div>
+            </li>
+
+            <li class="hex hvr-push hexWow bounceIn" data-wow-delay="0.5s">
+                <div class="hexIn">
+                    <a class="hexLink">
+          </a>
+                </div>
+            </li>
+
+            <li class="hex hvr-push hexWow bounceIn" data-wow-delay="0.7s">
+                <div class="hexIn">
+                    <a class="hexLink hexLinkAlt">
+          </a>
+                </div>
+            </li>
+
+            <!--Logo for Four hexagons row-->
+            <li id="" class="hex hvr-push hexWow bounceIn" data-wow-delay="0.3s">
+                <div class="hexIn">
+                    <a class="hexLink hexLinkLogo">
+            <img class="logo2" src="images/hive-logo-2.png" alt="" />
+          </a>
+                </div>
+            </li>
+            <li class="hex hvr-push hexWow bounceIn" data-wow-delay="0.6s">
+                <div class="hexIn">
+                    <a class="hexLink hexLinkAlt">
+          </a>
+                </div>
+            </li>
+            <li class="hex hvr-push hexWow bounceIn" data-wow-delay="0.8s">
+                <div class="hexIn">
+                    <a class="hexLink">
+          </a>
+                </div>
+            </li>
+
+            <li class="hex hvr-push hexWow bounceIn" data-wow-delay="0.9s">
+                <div class="hexIn">
+                    <a class="hexLink hexLinkAlt">
+          </a>
+                </div>
+            </li>
+
+            <!--These are the hexagons with modal links-->
+            <li id="slide1" class="hex modalPointer hvr-shrink">
+                <div class="hexIn">
+                    <a class="hexLink">
+            <img src="https://placebear.com/g/800/520" alt="" />
+            <h1>Title Here</h1>
+            <p>Click on these hexagons to open a modal!</p>
+          </a>
+                </div>
+            </li>
+            <li id="slide2" class="hex modalPointer hvr-shrink">
+                <div class="hexIn">
+                    <a class="hexLink">
+            <img src="https://placeimg.com/1000/800/arch" alt="" />
+            <h1>A Nice Title</h1>
+            <p>and more.</p>
+          </a>
+                </div>
+            </li>
+            <li id="slide3" class="hex modalPointer hvr-shrink">
+                <div class="hexIn">
+                    <a class="hexLink">
+            <img src="images/the-hive-grand-opening-hero.jpg" alt="" />
+            <h1>June 30, 2018</h1>
+            <p>Grand Opening</p>
+          </a>
+                </div>
+            </li>
+            <li id="slide4" class="hex modalPointer hvr-shrink">
+                <div class="hexIn">
+                    <a class="hexLink">
+            <img src="https://placeimg.com/1000/800/tech" alt="" />
+            <h1>Click These Hexagons</h1>
+            <p>And see what happens</p>
+          </a>
+                </div>
+            </li>
+            <li id="slide5" class="hex modalPointer hvr-shrink">
+                <div class="hexIn">
+                    <a class="hexLink">
+            <img src="https://placebear.com/g/800/600" alt="" />
+            <h1>Another Title</h1>
+            <p>Click on me please!</p>
+          </a>
+                </div>
+            </li>
+
+            <!--These are the hexagon images without modal links-->
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink">
+            <img src="https://placeimg.com/1200/800/animals" alt="" />
+            <h1>Title</h1>
+            <p>Subtitle goes here</p>
+          </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink">
+            <img src="https://placeimg.com/640/480/tech" alt="" />
+            <h1>Title</h1>
+            <p>Subtitle goes here</p>
+          </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink">
+            <img src="https://placeimg.com/640/480/people" alt="" />
+            <h1>Title</h1>
+            <p>Subtitle goes here</p>
+          </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink">
+            <img src="https://placeimg.com/800/600/tech" alt="" />
+            <h1>Title</h1>
+            <p>Subtitle goes here</p>
+          </a>
+                </div>
+            </li>
+        </ul>
+
+
+        <!--About Section-->
+        <div id="about">
+            <!--Hexagon page title-->
+            <ul id="hexGrid" class="wow bounceInLeft">
+                <li class="hex">
+                    <div class="hexIn">
+                        <a class="hexLink hexLinkDark">
+
+                            <h1>About Us</h1>
+                            <p>Want to know a bit more info about us. Read below.</p>
+
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="aboutSection">
+                <h1>A fun headline goes here.</h1>
+                <p>A bit of paragraph text can go here. Lorem ipsum, fugiat quo voluptas nulla pariatur? Qui officia deserunt mollit anim id est laborum. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                <p><strong>Bold text in the paragraph! Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</strong> <em> Eaque ipsa quae ab illo inventore veritatis et quasi.</em> Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                <h2>Maybe another subhead here?</h2>
+                <p>Some paragraph text goes here. Qui officia deserunt mollit anim id est laborum. Esse cillum dolore eu fugiat nulla pariatur. Corrupti quos dolores et quas molestias excepturi sint occaecati.</p>
+                </p>
+            </div>
+            <div class="aboutSection"><img src="images/kfsnhiveimg.jpg"></div>
+
+            <!--Contact Section-->
+            <div id="contact">
+                <!--Hexagon page title-->
+                <ul id="hexGrid" class="hexGridRight wow bounceInRight">
+                    <li class="hex">
+                        <div class="hexIn">
+                            <a class="hexLink hexLinkDark">
+
+                                <h1>Contact Us</h1>
+                                <p>Need to get in touch? Use this form or email us.</p>
+
+                            </a>
+                        </div>
+                    </li>
+
+                </ul>
+                <div id="contact-form">
+                    <form>
+                        <p>
+                            <input type="text" name="name" placeholder="NAME" value="" />
+                        </p>
+                        <p>
+                            <input type="email" name="email" placeholder="EMAIL" value="" />
+                        </p>
+                        <p>
+                            <textarea name="message" placeholder="MESSAGE" cols="200" rows="10"></textarea>
+                        </p>
+                        <button type="submit" name="submit" value="Submit">SEND</button>
+                    </form>
+                </div>
+
+            </div>
+            <!--Close Contact Container-->
+        </div>
+        <!--Close About Container-->
+
+    </div>
+    <!--Close Home Container-->
+
+    <div class="footer">
+
+        <p>The Bitwise Hive <br>2018</p>
+
+    </div>
+    <!--Close footer Container-->
+
+    <canvas id="honeycomb" width="70%" height="70%"></canvas>
+    <canvas id="mousetrail" width="70%" height="70%"></canvas>
+    
+    <!--Go to Top button-->
+    <a href="#" class="goTop">TOP</a>
+    
+    <!-- Activate wow plugin -->
+    <script>
+        new WOW().init();
+        hexWow = new WOW({
+            boxClass: 'hexWow', // default
+            animateClass: 'animated', // default
+            offset: 2, // default
+            mobile: true, // default
+            live: true // default
+        })
+        hexWow.init();
+    </script>
+</body>
+
+</html>

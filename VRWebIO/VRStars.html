@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from vrweb.io/VRStars.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2017 07:32:38 GMT -->
+<head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Stars</title>
+    <meta name="description" content="Hello, World! • A-Frame">
+<!--    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>-->
+    <script src="js/aframe.js"></script>
+    
+
+</head>
+
+<body>
+
+         <a-assets>
+        <img id="stars" src="images/stars.jpg">
+        <img id="VRlogo" src="images/VRWebLogo.png">
+        
+        
+        </a-assets>
+        
+        <a-scene>
+             
+            <a-image src="#VRlogo" height="4" width="8" position="0 2.4 -2.4"></a-image>
+            <a-sky src="#stars">
+
+
+                <a-animation attribute="rotation" to="0 360 0" dur="150000" easing="linear" fill="forwards" repeat="indefinite">
+                </a-animation>
+
+
+            </a-sky>
+
+            <a-sky src="#stars">
+
+
+                <a-animation attribute="rotation" to="0 -360 0" dur="150000" easing="linear" fill="forwards" repeat="indefinite">
+                </a-animation>
+
+
+            </a-sky>
+        </a-scene>
+        
+    
+
+
+</body>
+
+
+<!-- Mirrored from vrweb.io/VRStars.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2017 07:33:11 GMT -->
+</html>

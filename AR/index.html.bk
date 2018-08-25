@@ -1,0 +1,301 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <style>
+        #arjsDebugUIContainer {
+            display: none;
+        }
+    </style>
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <script src="aframe-ar.js"></script>
+
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+
+
+        <a-assets>
+            <a-asset-item id="stick-obj" src="models/StickEddie.obj"></a-asset-item>
+            <a-asset-item id="stick-mtl" src="models/StickEddie.mtl"></a-asset-item>
+
+            <img id="logo" src="images/logoWhite.png">
+            <img id="dot" src="images/dot.png">
+            <img id="dot2" src="images/dot1.png">
+            <img id="dot3" src="images/dot2.png">
+            <img id="email" src="images/email.png">
+            <img id="tel" src="images/tel.png">
+            <img id="close" src="images/Close.png">
+            <img id="bubble" src="images/bubble.png">
+            <img id="bubble2" src="images/bubble2.png">
+            <img id="bubble3" src="images/bubble3.png">
+
+
+            <!--Web Pages-->
+            <img id="site1" src="images/portfolio/site1.jpg">
+            <img id="site2" src="images/portfolio/site2.jpg">
+            <img id="site3" src="images/portfolio/site3.jpg">
+            <img id="site4" src="images/portfolio/site4.jpg">
+            <img id="site5" src="images/portfolio/site5.jpg">
+
+            <!--Mobile Pages-->
+            <img id="mobile1" src="images/portfolio/dogeBalance.gif">
+            <img id="mobile2" src="images/portfolio/mobile2.png">
+            <img id="mobile3" src="images/portfolio/mobile3.png">
+            <img id="mobile4" src="images/portfolio/mobile4.png">
+            <img id="mobile5" src="images/portfolio/mobile5.png">
+            <img id="mobile6" src="images/portfolio/mobile6.png">
+            <img id="mobile7" src="images/portfolio/mobile7.png">
+
+            <!--Illustration Pages-->
+            <img id="illustration1" src="images/portfolio/illustration9.jpg">
+            <img id="illustration2" src="images/portfolio/illustration2.jpg">
+            <img id="illustration3" src="images/portfolio/illustration3.jpg">
+            <img id="illustration4" src="images/portfolio/illustration4.jpg">
+            <img id="illustration5" src="images/portfolio/illustration5.jpg">
+            <img id="illustration6" src="images/portfolio/illustration6.jpg">
+            <img id="illustration7" src="images/portfolio/illustration7.jpg">
+            <img id="illustration8" src="images/portfolio/illustration8.jpg">
+
+            <!--Video Gifs-->
+            <img id="vid1" src="images/portfolio/gifs/battle.gif">
+            <img id="vid2" src="images/portfolio/gifs/bear.gif">
+            <img id="vid3" src="images/portfolio/gifs/hen.gif">
+            <img id="vid4" src="images/portfolio/gifs/logo.gif">
+            <img id="vid5" src="images/portfolio/gifs/robots.gif">
+        </a-assets>
+
+        <a-marker type='pattern' url='markers/manSitting.patt'>
+            <a-entity id="#entireScene" scale="1.5 1.5 1.5">
+                <a-entity scale="0.003 0.003 0.003" position="0 .2 0" obj-model="obj: #stick-obj; mtl: #stick-mtl"></a-entity>
+                <a-image id="bubbleIntro" width="1.5" height="0.5" position="1 1.6 0" src="speechBubble" material="shader:gif;src:url(images/portfolio/gifs/Bubble.gif);"></a-image>
+
+                <a-entity scale=".5 0.6 .5" id="box" cursor-listener geometry="primitive: box" material="color: #000000"></a-entity>
+                <a-entity scale=".75 0.4 .75" id="box2" cursor-listener geometry="primitive: box" material="color: #898989"></a-entity>
+                <a-entity scale="1 0.2 1" id="box3" cursor-listener geometry="primitive: box" material="color: #606060"></a-entity>
+
+                <a-entity id="logoscene" scale="0.005 0.005 0.005" rotation="0 0 0" visible="false">
+                    <a-animation attribute="visible" to="false" dur="1"></a-animation>
+                    <a-animation attribute="visible" to="true" delay="10" dur="1"></a-animation>
+
+                    <a-image src="#logo" width="250" height="100">
+                        <a-animation attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="300"></a-animation>
+                        <a-animation attribute="scale" begin="0" from="0 0 0" to="1 1 1" repeat="0" dur="400"></a-animation>
+                        <a-animation attribute="position" begin="0" from="0 -100 0" to="0 80 90" repeat="0" dur="500"></a-animation>
+
+                    </a-image>
+
+                    <a-entity id="buttons" position="-110 0 0 20" scale="1.5 1.5 1.5">
+                        <a-entity id="button1" onclick="dotclick();">
+                            <a-image src="#bubble" position="21.71 15 108.94" rotation="-70 0 0" height="15" width="50" visible="true">
+                                <a-animation delay="1000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation>
+                            </a-image>
+                            <a-sphere color="#A61E34" radius="5" scale="2.5 2.5 2.5">
+                                <a-animation delay="1000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="800"></a-animation>
+                                <a-animation delay="1000" attribute="position" begin="0" from="40.02 -15 85" to="40.02 15 85" repeat="0" dur="1000"></a-animation>
+                            </a-sphere>
+                        </a-entity>
+
+
+
+
+                        <a-entity id="button2" onclick="dot2click();">
+                            <a-image src="#bubble2" position="74.01 15 108.41" rotation="-70 0 0" height="15" width="50" visible="true">
+
+                                <a-animation delay="2000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="1200"></a-animation>
+                            </a-image>
+                            <a-sphere color="#3DA649" radius="5" scale="2.5 2.5 2.5">
+                                <a-animation delay="2000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="1200"></a-animation>
+                                <a-animation delay="2000" attribute="position" begin="0" from="73.88 -15 85" to="73.88 15 85" repeat="0" dur="1400"></a-animation>
+
+                            </a-sphere>
+                        </a-entity>
+
+
+
+                        <a-entity id="button3" onclick="dot3click();">
+                            <a-image src="#bubble3" position="126.50 15 108.33" rotation="-70 0 0" height="15" width="50" visible="true">
+
+                                <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="1600"></a-animation>
+                            </a-image>
+                            <a-sphere color="#1F6981" radius="5" scale="2.5 2.5 2.5">
+
+                                <a-animation delay="3000" attribute="opacity" begin="0" from="0" to="1" repeat="0" dur="1600"></a-animation>
+                                <a-animation delay="3000" attribute="position" begin="0" from="110.32 -15 85" to="110.32 15 85" repeat="0" dur="1800"></a-animation>
+
+                            </a-sphere>
+                        </a-entity>
+                    </a-entity>
+
+                    <a-image src="#close" width="30" height="30" position="0 15 220" rotation="-80 0 0" onclick="closeClick();" visible="true">
+                    </a-image>
+
+
+                    <a-entity id="portfolioContainer" scale="2 2 2">
+
+                    <!--Website Portfolio Images-->
+                    <a-entity id="portfolioWebPages" visible="false" easing="ease-out" scale="35 35 35">
+                        <a-animation begin="webPageActive" attribute="position" from="0 -15 0" to="0 200 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                        <a-animation begin="webPageInActive" attribute="position" from="0 200 0" to="0 -1500 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                        <a-animation attribute="rotation" to="0 -360 0" dur="10000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
+
+                        <a-curvedimage id="milkySite" src="#site1" height="3.0" radius="4.7" theta-length="72" rotation="0 0 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#site2" height="3.0" radius="4.7" theta-length="72" rotation="0 90 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#site3" height="3.0" radius="4.7" theta-length="72" rotation="0 180 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#site4" height="3.0" radius="4.7" theta-length="72" rotation="0 270 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        </a-image>
+
+                    </a-entity>
+
+                    <!--Mobile Portfolio Images-->
+                    <a-entity id="portfolioMobilePages" visible="false" easing="ease-out" scale="100 100 100">
+                        <a-animation begin="mobilePageActive" attribute="position" from="0 -15 0" to="0 200 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                        <a-animation begin="mobilePageInActive" attribute="position" from="0 200 0" to="0 -1500 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                        <a-animation attribute="rotation" to="0 -360 0" dur="10000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
+
+                        <a-curvedimage src="#mobile1" material="shader:gif" height="2.0" radius="1.5" theta-length="42" rotation="0 0 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#mobile2" height="2.0" radius="1.5" theta-length="42" rotation="0 60 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#mobile3" height="2.0" radius="1.5" theta-length="42" rotation="0 120 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#mobile4" height="2.0" radius="1.5" theta-length="42" rotation="0 180 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#mobile5" height="2.0" radius="1.5" theta-length="42" rotation="0 240 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#mobile6" height="2.0" radius="1.5" theta-length="42" rotation="0 300 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                    </a-entity>
+
+                    <!--Illustration Portfolio Images-->
+                    <a-entity id="portfolioIllustrationPages" visible="false" easing="ease-out" scale="35 35 35">
+                        <a-animation begin="illustrationPageActive" attribute="position" from="0 -15 0" to="0 200 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                        <a-animation begin="illustrationPageInActive" attribute="position" from="0 200 0" to="0 -1500 0" dur="1000" easing="linear" fill="forwards" repeat="0"></a-animation>
+                        <a-animation attribute="rotation" to="0 -360 0" dur="10000" easing="linear" fill="forwards" repeat="indefinite"></a-animation>
+
+                        <a-curvedimage src="#vid1" material="shader:gif" height="3.0" radius="4.7" theta-length="72" rotation="0 0 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#vid2" material="shader:gif" height="3.0" radius="4.7" theta-length="72" rotation="0 90 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#vid3" material="shader:gif" height="3.0" radius="4.7" theta-length="72" rotation="0 180 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                        <a-curvedimage src="#vid4" material="shader:gif" height="3.0" radius="4.7" theta-length="72" rotation="0 270 0" scale="-0.8 0.7 0.8"></a-curvedimage>
+
+                    </a-entity>
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+        </a-marker>
+
+        <a-entity camera>
+            <a-entity id="myCursor" cursor="fuse:true; fuse-timeout: 500" position="0 0 -0.1" geometry="primitive:ring; radiusInner: 0.001; radiusOuter: 0.0015" material="color: #ff0000; opacity:0.3;">
+                <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="1 1 1"></a-animation>
+                <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" fill="forwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
+
+
+            </a-entity>
+
+        </a-entity>
+    </a-scene>
+
+
+    <script>
+        function telClick() {
+            window.open('tel:+1-559-549-3439');
+
+        }
+
+        function emailClick() {
+            window.open('mailto:eddiebarkman@gmail.com');
+
+        }
+
+        function closeClick() {
+            document.querySelector('#portfolioMobilePages').setAttribute('visible', 'false');
+            portfolioWebPage.setAttribute('visible', 'false');
+            document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'false');
+            document.querySelector('#close').setAttribute('visible', 'false');
+            document.querySelector('#bubbleIntro').setAttribute('visible', 'true');
+
+        }
+
+
+
+
+
+        var portfolioWebPage = document.querySelector('#portfolioWebPages')
+        document.querySelector('#button1').addEventListener('click', function() {
+            document.querySelector('#close').setAttribute('visible', 'true');
+            portfolioWebPage.setAttribute('visible', 'true');
+            document.querySelector('#portfolioMobilePages').setAttribute('visible', 'false');
+            document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'false');
+
+            document.querySelector('#portfolioWebPages').emit('webPageActive');
+            document.querySelector('#portfolioMobilePages').emit('mobilePageInactive');
+            document.querySelector('#portfolioillustrationPages').emit('illustrationPageInactive');
+            document.querySelector('#bubbleIntro').setAttribute('visible', 'false');
+
+
+            setTimeout(function() {
+                document.querySelector('#portMenu').setAttribute('visible', 'false');
+                document.querySelector('#bubbleIntro').setAttribute('visible', 'false');
+
+            }, 500);
+        });
+
+
+
+
+        document.querySelector('#button2').addEventListener('click', function() {
+            document.querySelector('#close').setAttribute('visible', 'true');
+            document.querySelector('#portfolioMobilePages').setAttribute('visible', 'true');
+            document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'false');
+            portfolioWebPage.setAttribute('visible', 'false');
+
+            document.querySelector('#portfolioMobilePages').emit('mobilePageActive');
+            document.querySelector('#portfolioWebPages').emit('webPageInactive');
+            document.querySelector('#portfolioillustrationPages').emit('illustrationPageInactive');
+            document.querySelector('#bubbleIntro').setAttribute('visible', 'false');
+
+            setTimeout(function() {
+                document.querySelector('#portMenu').setAttribute('visible', 'false');
+                document.querySelector('#bubbleIntro').setAttribute('visible', 'false');
+                menu.setAttribute('visible', 'false')
+            }, 500);
+        });
+
+
+
+
+        document.querySelector('#button3').addEventListener('click', function() {
+            document.querySelector('#close').setAttribute('visible', 'true');
+            document.querySelector('#portfolioIllustrationPages').setAttribute('visible', 'true');
+            document.querySelector('#portfolioMobilePages').setAttribute('visible', 'false');
+            portfolioWebPage.setAttribute('visible', 'false');
+
+            document.querySelector('#portfolioIllustrationPages').emit('illustrationPageActive');
+            document.querySelector('#portfolioWebPages').emit('webPageInactive');
+            document.querySelector('#portfolioMobilePages').emit('mobilePageInactive');
+            document.querySelector('#bubbleIntro').setAttribute('visible', 'false');
+
+
+            setTimeout(function() {
+                document.querySelector('#portMenu').setAttribute('visible', 'false');
+                document.querySelector('#bubbleIntro').setAttribute('visible', 'false');
+                menu.setAttribute('visible', 'false')
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
