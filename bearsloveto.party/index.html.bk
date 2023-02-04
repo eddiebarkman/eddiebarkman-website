@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Bears Love to Party</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header>
+
+   	<div class="row">
+
+   		<div class="logo">
+	         <a href="index.html">Bears Love to Party</a>
+	      </div>
+
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation">
+					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+					<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+					<li><a class="smoothscroll"  href="#team" title="">Team</a></li>
+					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>					
+					<li class="highlight with-sep"><a class="smoothscroll" href="#shop" title="">Mini Shop</a></li>					
+				</ul>
+			</nav>
+
+			<a class="menu-toggle" href="#"><span>Menu</span></a>
+   		
+   	</div>   	
+   	
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">
+   	<div class="streamer-left"></div>
+   	<div class="streamer-right"></div>
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<div class='video-link'>
+	   				<img src="images/2018LogoAniSmall.gif" alt="">
+<!--	   				<a href="#video-popup"><img src="images/2018Logo.png" alt=""></a>-->
+	   			</div>
+
+	   			<h5>Art, Apps, Shirts, and more!</h5>
+	   			<h1>Come party with us!</h1>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">Let's Party</a>
+
+	   		</div>  
+   		</div>   
+   	</div> 
+   	<!-- Modal Popup
+	   ========================================================= -->
+
+      <div id="video-popup" class="popup-modal mfp-hide">
+
+		   <div class="fluid-video-wrapper">
+         </div>		     
+
+         <a class="close-popup">Close</a>         
+
+	   </div> <!-- /video-popup -->  	
+        <canvas id="confetti"></canvas>
+   </section> <!-- /intro -->
+
+
+   <!-- Process Section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+
+   			<h5>About</h5>
+   			<h1>Bears Love to Party</h1>
+
+   			<p class="lead">We at Bears Love to Party are here to bring you cute, kind, pawsitive and wholesome content. We try to come up with fun ideas for apps, games, shirts, and anything else that will bring a smile to your face and ours! Now please bear with me while I tell you a bit about the stuff we have going on now and in the future!</p>
+
+   		</div>   		
+   	</div>
+
+   	<div class="row process-content">
+
+   		<div class="left-side">
+
+   			<div class="item">
+
+   				<h5>Etsy Shop</h5>
+
+   				<p>At our etsy shop you can find some cool antiques, art, and our special greeting cards, and even more cool stuff!</p>
+                	   <a class="button" href="https://www.etsy.com/shop/BearsLoveToParty" target="_blank" title="">Go to Etsy</a>
+   					
+   			</div>
+
+   			<div class="item">
+
+	   			<h5>T-Shirts</h5>
+
+	   			<p>On Amazon we have an ever ex-panda-ing selection of fun shirts. They feature many bears and our other friends!</p>
+                <a class="button" href="https://www.amazon.com/s/ref=w_bl_sl_s_ap_web_7141123011?ie=UTF8&node=7141123011&field-brandtextbin=Bears+Love+to+Party" target="_blank" title="">Go to Amazon</a>
+   					
+   			</div>
+   				
+   		</div> <!-- /left-side -->
+   		
+   		<div class="right-side">
+   				
+   			<div class="item">
+
+   				<h5>Apps</h5>
+
+   				<p>While we don't have anything out yet, be sure to keep an eye out in your favorite app store. In the future, we hope to make fun and useful little applications!</p>
+   	        <a class="button" href="#" target="_blank" title="">Go Nowhere</a>
+   			</div>
+
+   			<div class="item">
+
+   				<h5>More</h5>
+
+   				<p>What else could be in our future? Web comics, animations, music? Anything is pawsible!</p>
+                   	<a class="button" href="#" target="_blank" title="">Go Nowhere</a>
+   					
+   			</div>
+
+   		</div> <!-- /right-side -->  
+
+   		<a href="#team" class="smoothscroll"><div class="image-part"></div></a>  			
+
+   	</div> <!-- /process-content --> 
+
+   </section> <!-- /process-->    
+
+	<!-- pricing
+   ================================================== -->
+
+   <section id="team">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+
+   			<h5>Our Highly qualified</h5>
+   			<h1>Team of Experts</h1>
+            <p class="lead">Our team of experts know exactly what they are doing... Usually. So let me introduce you to our Party Expert, <strong style="color:#CE936B">Bear Pear</strong>. Our fabulous artist, <strong style="color:#E2AA61">Birb Mama</strong>. Finally our business manager <strong style="color:#FFFFFF">Bear in a Hat</strong>.</p>
+   		</div>   		
+   	</div>
+<img class="bear-group" src="images/group.gif">
+   	<div class="row pricing-content">
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /pricing --> 
+
+   <!-- faq
+   ================================================== -->
+   <section id="faq">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+
+   			<h5>Faq</h5>
+   			<h1>You have questions, we have puns.</h1>
+
+   			<p class="lead">Bear Pear here to answer all of your unbearably difficult questions before I nap. But if you have any actual questions feel free to get in contact with us! Otherwise check below.</p>
+
+   		</div>   		
+   	</div>
+
+   	<div class="row faq-content">
+
+   		<div class="q-and-a block-1-2 block-tab-full group">
+
+   			<div class="bgrid">
+
+   				<h3>Why do bears love to party?</h3>
+
+   				<p>Bears generally love two things in life. Sleeping and eating. However one day I, Bear Pear, discovered that in addition to these things I also quite enjoyed cake...and the company of my fellow bears in a fun and friendly environment. I also kind of liked dancing. So I decided to start partying with his all of his friends!</p>
+
+   			</div>
+
+   			<div class="bgrid">
+
+   				<h3>Who is Bear in a hat?</h3>
+
+   				<p>Bear in a Hat is our business manager. A long time ago he came across his first hat. He was so astonished by how fashionable he looked he started collecting all the hats he could find. Someone then told him that he should start a hat shop and sell them. However Bear in a Hat could never part with any of them so he decided to sell other things instead.</p>
+
+   			</div>
+
+   			<div class="bgrid">
+
+   				<h3>What about Birb Mama?</h3>
+
+   				<p>Birb Mama is our amazing and awesome consultant on all the popular trends. She is a cool and fancy bear, so she knows whats up.</p>
+
+   			</div>
+
+   			<div class="bgrid">
+
+   				<h3>Uhhh... a bear?</h3>
+
+   				<p>Yes, a bear. This is bears love to party. She may look a bit different, with her short height, feathers, and ability to fly. But she is definitely a bear.</p>
+
+   			</div>
+
+   			<div class="bgrid">
+
+   				<h3>Okay, so where are all of your other products, like apps and stuff?</h3>
+
+   				<p>Bear pear is very lazy. I have to hibernate for a good three months at a time before I can get started on new projects. Hopefully I'll get some stuff done soon.</p>
+
+   			</div>
+
+   			<div class="bgrid">
+
+   				<h3>I like you Bear Pear. How can I contact you with more questions?</h3>
+
+   				<p>Oh, sure. Let me find my email address. It's uh bear@....I just got really tired...I'll get back to you in about three months...</p>
+
+   			</div>
+
+   		</div> <!-- /q-and-a --> 
+   		
+   	</div> <!-- /faq-content --> 
+
+
+   </section> <!-- /faq --> 
+
+<!-- pricing
+   ================================================== -->
+
+   <section id="shop">
+          	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+
+   			<h5>Mini T-shirt Shop</h5>
+   			<h1>Check out some of our tshirts!</h1>
+   		</div>   		
+   	</div>
+
+   	<div class="row pricing-content">
+
+         <div class="pricing-tables block-1-3 group">
+
+           <div class="bgrid">               
+
+               <div class="price-block">
+
+            		<div class="top-part">
+                        	<h3 class="plan-title">Bear in Space Shirt</h3>
+                        <img src="images/astrbear-tshirt.png">
+	            	</div> 
+	            	
+						<div class="bottom-part">
+
+	            		<ul class="features">
+		                  <li><strong>Price</strong> 13.99</li>
+		                  <li><strong>Free Shipping</strong> With Prime</li>		                  
+		               </ul>
+                            <a class="button large" href="https://www.amazon.com/Astronaut-Bear-Space-T-Shirt/dp/B07DYVXC4N/" target="_blank">Buy Now</a>
+
+	            	</div>	            		                
+            		
+            	</div>                              
+			   </div> <!-- /price-block --> 
+         
+           <div class="bgrid">               
+
+               <div class="price-block">
+
+            		<div class="top-part">
+                        	<h3 class="plan-title">Un-Limited Official Shirt</h3>
+                        <img src="images/bearsparty-tshirt.png">
+	            	</div> 
+	            	
+						<div class="bottom-part">
+
+	            		<ul class="features">
+		                  <li><strong>Price</strong> 12.99</li>
+		                  <li><strong>Free Shipping</strong> With Prime</li>		                  
+		               </ul>
+                            <a class="button large" href="https://www.amazon.com/dp/B07G72SK98/" target="_blank">Buy Now</a>
+
+	            	</div>	            		                
+            		
+            	</div>                              
+			   </div> <!-- /price-block --> 
+         
+           <div class="bgrid">               
+
+               <div class="price-block">
+
+            		<div class="top-part">
+                        	<h3 class="plan-title">Let's Flamingo Shirt</h3>
+                        <img src="images/flamingo-tshirt.png">
+	            	</div> 
+	            	
+						<div class="bottom-part">
+
+	            		<ul class="features">
+		                  <li><strong>Price</strong> 14.99</li>
+		                  <li><strong>Free Shipping</strong> With Prime</li>		                  
+		               </ul>
+                            <a class="button large" href="https://www.amazon.com/dp/B07DTJT1T1/" target="_blank">Buy Now</a>
+
+	            	</div>	            		                
+            		
+            	</div>                              
+			   </div> <!-- /price-block --> 
+         
+
+         </div> <!-- /pricing-tables --> 
+
+      </div> <!-- /pricing-content --> 
+
+   </section> <!-- /pricing --> 
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+   	<div class="footer-main">
+
+   		<div class="row">  
+
+	      	<div class="col-four tab-full mob-full footer-info">            
+
+	            <div class="footer-logo"></div>
+
+	            <p>
+		        	This site is maintained by cute little<br>
+                    fuzzy bears with hammers and potatoes.
+		        	</p>
+
+		      </div> <!-- /footer-info -->
+
+	      	<div class="col-two tab-1-3 mob-1-2 site-links">
+
+	      		<h4>Site Links</h4>
+
+	      		<ul>
+	      			<li><a href="#top" class="smoothscroll">Home</a></li>
+	      			<li><a href="#about" class="smoothscroll">About</a></li>
+						<li><a href="#team" class="smoothscroll">Team</a></li>
+						<li><a href="#faq" class="smoothscroll">FAQ</a></li>
+					</ul>
+
+	      	</div> <!-- /site-links -->  
+
+	      	<div class="col-two tab-1-3 mob-1-2 social-links">
+
+	      		<h4>Shops</h4>
+
+	      		<ul>
+	      			<li><a href="https://www.amazon.com/s/ref=w_bl_sl_s_ap_web_7141123011?ie=UTF8&node=7141123011&field-brandtextbin=Bears+Love+to+Party" target="_blank">T-Shirts</a></li>
+						<li><a href="https://www.etsy.com/shop/BearsLoveToParty" target="_blank">Etsy</a></li>
+					</ul>
+	      	           	
+	      	</div> <!-- /social --> 
+
+	      	<div class="col-four tab-1-3 mob-full footer-subscribe">
+
+	      		<h4>Subscribe</h4>
+
+	      		<p>Subscribe to our high koalaty newsletter today! <small>(Actually don't do it today because it doesn't exist yet...)</small></p>
+
+	      		<div class="subscribe-form">
+	      	
+	      			<form id="mc-form" class="group" novalidate="true">
+
+							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="Type in your e-mail &amp; pawress enter" required=""> 
+	   		
+			   			<input type="submit" name="subscribe" >
+		   	
+		   				<label for="mc-email" class="subscribe-message"></label>
+			
+						</form>
+
+	      		</div>	      		
+	      	           	
+	      	</div> <!-- /subscribe -->         
+
+	      </div> <!-- /row -->
+
+   	</div> <!-- /footer-main -->
+
+
+      <div class="footer-bottom">
+
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© Bears Love to Party 2018</span> 	         	
+		         </div>
+
+		         <div id="go-top" style="display: block;">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> <!-- /footer-bottom -->     	
+
+      </div>
+
+   </footer>  
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/confetti.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -6658,6 +6658,19 @@ a.navbar-link.is-active {
     text-indent: 10px;
     border: 1px solid #FFFFFF;
     border-radius: 3px; }
+
+  #contactTabContent .contact form input[type="email"] {
+    width: 100%;
+    padding: 1.5% 0;
+    margin-bottom: 7%;
+    background: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    outline: none;
+    font-weight: 400;
+    text-indent: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px; }
   #contactTabContent .contact form textarea {
     resize: none;
     width: 100%;

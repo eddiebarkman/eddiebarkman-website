@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VRWeb.IO 360 Images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,300|PT+Serif:400,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="icons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="icons/manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="icons/mstile-144x144.png">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="https://i❤️.ws/js/emojiurlifier.js"></script>
+<script>
+  emojiurlifier('http://eddie.⌨🎨.ws', 'http://git.eddiebarkman.com/');
+</script>
+</head>
+
+<body>
+    <div id="top-image"></div>
+    <div id="top-image2"></div>
+<!--
+    <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+        <a class="navmenu-brand" href="../index.html">VRWeb.IO</a>
+        <ul class="nav navmenu-nav">
+            <li class="active"><a href="index.html">Upload Image</a></li>
+            <li><a href="http://www.vrweb.io/upload/gallery.php">View Gallery</a></li>
+            <li><a href="http://www.vrweb.io/About">About VRWeb.IO</a></li>
+        </ul>
+    </nav>
+-->
+    <div class="navbar navbar-default navbar-fixed-top col-md-12">
+        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+<!--
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+-->
+        </button>
+        <a href="http://www.eddiebarkman.com"><img src="VRButtons.png" class="center-block iconTop"></a>
+    </div>
+
+
+    <div class="container-fluid navBarSpace">
+        <div class="col-md-12 text-center">
+            <form action="http://vrweb.io/upload/upload.php" method="post" enctype="multipart/form-data">
+
+
+                <div class="fileinput fileinput-new" data-provides="fileinput">
+                    <div class="fileinput-new thumbnail">
+                        <img src="uploadImg.jpg" alt="...">
+                    </div>
+                    <p>Select a 360 Image that you'd like to upload. Non 360 images may have weird results.</p>
+                    <div class="fileinput-preview fileinput-exists thumbnail" style="max-width:50%;"></div>
+                    <div>
+                        <span class="btn btn-default btn-file"><span class="fileinput-new smallBtn">Select Image</span><span class="fileinput-exists">Change</span>
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        </span>
+                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                    </div>
+                </div>
+                <br>
+                <input class="btn btn-default btn-file" type="submit" value="Upload Image" name="submit">
+                <a href="gallery.html"> <span class="btn btn-default btn-file"> View Gallery </span></a>
+                <br>
+            </form>
+
+        </div>
+
+<br>
+        <div class="panel-footer footerCustomize text-center"> This is merely a Prototype/Proof of Concept web application. Please note that any images uploaded will be public on this server until they are erased.</div>
+
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jasny-bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var movementStrength = 25;
+            var height = movementStrength / $(window).height();
+            var width = movementStrength / $(window).width();
+            $("body").mousemove(function (e) {
+                var pageX = e.pageX - ($(window).width() / 2);
+                var pageY = e.pageY - ($(window).height() / 2);
+                var newvalueX = width * pageX * -1 - 25;
+                var newvalueY = height * pageY * -1 - 50;
+                $('#top-image').css("background-position", newvalueX + "px     " + newvalueY + "px");
+            });
+        });
+    </script>
+
+<script>
+
+
+    $( document ).ready(function() {
+    var a=document.getElementsByTagName("a");
+for(var i=0;i<a.length;i++) {
+    if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
+        a[i].onclick=function() {
+                window.location=this.getAttribute("href");
+                return false; 
+        }
+    }
+}
+});
+</script>
+</body>
+</html>

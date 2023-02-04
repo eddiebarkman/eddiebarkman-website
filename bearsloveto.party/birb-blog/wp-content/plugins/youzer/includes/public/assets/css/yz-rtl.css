@@ -1,0 +1,367 @@
+/**
+ * Navbar
+ */
+ .youzer {
+	direction: rtl;
+}
+#yz-wall-form .yz-image-preview,
+.youzer .activity-meta .yz-post-liked-by a,
+.youzer .activity-comments .acomment-avatar,
+.youzer .acomment-options, .youzer .activity-comments .comment-inner,
+.yz-main-column .vertical-services-layout .yz-service-item,
+.yz-main-column .yz-tab-posts .yz-no-thumbnail, .yz-main-column .yz-tab-posts .yz-post-thumbnail,
+.yz-tab-post .yz-rm-icon,
+.yz-post-content .yz-no-thumbnail,
+.widget_display_replies li img,
+.yz-project-content .yz-no-thumbnail,
+.yz-recent-posts .yz-no-thumbnail,
+.yz-hdr-v1 .yz-profile-photo,
+.yz-pagination .yz-nav-links .page-numbers, .yz-pagination .yz-pagination-pages,
+.yz-post .yz-rm-icon,
+li.bbp-forum-info, li.bbp-topic-title,
+.youzer .yz-wall-embed .yz-embed-head,
+.youzer .yz-wall-embed .yz-embed-avatar,
+.yz-wall-options .yz-wall-opts-item label,
+#bbpress-forums div.bbp-forum-author,
+.yza-icon,
+#bbpress-forums div.bbp-reply-author,
+.youzer .settings-sidebar,
+#bbpress-forums div.bbp-topic-author,
+.yz-horizontal-layout .yz-main-column,
+#buddypress div.item-list-tabs ul li,
+.option-infos,
+.yz-group-navmenu ul>li {
+	float: right;
+}
+.yza-form-actions,
+.bbp-forum-header a.bbp-forum-permalink, .bbp-reply-header a.bbp-reply-permalink,
+.bbp-topic-header a.bbp-topic-permalink,
+.yzw-quote-post .yzw-quote-owner,
+.youzer .activity-comments .acomment-meta a.activity-time-since,
+.yz-tab-comment .view-comment-button,
+span.bbp-admin-links,
+.yz-copyright,
+.youzer .settings-main-content,
+.yz-profile-navmenu .yz-nav-view-more-menu li a span.count,
+.yz-profile-navmenu .yz-navbar-item a span, .yz-profile-navmenu .yz-navbar-item a span.count,
+.yz-quote .yz-quote-owner,
+.youzer .yz-wall-embed .yz-embed-action,
+.youzer div.item-list-tabs ul li.last,
+#buddypress div.item-list-tabs li.last,
+.yz-sidebar-column {
+	float: left;
+}
+.settings-main-content .settings-inner-content {
+	margin-left: 0;
+	margin-right: 35px;
+}
+
+.yz-horizontal-layout .yz-sidebar-column .yz-column-content {
+    margin-right: 17.5px;
+}
+
+.yz-horizontal-layout .yz-main-column .yz-column-content {
+    margin-left: 17.5px;
+}
+.yz-tab-comment .yz-comment-meta ul li,
+.youzer .yz-wall-embed .yz-embed-action {
+	margin-right: 0;
+	margin-left: 25px;
+}
+.yz-project-meta ul li i,
+.yz-forums-topic-item .yz-forums-topic-meta img.avatar,
+.yz-follow-message-button,
+.yz-tab-post .yz-post-meta ul li i,
+.yz-user-balance-box .yz-box-head i,
+.yz-post-content .yz-post-meta ul li i,
+.youzer .yz-wall-embed .yz-embed-action .friendship-button a {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.yz-my-account-widget .yz-menu-links .yz-link-item .yz-link-title .yz-link-count,
+.yz-forums-topic-item .yz-forums-topic-meta .yz-forums-topic-forum,
+.yz-bbp-freshness-data .yz-bbp-freshness-content {
+	margin-right: 8px;
+	margin-left: 0;
+}
+
+.yz-tab-comment .yz-comment-date span {
+	margin-left: 0;
+	margin-right: -20px;
+}
+
+.youzer .activity-meta .yz-post-liked-by .yz-liked-this {
+	margin-left: 0;
+	margin-right: 5px;
+}
+.yz-bbp-topic-head-meta .yz-bbp-topic-head-meta-item i,
+.bbp-header .bbp-reply-content #favorite-toggle a:before,
+.bbp-header .bbp-reply-content #subscription-toggle a:before,
+.yz-tab-comment .view-comment-button i,
+#sitewide-notice strong:before,
+.my-friends .youzer #friend-list .action a:before,
+.youzer div.item-list-tabs a:before,
+.bp-site-wide-message strong:before, 
+.follow-button a:before, .friendship-button a:before,
+.group-button a:before, .message-button a:before,
+.widget-content .widget-title:before,
+body #bbpress-forums div.bbp-breadcrumb a.bbp-breadcrumb-home:before,
+.widget_bp_core_login_widget .bp-login-widget-user-logout a:before,
+.widget_display_forums li a:before, .widget_display_topics li:before,
+.widget_display_views li .bbp-view-title:before,
+.youzer .activity-list li.load-newest a:before,
+a.button:before,
+.yz-user-balance-box .yz-user-level-data img,
+.yz-usermeta li i,
+.bbp-reply-header .bbp-reply-post-date i,
+.yz-wall-actions .yz-wall-upload-btn i,
+div.bbp-submit-wrapper button i,
+.youzer div.item-list-tabs li a i,
+.youzer .yz-wall-embed .yz-embed-meta .yz-embed-meta-item i,
+.youzer .yzpr-no-reaction i,
+.item-list-tabs li label,
+.yz-profile-navmenu .yz-nav-view-more-menu li a i,
+#sitewide-notice strong:before,
+#bbpress-forums .bbp-topic-tags a,
+#bbpress-forums li.bbp-forum-reply-count i, #bbpress-forums li.bbp-forum-topic-count i,
+#bbpress-forums li.bbp-topic-reply-count i, #bbpress-forums li.bbp-topic-voice-count i,
+.yz-items-list-widget .yz-list-item .yz-item-meta .yz-meta-item i,
+.my-friends .youzer #friend-list .action a:before,
+.youzer div.item-list-tabs a:before {
+	margin: 0 0 0 8px;
+}
+.yz-bbp-topic-head-meta .yz-bbp-topic-head-meta-item,
+.youzer .activity-comments .acomment-avatar img,
+.yz-tab-post .yz-post-meta ul li,
+.youzer .activity-header .activity-avatar img,
+.widget_bp_core_members_widget #members-list .vcard .item-avatar,
+.yz-my-account-widget .yz-menu-links .yz-link-item i,
+.widget_bp_groups_widget #groups-list li .item-avatar,
+.yz-items-list-widget .yz-list-item .yz-item-avatar,
+.youzer div.item-list-tabs li a {
+	margin-right: 0;
+	margin-left: 12px;
+}
+.uk-option-item .option-desc,
+.settings-inner-content .options-section-title h2 i,
+.yz-my-account-widget .yz-widget-header .yz-head-avatar,
+.youzer .acomment-options a,
+.settings-sidebar .account-menus ul li i,
+.yz-project-meta ul li,
+.yz-tab-comment .yz-comment-img,
+.yz-usermeta li,
+.yz-recent-posts .yz-no-thumbnail,
+.widget_display_replies li img,
+.yz-wg-networks.yz-icons-full-width li a i,
+.youzer .acomment-options .yzpr-reacto-post,
+.yz-post-content .yz-post-meta ul li,
+.youzer #yz-members-list .yz-item-avatar {
+	margin-right: 0;
+	margin-left: 15px;
+}
+
+.youzer .acomment-options .yzpr-reacto-post,
+.youzer .activity-meta .yzpr-reacto-post {
+	margin-right: 0;
+	margin-left: 0; 
+}
+span.bbp-admin-links a:before {
+	margin-right: 0;
+	margin-left: 6px; 
+}
+
+#bbpress-forums .yz-bbp-box .yz-bbp-box-title i,
+.youzer .yz-wall-embed .yz-embed-meta .yz-embed-meta-item,
+.yz-wg-title-icon-bg .yz-widget-title i,
+.yz-navbar-inline-icons .yz-navbar-item a i,
+.yz-wall-options .yz-wall-opts-item label:not(.yzw-form-show-all) i,
+.yz-group-infos-widget .yz-group-widget-title i,
+#group-settings-form #avatar-crop-actions a.avatar-crop-submit:before,
+#group-settings-form #bp-delete-avatar:before,
+#group-settings-form #bp-delete-cover-image:before,
+.youzer .group-request-list .action a:before,
+.yz-group-navmenu a:before {
+	margin: 0 0 0 10px;
+}
+.logged-in .youzer .activity-meta .yz-post-liked-by,
+.logged-in .youzer .activity-meta .yz-post-reactors-list,
+.youzer .yz-show-activity-tools {
+	left: 25px;
+	right: initial;
+}	
+.widget_display_topics li:before {
+	right: 25px;
+	left: initial;
+}
+
+.youzer-sidebar .widget-content .widget-title:before {
+	margin: 0 0 0 10px;
+}
+.yz-project-content .yz-project-tags li,
+.yz-post-content .yz-post-tags li {
+	margin: 0 0 6px 6px;
+}
+
+.youzer .emojionearea .emojionearea-button {
+	right: initial;
+	left: 5px;
+}
+
+.account-menus .yz-menu-head i {
+	right: initial;
+	left: 20px;
+}
+
+#yz-profile-navmenu .yz-settings-menu {
+	left: 0;
+	right: initial;
+	text-align: right;
+}
+
+i.yz-small-verified-icon {
+	margin: 0 5px 0 2px; 
+}
+.youzer #yz-members-list .yzm-user-actions,
+#yz-profile-navmenu .yz-settings-area, #yz-profile-navmenu .yz-social-buttons {
+	text-align: left;
+}
+
+#message.info,
+div#message.info {
+	border-left: none;
+	border-right: 6px solid #9e9e9e;
+}
+#bbpress-forums .bbp-body div.bbp-reply-content,
+#bbpress-forums .bbp-body div.bbp-topic-content,
+.youzer .acomment-options, .youzer .activity-comments .comment-inner,
+.yz-bbp-freshness-data .yz-bbp-freshness-content,
+.youzer .pagination .pag-count,
+li.bbp-forum-info, li.bbp-topic-title,
+.yz-infos-content .yz-info-data,
+.yz-user-balance-box .yz-box-head,
+.yz-profile-navmenu .yz-nav-view-more-menu,
+.yz-wg-networks.yz-icons-full-width li a,
+.youzer .emojionearea .emojionearea-editor {
+	text-align: right;
+	direction: rtl;
+}
+#bbpress-forums .bbp-body div.bbp-reply-content, #bbpress-forums .bbp-body div.bbp-topic-content {
+	margin-right: 130px;
+	margin-left: 0;
+}
+/*.youzer {
+	text-align: right;
+}
+*/
+#bbpress-forums div.bbp-breadcrumb .bbp-breadcrumb-current a,
+.bbp-forum-header a.bbp-forum-permalink,
+.bbp-reply-header a.bbp-reply-permalink,
+.bbp-topic-header a.bbp-topic-permalink,
+.yz-profile-navmenu .yz-navbar-item a span, .yz-profile-navmenu .yz-navbar-item a span.count,
+.yz-name .yz-user-status {
+	margin-left: 0;
+	margin-right: 10px;
+
+}
+.yz-forums-topic-item .yz-forums-topic-forum i {
+	margin-right: 0;
+	margin-left: 3px;
+}
+.yz-wall-textarea,
+.yz-wall-textarea:active,
+.yz-wall-textarea:focus {
+	padding: 40px 100px 12px 20px;
+}
+
+.yz-main-column .yz-project-container,
+.yz-main-column .yz-tab-post .yz-post-container,
+.yz-main-column .yz-post-content .yz-post-container {
+	margin-left: 0;
+	margin-right: 45%;
+}
+
+div.bbp-template-notice,
+div.indicator-hint,
+.yz-bbp-topic-head {
+	border-left: none;
+	border-right-width: 5px;
+    border-right-style: solid;
+}
+
+.youzer input[type="checkbox"],
+.youzer input[type="radio"] {
+    margin-right: 0;
+    margin-left: 0.4375em;
+}
+
+.widget_display_topics li {
+     padding: 15px 90px 15px 25px;
+
+}
+
+.yz-skill-bar-percent {
+	left: 10px;
+	right: initial;
+}
+#bbpress-forums .bbp-forums-list li {
+	border-left: none;
+    border-right: 3px solid #c0c1c2;
+}
+#bbpress-forums .bbp-forums-list {
+	margin-left: 0;
+	padding-left: 0;
+    margin-right: 22px;
+	padding-right: 15px;
+    border-left: none;
+    border-right: 2px solid #eaeaea;
+}
+
+#buddypress.youzer div.bp-avatar-status p.warning,
+#buddypress.youzer div.bp-cover-image-status p.warning,
+.youzer div.bp-cover-image-status p.warning,
+body.youzer div.bp-avatar-status p.warning {
+	border-left: 0;
+	border-right: 5px solid #809fae;
+}
+/**
+ *
+ */
+/**
+ *
+ */
+/**
+ *
+ */
+/**
+ *
+ */
+/**
+ *
+ */
+/**
+ * Header 1
+ */
+.yz-hdr-v1 .yz-cover-content .yz-head-content {
+ 	margin-left: 0;
+ 	margin-right: 185px;
+}
+
+.yz-forums-forum-item .yz-forums-forum-head,
+.yz-forums-topic-item .yz-forums-topic-head {
+ 	margin-left: 0;
+ 	margin-right: 15px;
+}
+
+.yz-box-head .yz-box-icon,
+.yz-hdr-v1 .yz-user-statistics {
+	right: initial;
+	left: 0;
+}
+.yz-widget .yz-user-tags .yz-utag-values .yz-utag-value-item {
+	margin: 8px 0 3px 8px;
+}
+
+.follows .youzer #yz-members-list .yz-item-avatar,
+.my-friends .youzer #yz-members-list .yz-item-avatar {
+	margin-right: 0;
+}

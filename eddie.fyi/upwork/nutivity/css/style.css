@@ -1,0 +1,1141 @@
+@import url("https://fonts.googleapis.com/css?family=Uncial+Antiqua");
+@import url("https://fonts.googleapis.com/css?family=Metamorphous");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800");
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+/* line 11, style.scss */
+*:focus {
+  outline: none; }
+
+/* line 15, style.scss */
+body {
+  max-width: 100%;
+  overflow: hidden; }
+
+/* line 20, style.scss */
+#container {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+/* line 26, style.scss */
+.toTop {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  height: 3em;
+  width: 3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999; }
+
+/* line 36, style.scss */
+.chevron {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+  position: relative; }
+
+/* line 44, style.scss */
+.chevron:before {
+  content: '';
+  display: block;
+  width: 1em;
+  height: 1em;
+  top: 10%;
+  left: 10%;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  -ms-transform-origin: 50% 50% 50%;
+  -webkit-transform-origin: 50% 50% 50%;
+  transform-origin: 50% 50% 50%; }
+
+/* line 61, style.scss */
+.chevron.left:before {
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  margin: -15px 0 0 -10px; }
+
+/* line 69, style.scss */
+.chevron.up:before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin: -10px 0 0 -15px; }
+
+/* line 77, style.scss */
+.nutTitle {
+  position: fixed;
+  width: 10em;
+  margin: auto;
+  top: 2.8em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999999;
+  display: none; }
+
+/* line 89, style.scss */
+.nutivityTitle {
+  position: relative;
+  width: 15em !important; }
+
+/* line 94, style.scss */
+.menu {
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10em;
+  color: white;
+  z-index: 999999; }
+  /* line 104, style.scss */
+  .menu li {
+    display: inline-block;
+    padding: 1em; }
+    /* line 108, style.scss */
+    .menu li :hover {
+      opacity: 0.7;
+      -webkit-transition-duration: 0.5s;
+              transition-duration: 0.5s; }
+  /* line 113, style.scss */
+  .menu a {
+    font-family: "Metamorphous", cursive;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px; }
+
+/* line 121, style.scss */
+.activeMenu {
+  color: gold !important; }
+
+/* line 126, style.scss */
+#synopsis {
+  position: relative;
+  background-color: #d0a26b; }
+  /* line 130, style.scss */
+  #synopsis .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border2.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 141, style.scss */
+  #synopsis h1 {
+    font-family: "Uncial Antiqua", cursive;
+    color: brown; }
+  /* line 147, style.scss */
+  #synopsis h2 {
+    color: white; }
+
+/* line 153, style.scss */
+#synopsis-2 {
+  position: relative;
+  background-color: #d0a26b; }
+  /* line 157, style.scss */
+  #synopsis-2 .border {
+    position: absolute;
+    top: -4em;
+    left: 0em;
+    background: url("../images/border2.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 168, style.scss */
+  #synopsis-2 h1 {
+    color: black; }
+  /* line 172, style.scss */
+  #synopsis-2 h2 {
+    color: white; }
+
+/* line 177, style.scss */
+#synopsis-3 {
+  position: relative;
+  background-color: #d0a26b; }
+  /* line 181, style.scss */
+  #synopsis-3 .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border2.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 192, style.scss */
+  #synopsis-3 h1 {
+    color: black; }
+  /* line 196, style.scss */
+  #synopsis-3 h2 {
+    color: white; }
+
+/* line 202, style.scss */
+#page2 {
+  position: relative;
+  background-color: #222; }
+  /* line 206, style.scss */
+  #page2 h1 {
+    color: white; }
+  /* line 210, style.scss */
+  #page2 h2 {
+    color: white; }
+  /* line 214, style.scss */
+  #page2 .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border3.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 228, style.scss */
+  #page2 .columns .cast {
+    cursor: pointer; }
+    /* line 231, style.scss */
+    #page2 .columns .cast h1 {
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      color: white; }
+    /* line 237, style.scss */
+    #page2 .columns .cast h2 {
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      color: gold; }
+  /* line 248, style.scss */
+  #page2 #page2mates h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    padding: 0.25em 0; }
+  /* line 253, style.scss */
+  #page2 #page2mates h2 {
+    color: gold; }
+  /* line 257, style.scss */
+  #page2 #page2mates p {
+    color: antiquewhite; }
+
+/* line 263, style.scss */
+#page4 {
+  position: relative;
+  background-color: #214c87; }
+  /* line 267, style.scss */
+  #page4 .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border4.png") no-repeat;
+    background-size: cover;
+    width: 150%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 279, style.scss */
+  #page4 h1 {
+    color: white; }
+  /* line 283, style.scss */
+  #page4 h2 {
+    color: white; }
+  /* line 287, style.scss */
+  #page4 p {
+    color: white; }
+  /* line 291, style.scss */
+  #page4 a {
+    color: gold; }
+  /* line 296, style.scss */
+  #page4 .social i {
+    font-size: 1.5em;
+    padding: 0.25em; }
+  /* line 303, style.scss */
+  #page4 blockquote {
+    color: white; }
+
+/* line 308, style.scss */
+#page5 {
+  position: relative;
+  background-color: #000;
+  max-height: 1em; }
+  /* line 313, style.scss */
+  #page5 .border {
+    position: absolute;
+    top: -10.5vw;
+    left: 25%;
+    background: url("../images/footerBorderSm.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    margin: auto;
+    height: 13em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 327, style.scss */
+  #page5 h1 {
+    color: white; }
+  /* line 331, style.scss */
+  #page5 p {
+    color: white; }
+  /* line 335, style.scss */
+  #page5 a {
+    color: pink; }
+  /* line 340, style.scss */
+  #page5 .social i {
+    font-size: 1.5em;
+    padding: 0.25em; }
+
+/* line 349, style.scss */
+#statement {
+  position: relative;
+  background-color: #d0a26b;
+  font-size: 1.2em; }
+  /* line 354, style.scss */
+  #statement .container {
+    padding-top: 2em; }
+  /* line 358, style.scss */
+  #statement p {
+    color: black; }
+  /* line 361, style.scss */
+  #statement strong {
+    color: #000; }
+  /* line 365, style.scss */
+  #statement h1 {
+    font-family: "Uncial Antiqua", cursive;
+    color: white; }
+  /* line 370, style.scss */
+  #statement h2 {
+    font-family: "Raleway", sans-serif;
+    color: #fff; }
+  /* line 375, style.scss */
+  #statement li {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 1em; }
+  /* line 383, style.scss */
+  #statement footer p {
+    color: white; }
+
+/* line 392, style.scss */
+#contact .container {
+  padding-top: 2em; }
+
+/* line 398, style.scss */
+#team {
+  position: relative;
+  background-color: #214c87; }
+  /* line 402, style.scss */
+  #team .container {
+    padding-top: 2em; }
+  /* line 406, style.scss */
+  #team h1 {
+    font-family: "Uncial Antiqua", cursive;
+    color: white; }
+  /* line 410, style.scss */
+  #team h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white; }
+    /* line 414, style.scss */
+    #team h2 span {
+      color: gold; }
+  /* line 418, style.scss */
+  #team h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    color: white;
+    font-weight: 800; }
+  /* line 425, style.scss */
+  #team p {
+    font-size: 0.8em;
+    color: white; }
+  /* line 431, style.scss */
+  #team a {
+    color: gold; }
+  /* line 436, style.scss */
+  #team .social i {
+    font-size: 1.5em;
+    padding: 0.25em; }
+  /* line 441, style.scss */
+  #team .social .phonenumber {
+    color: white; }
+
+/* line 451, style.scss */
+.bluePage {
+  position: relative;
+  background-color: #214c87; }
+  /* line 455, style.scss */
+  .bluePage .title {
+    font-size: 2.5em; }
+  /* line 459, style.scss */
+  .bluePage .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border4.png") no-repeat;
+    background-size: cover;
+    width: 150%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 471, style.scss */
+  .bluePage h1 {
+    font-size: 2em;
+    color: white; }
+  /* line 476, style.scss */
+  .bluePage h2 {
+    color: white; }
+  /* line 479, style.scss */
+  .bluePage h3 {
+    color: white;
+    font-weight: 800; }
+  /* line 484, style.scss */
+  .bluePage p {
+    color: white; }
+  /* line 488, style.scss */
+  .bluePage a {
+    color: gold; }
+  /* line 493, style.scss */
+  .bluePage .social i {
+    font-size: 1.5em;
+    padding: 0.25em; }
+  /* line 500, style.scss */
+  .bluePage blockquote {
+    color: white; }
+
+/* line 505, style.scss */
+.navbar.is-fixed-bottom,
+.navbar.is-fixed-top {
+  z-index: 9999; }
+
+/* line 510, style.scss */
+.content {
+  padding: 16px; }
+
+/* line 514, style.scss */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+/* line 520, style.scss */
+.sticky + .content {
+  padding-top: 60px; }
+
+/* line 524, style.scss */
+footer {
+  position: relative;
+  width: 100%;
+  max-height: 10em;
+  background-color: #333; }
+
+/* line 531, style.scss */
+.footerBorder {
+  width: 50%;
+  height: 10em;
+  background-color: red; }
+
+/* line 540, style.scss */
+.home .header1 {
+  position: relative;
+  left: 0;
+  padding: 1em;
+  color: white;
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800; }
+/* line 550, style.scss */
+.home .header2 {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+  color: white;
+  font-size: 3em;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  vertical-align: middle; }
+  /* line 562, style.scss */
+  .home .header2 p {
+    color: gold;
+    font-size: 0.5em;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    vertical-align: middle; }
+
+/* line 574, style.scss */
+.downloadsMary {
+  width: 70%;
+  height: auto; }
+
+/* line 579, style.scss */
+.iconButton {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  padding: 3em;
+  color: white;
+  cursor: pointer; }
+  /* line 587, style.scss */
+  .iconButton p {
+    padding-top: 0.5em;
+    color: gold; }
+  /* line 592, style.scss */
+  .iconButton i {
+    font-size: 4em; }
+
+/* line 598, style.scss */
+#scene {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+/* line 604, style.scss */
+.logo {
+  z-index: 99;
+  max-width: 70%;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  padding-top: 10%; }
+
+/* line 611, style.scss */
+.star {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  opacity: 1;
+  background: url("../images/star.png") no-repeat;
+  background-size: cover;
+  height: 20em;
+  width: 20em;
+  z-index: -5;
+  pointer-events: none;
+  -webkit-animation: flickerAnimation 3s infinite;
+          animation: flickerAnimation 3s infinite; }
+
+/* line 626, style.scss */
+.bgCover {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: url("../images/bgcover.jpg") no-repeat;
+  background-size: cover;
+  height: 140vh;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0.1;
+  pointer-events: none; }
+
+/* line 639, style.scss */
+canvas {
+  display: block;
+  vertical-align: bottom;
+  z-index: -9999; }
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+/* line 658, style.scss */
+#particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1000;
+  background: -webkit-linear-gradient(top, #1b529c 0%, black 100%);
+  background: linear-gradient(to bottom, #1b529c 0%, black 100%); }
+
+/* line 669, style.scss */
+.content {
+  min-height: 100%;
+  overflow: hidden; }
+
+/* line 674, style.scss */
+.wrapper {
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px; }
+
+/* line 707, style.scss */
+.box1 {
+  position: absolute;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  will-change: transform;
+  z-index: 999;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: 50%;
+  margin-top: -25%;
+  /* Half the height */
+  margin-left: -32.5%
+  /* Half the width */ }
+
+/* line 738, style.scss */
+.box2 {
+  position: absolute;
+  left: 0;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 100%;
+  width: 50%;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  will-change: transform;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+
+/* line 758, style.scss */
+.box3 {
+  position: absolute;
+  right: 0;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 100%;
+  width: 50%;
+  line-height: 100px;
+  color: #fff;
+  will-change: transform;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s; }
+
+/* line 776, style.scss */
+.box4 {
+  position: absolute;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  will-change: transform;
+  font-size: 3em;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  vertical-align: middle;
+  padding: 1em;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
+
+/* line 798, style.scss */
+.box5 {
+  position: absolute;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  will-change: transform;
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  vertical-align: middle;
+  display: inline-block;
+  color: white;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s; }
+
+/* line 821, style.scss */
+.box5 p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: gold;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 831, style.scss */
+.activeCast img {
+  border: 0.5em solid gold; }
+
+/* line 836, style.scss */
+.hide {
+  display: none; }
+
+/* line 840, style.scss */
+.mobileOnly {
+  display: none; }
+
+/* line 844, style.scss */
+blockquote {
+  display: block;
+  background: transparent;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  /*Font*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+  line-height: 1.2;
+  color: brown;
+  text-align: justify;
+  /*Borders - (Optional)*/
+  border-left: 15px solid gold;
+  border-right: none; }
+
+/* line 867, style.scss */
+blockquote::before {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-size: 60px;
+  font-weight: bold;
+  color: gold;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px; }
+
+/* line 881, style.scss */
+blockquote::after {
+  /*Reset to make sure*/
+  content: ""; }
+
+/* line 886, style.scss */
+blockquote a {
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c; }
+
+/* line 894, style.scss */
+blockquote a:hover {
+  color: #666; }
+
+/* line 898, style.scss */
+blockquote em {
+  font-style: italic; }
+
+@media screen and (max-width: 850px) {
+  /* line 903, style.scss */
+  .cast {
+    width: 49% !important; }
+
+  /* line 908, style.scss */
+  .menu li {
+    font-size: 0.8em;
+    padding: 0.5em; }
+
+  /* line 914, style.scss */
+  .box1 {
+    width: 85%;
+    height: 50%;
+    margin-top: -35%;
+    margin-left: -42.5%; }
+
+  /* line 920, style.scss */
+  .box4 {
+    font-size: 1.5em; }
+
+  /* line 924, style.scss */
+  .box5 {
+    font-size: 1.5em; } }
+@media screen and (max-width: 600px) {
+  /* line 932, style.scss */
+  .desktopOnly {
+    display: none; }
+
+  /* line 936, style.scss */
+  .mobileOnly {
+    display: inline; }
+
+  /* line 940, style.scss */
+  .menu {
+    display: none; }
+
+  /* line 944, style.scss */
+  .box1 {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 50%;
+    margin-top: -75%;
+    /* Half the height */
+    margin-left: -45%
+    /* Half the width */ }
+
+  /* line 955, style.scss */
+  .box2 {
+    height: 0;
+    bottom: 10em; }
+
+  /* line 960, style.scss */
+  .box3 {
+    height: 0;
+    bottom: 15em; }
+
+  /* line 965, style.scss */
+  .box4 {
+    padding: 0;
+    padding-top: 1em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em; }
+
+  /* line 973, style.scss */
+  .box5 {
+    padding: 0;
+    padding-top: 2.5em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em; }
+
+  /* line 981, style.scss */
+  .star {
+    left: 20%; }
+
+  /* line 985, style.scss */
+  #synopsis {
+    color: white; }
+
+  /* line 988, style.scss */
+  #synopsis .border {
+    width: 100%;
+    left: 0; }
+
+  /* line 992, style.scss */
+  #page2 .border {
+    width: 100%;
+    left: 0; }
+
+  /* line 996, style.scss */
+  #page4 .border {
+    width: 100%;
+    left: 0; }
+
+  /* line 1000, style.scss */
+  #page5 .border {
+    width: 100%;
+    left: 0; }
+
+  /* line 1011, style.scss */
+  #page2 .columns .cast {
+    width: 49%; }
+
+  /* line 1019, style.scss */
+  blockquote {
+    font-size: 1em; }
+
+  /* line 1024, style.scss */
+  .downloadsMary {
+    padding-top: 4em;
+    width: 100%;
+    height: auto; }
+
+  /* line 1030, style.scss */
+  .iconButton {
+    display: inline-block;
+    padding: 0.4em;
+    color: white;
+    cursor: pointer; }
+    /* line 1036, style.scss */
+    .iconButton i {
+      font-size: 2em; }
+    /* line 1040, style.scss */
+    .iconButton :hover {
+      opacity: 0.6; }
+
+  /* line 1045, style.scss */
+  .nutivityTitle {
+    position: absolute;
+    max-width: 12em;
+    z-index: 10;
+    top: 1em;
+    left: 1em; } }
+/* line 1057, style.scss */
+.mobileMenu {
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 999999;
+  display: none; }
+  /* line 1069, style.scss */
+  .mobileMenu img {
+    padding-top: 1em;
+    max-width: 60%; }
+  /* line 1074, style.scss */
+  .mobileMenu li {
+    display: block;
+    padding: 1em; }
+  /* line 1078, style.scss */
+  .mobileMenu a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: white; }
+
+/* line 1089, style.scss */
+.menu-wrapper {
+  z-index: 999999999;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  margin: auto;
+  width: 30px;
+  height: 25px;
+  cursor: pointer; }
+
+/* line 1100, style.scss */
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 30px;
+  height: 5px; }
+
+/* line 1107, style.scss */
+.hamburger-menu {
+  position: relative;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  background: white;
+  -webkit-transition: all 0ms 300ms;
+          transition: all 0ms 300ms; }
+  /* line 1113, style.scss */
+  .hamburger-menu.animate {
+    background: rgba(255, 255, 255, 0); }
+
+/* line 1118, style.scss */
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background: white;
+  -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 1127, style.scss */
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: white;
+  -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 1136, style.scss */
+.hamburger-menu.animate:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 1143, style.scss */
+.hamburger-menu.animate:before {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 1153, style.scss */
+figure.snip0078 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 310px;
+  width: 100%;
+  text-align: center; }
+
+/* line 1166, style.scss */
+figure.snip0078 * {
+  box-sizing: padding-box; }
+
+/* line 1171, style.scss */
+figure.snip0078 img {
+  opacity: 1;
+  max-width: 100%;
+  border: 10px solid #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+      transform: scale(0.85);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+      transform-origin: 0 0; }
+
+/* line 1183, style.scss */
+figure.snip0078 figcaption {
+  bottom: 0;
+  width: 60%;
+  right: 0;
+  position: absolute;
+  background: #000000;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+      transform: translateY(0);
+  box-shadow: 0 0px 10px -10px #000000; }
+
+/* line 1197, style.scss */
+figure.snip0078 figcaption h2,
+figure.snip0078 figcaption p {
+  margin: 0;
+  color: #ffffff; }
+
+/* line 1203, style.scss */
+figure.snip0078 figcaption h2 {
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/* line 1208, style.scss */
+figure.snip0078 figcaption h2 span {
+  font-weight: 800; }
+
+/* line 1212, style.scss */
+figure.snip0078 figcaption p {
+  font-size: 0.9em;
+  font-weight: 500;
+  opacity: 0.65; }
+
+/* line 1218, style.scss */
+figure.snip0078 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1; }
+
+/* line 1227, style.scss */
+figure.snip0078.blue figcaption {
+  background: #1b557a; }
+
+/* line 1231, style.scss */
+figure.snip0078.blue img {
+  border: 10px solid #1b557a; }
+
+/* line 1235, style.scss */
+figure.snip0078.red figcaption {
+  background: #81261d; }
+
+/* line 1239, style.scss */
+figure.snip0078.red img {
+  border: 10px solid #81261d; }
+
+/* line 1243, style.scss */
+figure.snip0078.yellow figcaption {
+  background: #a85913; }
+
+/* line 1247, style.scss */
+figure.snip0078.yellow img {
+  border: 10px solid #a85913; }
+
+/* line 1251, style.scss */
+figure.snip0078:hover figcaption,
+figure.snip0078.hover figcaption {
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+      transform: translateY(-8px);
+  box-shadow: 0 15px 15px -15px #000000; }
+
+/* line 1258, style.scss */
+figure.snip0078:hover.blue img,
+figure.snip0078.hover.blue img {
+  border: 10px solid #2980b9; }
+
+/* line 1263, style.scss */
+figure.snip0078:hover.red img,
+figure.snip0078.hover.red img {
+  border: 10px solid #c0392b; }
+
+/* line 1268, style.scss */
+figure.snip0078:hover.yellow img,
+figure.snip0078.hover.yellow img {
+  border: 10px solid #e67e22; }
+
+/*# sourceMappingURL=style.css.map */

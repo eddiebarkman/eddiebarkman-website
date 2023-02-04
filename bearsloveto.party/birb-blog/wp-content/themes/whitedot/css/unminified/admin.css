@@ -1,0 +1,33 @@
+.whitedot-notice {
+    position: relative;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.whitedot-notice p {
+    font-size: 15px;
+}
+
+.whitedot-notice-btn {
+    text-decoration: none;
+    color: #fff;
+    background: #00b9eb;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.whitedot-notice-btn:hover,
+.whitedot-notice-btn:focus,
+.whitedot-notice-btn:active {
+    color: #fff;
+    background: #00a9d6;
+    box-shadow: none;
+    border: 0;
+}

@@ -1,0 +1,23 @@
+    <html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-assets>
+            <img id="myImage" src="../uploads/1466017079.jpg">
+
+        </a-assets>
+                <a-scene vr-mode-ui="enabled: false">
+            <a-entity camera look-controls></a-entity>
+            <a-sky src="#myImage">
+                <a-animation attribute="rotation" to="0 360 0" dur="250000" easing="linear" fill="forwards" repeat="indefinite">
+                </a-animation>
+            </a-sky>
+
+        </a-scene>
+
+    </body>
+</html>
+    

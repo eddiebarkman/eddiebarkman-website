@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+    <!--320-->
+    <title>Bears Love Potatoes</title>
+    <link rel="stylesheet" href="../css/bulma.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/animate.css" type="text/css">
+    <link href="http://vjs.zencdn.net/6.2.0/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.4.0/balloon.min.css">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="js/cleave.min.js"></script>
+
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101953998-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+    <div id="overlay" onclick="closeNav();"></div>
+
+    <!--Dancing Potatoes-->
+    <div id="potatoHeart" class="animated zoomIn is-hidden-touch">
+        <figure class="image is-pulled-right">
+            <img class="opacity75" src="/images/potatoHeartRight.png">
+        </figure>
+    </div>
+
+    <div id="potatoHeart2" class="animated zoomIn is-hidden-touch">
+        <figure class="image is-pulled-right">
+            <img class="opacity75" src="/images/potatoHeartLeft.png">
+        </figure>
+    </div>
+
+
+    <div id="potatoHeart3" class="animated zoomIn is-hidden-touch">
+        <figure class="image is-pulled-right">
+            <img class="opacity75" src="/images/potatoHeartRight.png">
+        </figure>
+    </div>
+
+    <div id="potatoHeart4" class="animated zoomIn is-hidden-touch">
+        <figure class="image is-pulled-right">
+            <img class="opacity75" src="/images/potatoHeartLeft.png">
+        </figure>
+    </div>
+    <!--Dancing Potatoes-->
+
+    <div id="mySidenav" class="sidenav">
+        <img class="sideNavLogo opacity75 animated zoomIn" src="/images/logoFull.png">
+        <ul>
+            <li><a href="http://bearsloveto.party/" onclick="closeNav();"><span class="icon is-large"><i class="fa fa-home"></i></span><span>Home</span></a></li>
+            <li><a href="" onclick="closeNav();"><span class="icon is-large"><i class="fa fa-cloud"></i></span><span>About</span></a></li>
+            <li><a href="http://blog.bearsloveto.party/" onclick="closeNav();"><span class="icon is-large"><i class="fa fa-tree"></i></span><span>Blog</span></a></li>
+            <li class=""><a href="https://www.etsy.com/shop/BearsLovePotatoes" target="_blank"><span class="icon is-large"><i class="fa fa-heart"></i></span><span>Shop</span></a></li>
+            <li><a href="javascript:void(0)" onclick="closeNav();"><span class="icon is-large"><i class="fa fa-close"></i></span><span>Close</span></a></li>
+        </ul>
+
+    </div>
+
+
+
+
+    <section id="mainPage" class="hero is-success is-fullheight">
+
+
+        <nav id="menu" class="nav has-shadow animated fadeInUp is-hidden-mobile">
+
+
+            <div class="container =">
+
+                <div class="nav-left">
+                    <a class="nav-item is-tab is-hidden-mobile is-active">
+                        <span class="icon"><i class="fa fa-home"></i></span> Home
+                    </a>
+                    <a class="nav-item is-tab is-hidden-mobile">
+                        <span class="icon"><i class="fa fa-cloud"></i></span> About </a>
+                    <a href="http://blog.bearsloveto.party" class="nav-item is-tab is-hidden-mobile">
+                        <span class="icon"><i class="fa fa-tree"></i></span> Blog
+                    </a>
+                    <a href="https://www.etsy.com/shop/BearsLovePotatoes" target="_blank" class="nav-item is-tab is-hidden-mobile">
+                        <span class="icon"><i class="fa fa-heart"></i></span> Shop
+                    </a>
+                </div>
+
+                <div class="nav-center">
+                    <a href="http://bearsloveto.party" class="nav-item">
+                        <img src="/images/title2.png" alt="Bears Logo">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <div class="hero-body">
+            <i id="hambuggah" class="ham fa fa-bars" onClick="openNav();"></i>
+
+            <div class="container">
+                <div id="cardLoader" class="column is-8 is-offset-2">
+
+                    <div id="cardLoader" class="column is-8 is-offset-2">
+                        <figure class="image is-square">
+                            <video id="my-video" class="video-js column is-12" controls preload="auto" width="" height=""
+                              poster="../images/videoBG3.png" data-setup="{}">
+                                <source src="BearsPotatoesLogo.mp4" type='video/mp4'>
+                                <source src="MY_VIDEO.webm" type='video/webm'>
+                                <p class="vjs-no-js">
+                                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                </p>
+                              </video>
+                             <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>
+                        </figure>
+                    </div>
+                </div>
+                <div class="column is-half is-offset-one-quarter">
+
+
+                    <div id="IDEnter" class="field animated bounceInUp">
+
+                        <form onSubmit="process(); return false">
+
+                            <div class="field has-addons" data-balloon="It's the 8 character code on the back of your card!" data-balloon-pos="up">
+
+                                <p class="control has-icons-left is-expanded">
+
+                                    <input class="input is-large is-full-width IDNumber" type="text" name="url" id="url" placeholder="Enter your card ID ">
+
+                                    <span class="icon is-medium is-left">
+                                        
+                                          <i class="fa fa-barcode"></i>
+                                        
+                                        </span>
+                                </p>
+                                <button id="submitButton" type="submit" class="button is-large is-info">
+                                    <span class="icon is-large has-text-centered"><i class="fa fa-heart"></i></span>
+                                </button>
+
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var cleave = new Cleave('.IDNumber', {
+            delimiters: ['-'],
+            blocks: [4, 4],
+            uppercase: true
+        });
+    </script>
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+    <script>
+        function process() {
+            var cardID = "http://bearsloveto.party/cards/" + document.getElementById("url").value;
+
+
+            $.ajax({
+                url: cardID,
+                type: 'HEAD',
+                error: function () {
+
+                    //                    $("#cardLoader").html('<object id="cardLoaderInside" data="http://bearsloveto.party/cards/error/">');        
+                    document.getElementById('cardLoader').innerHTML = '<div id="cardLoader" class="column is-8 is-offset-2"><figure class="image is-square"><img id="bearLogo" class="opacity75 animated jello" src="/images/errorLogo.png"></figure> <span class="tag errorColor"> Card ID not found, please try again!</span></div>';
+
+                    $('#IDEnter').removeClass('animated bounceInUp');
+                    $('#IDEnter').addClass('animated shake');
+
+
+                    return false;
+
+                    //file not exists
+                },
+                success: function () {
+                    $("#cardLoader").html('<object id="cardLoaderInside" class="effect7 animated zoomIn" data="">');
+                    document.getElementById("cardLoaderInside").setAttribute("data", cardID);
+
+
+                    return false;
+                    //file exists
+                }
+            });
+
+        }
+    </script>
+
+    <script>
+        function potatoPulse() {
+            $('#potatoHeart').removeClass('animated zoomIn');
+            $('#potatoHeart').addClass('animated pulse infinite');
+
+            $('#potatoHeart2').removeClass('animated zoomIn');
+            $('#potatoHeart2').addClass('animated pulse infinite');
+
+            $('#potatoHeart3').removeClass('animated zoomIn');
+            $('#potatoHeart3').addClass('animated pulse infinite');
+
+            $('#potatoHeart4').removeClass('animated zoomIn');
+            $('#potatoHeart4').addClass('animated pulse infinite');
+
+        }
+
+
+
+        window.onload = function () {
+
+            window.setTimeout(potatoPulse, 2500);
+
+        };
+    </script>
+
+    <script>
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, false);
+    </script>
+
+
+
+    <script>
+        if (document.documentElement.clientWidth > 700) { //Larger than 700px
+            function openNav() {
+                document.getElementById("mySidenav").style.right = "0em";
+                document.getElementById("mainPage").style.marginLeft = "-25em";
+                document.getElementById("hambuggah").style.right = "9em";
+                document.getElementById("overlay").style.display = "block";
+                document.getElementById("hambuggah").style.transform = "rotate(90deg)";
+                //            $("i.ham").removeClass("fa-bars");
+                //            $("i.ham").addClass("fa-close");
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.right = "-30em";
+                document.getElementById("mainPage").style.marginLeft = "0em";
+                document.getElementById("hambuggah").style.right = "0.5em";
+                document.getElementById("hambuggah").style.transform = "rotate(0deg)";
+                document.getElementById("overlay").style.display = "none";
+                //            $("i.ham").removeClass("fa-close");
+                //            $("i.ham").addClass("fa-bars");
+
+            }
+
+        }
+
+
+        if (document.documentElement.clientWidth < 700) { //smaller than 700 px
+            function openNav() {
+                document.getElementById("mySidenav").style.right = "0em";
+                document.getElementById("mainPage").style.marginLeft = "-20em";
+                document.getElementById("hambuggah").style.right = "9em";
+                document.getElementById("overlay").style.display = "block";
+                document.getElementById("hambuggah").style.transform = "rotate(90deg)";
+                //            $("i.ham").removeClass("fa-bars");
+                //            $("i.ham").addClass("fa-close");
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.right = "-30em";
+                document.getElementById("mainPage").style.marginLeft = "0em";
+                document.getElementById("hambuggah").style.right = "0.5em";
+                document.getElementById("hambuggah").style.transform = "rotate(0deg)";
+                document.getElementById("overlay").style.display = "none";
+                //            $("i.ham").removeClass("fa-close");
+                //            $("i.ham").addClass("fa-bars");
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

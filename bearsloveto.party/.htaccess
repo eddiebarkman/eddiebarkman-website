@@ -1,0 +1,15 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^bearsloveto\.party$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bearsloveto\.party$
+RewriteRule ^(.*)$ "https\:\/\/bearsloveto\.party\/$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^bearsloveto\.eddiebarkman\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bearsloveto\.eddiebarkman\.com$
+RewriteRule ^/?$ "https\:\/\/bearsloveto\.party" [R=301,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “alt-php56” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-alt-php56 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

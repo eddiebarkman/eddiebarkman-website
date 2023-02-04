@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nut-ivity</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css" type="text/css">
+    <link rel="stylesheet" href="css/bulma.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+<div class="stickMe">
+            <div id="rightImg" class="animated slideInRight"></div>
+        <div id="leftImg" class="animated slideInLeft"></div>
+    <section class="hero is-fullheight home">
+        <div id="scene"  class="hero-body">
+            <div class="container has-text-centered"  data-depth="0.03">
+                <img class="animated fadeIn logo is-hidden-mobile" src="images/logolarge.png">
+                <img class="animated fadeIn logo is-mobile-only is-hidden-tablet" src="images/logoMobileLarge.png">
+            </div>
+        </div>
+        <span class="header1 animated fadeInDown">A Satirical Comedy</span>
+        <span class="header2 animated fadeInDown"><p>about the</p> Virgin Mary</span>
+        <div id="scene2">
+        </div>
+        <div class="star"></div>
+        <div class="bgCover"></div>
+    </section>
+    </div>
+<section id="page2" class="hero is-fullheight">
+    <div class="border"></div>
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Full Height title
+      </h1>
+      <h2 class="subtitle">
+        Full Height subtitle
+      </h2>
+    </div>
+  </div>
+</section>
+
+    <div id="particles-js" data-depth="0.5"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script> <!--Might delete this data-tilt -->
+        <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/app.js"></script>
+    
+    <script>
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
+        
+        var scene = document.getElementById('scene2');
+var parallaxInstance = new Parallax(scene2);
+        
+        $("#leftImg").stick_in_parent();
+        $("#rightImg").stick_in_parent();
+
+    </script>
+</body>
+    
+
+</html>

@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e(window);e(".layer-slider").flexslider({animation:"fade",animationLoop:!0,slideshow:!0,slideshowSpeed:5e3,animationSpeed:700,smoothHeight:!0})});

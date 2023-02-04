@@ -1,0 +1,16 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /clients/akemi/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /clients/akemi/index.php [L]
+</IfModule>
+
+# END WordPress
+AuthType Basic
+AuthName "Clients"
+AuthUserFile "/home/eddiebar/.htpasswds/public_html/eddie.fyi/clients/akemi/passwd"
+require valid-user

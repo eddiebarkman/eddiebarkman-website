@@ -1,0 +1,1037 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+/* line 1, style.scss */
+*:focus {
+  outline: none; }
+
+/* line 5, style.scss */
+body {
+  max-width: 100%;
+  overflow: hidden; }
+
+/* line 10, style.scss */
+#container {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+/* line 16, style.scss */
+.toTop {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  height: 3em;
+  width: 3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999; }
+
+/* line 26, style.scss */
+.chevron {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+  position: relative; }
+
+/* line 34, style.scss */
+.chevron:before {
+  content: '';
+  display: block;
+  width: 1em;
+  height: 1em;
+  top: 10%;
+  left: 10%;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+  -ms-transform-origin: 50% 50% 50%;
+  -webkit-transform-origin: 50% 50% 50%;
+  transform-origin: 50% 50% 50%; }
+
+/* line 51, style.scss */
+.chevron.left:before {
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  margin: -15px 0 0 -10px; }
+
+/* line 59, style.scss */
+.chevron.up:before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin: -10px 0 0 -15px; }
+
+/* line 67, style.scss */
+.nutTitle {
+  position: fixed;
+  width: 10em;
+  margin: auto;
+  top: 2.8em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999999;
+  display: none; }
+
+/* line 79, style.scss */
+.nutivityTitle {
+  position: relative;
+  width: 10em !important; }
+
+/* line 84, style.scss */
+.menu {
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10em;
+  color: white;
+  z-index: 999999; }
+  /* line 94, style.scss */
+  .menu li {
+    display: inline-block;
+    padding: 1em; }
+  /* line 100, style.scss */
+  .menu a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: white; }
+
+/* line 107, style.scss */
+.menu::after {
+  height: 20px;
+  width: 100%;
+  background: url("../images/border5.png"); }
+
+/* line 114, style.scss */
+#synopsis {
+  position: relative;
+  background-color: #d0a26b; }
+  /* line 118, style.scss */
+  #synopsis .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border2.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 129, style.scss */
+  #synopsis h1 {
+    color: brown; }
+  /* line 133, style.scss */
+  #synopsis h2 {
+    color: white; }
+
+/* line 138, style.scss */
+#synopsis-2 {
+  position: relative;
+  background-color: #d0a26b; }
+  /* line 142, style.scss */
+  #synopsis-2 .border {
+    position: absolute;
+    top: -4em;
+    left: 0em;
+    background: url("../images/border2.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 153, style.scss */
+  #synopsis-2 h1 {
+    color: black; }
+  /* line 157, style.scss */
+  #synopsis-2 h2 {
+    color: white; }
+
+/* line 162, style.scss */
+#synopsis-3 {
+  position: relative;
+  background-color: #d0a26b; }
+  /* line 166, style.scss */
+  #synopsis-3 .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border2.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 177, style.scss */
+  #synopsis-3 h1 {
+    color: black; }
+  /* line 181, style.scss */
+  #synopsis-3 h2 {
+    color: white; }
+
+/* line 187, style.scss */
+#cast {
+  position: relative;
+  background-color: #222; }
+  /* line 191, style.scss */
+  #cast h1 {
+    color: white; }
+  /* line 195, style.scss */
+  #cast .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border3.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 209, style.scss */
+  #cast .columns .cast {
+    cursor: pointer; }
+    /* line 212, style.scss */
+    #cast .columns .cast h1 {
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      color: white; }
+    /* line 218, style.scss */
+    #cast .columns .cast h2 {
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      color: gold; }
+  /* line 229, style.scss */
+  #cast #castmates h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    padding: 0.25em 0; }
+  /* line 234, style.scss */
+  #cast #castmates h2 {
+    color: gold; }
+  /* line 238, style.scss */
+  #cast #castmates p {
+    color: antiquewhite; }
+
+/* line 244, style.scss */
+#page4 {
+  position: relative;
+  background-color: #214c87; }
+  /* line 248, style.scss */
+  #page4 .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border4.png") no-repeat;
+    background-size: cover;
+    width: 150%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 260, style.scss */
+  #page4 h1 {
+    color: white; }
+  /* line 264, style.scss */
+  #page4 p {
+    color: white; }
+  /* line 268, style.scss */
+  #page4 a {
+    color: gold; }
+  /* line 273, style.scss */
+  #page4 .social i {
+    font-size: 1.5em;
+    padding: 0.25em; }
+  /* line 280, style.scss */
+  #page4 blockquote {
+    color: white; }
+
+/* line 285, style.scss */
+#page5 {
+  position: relative;
+  background-color: #000; }
+  /* line 289, style.scss */
+  #page5 .border {
+    position: absolute;
+    top: -23em;
+    left: 0em;
+    background: url("../images/footerBorder.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 23em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 301, style.scss */
+  #page5 h1 {
+    color: white; }
+  /* line 305, style.scss */
+  #page5 p {
+    color: white; }
+  /* line 309, style.scss */
+  #page5 a {
+    color: pink; }
+  /* line 314, style.scss */
+  #page5 .social i {
+    font-size: 1.5em;
+    padding: 0.25em; }
+
+/* line 323, style.scss */
+#statement {
+  position: relative;
+  background-color: #d0a26b; }
+  /* line 327, style.scss */
+  #statement h1 {
+    color: white; }
+  /* line 331, style.scss */
+  #statement blockquote {
+    font-size: 1.2em; }
+  /* line 337, style.scss */
+  #statement blockquote::before {
+    color: #d0a26b;
+    left: 1px; }
+
+/* line 345, style.scss */
+#contact .container {
+  top: -14em; }
+
+/* line 352, style.scss */
+.bluePage {
+  position: relative;
+  background-color: #214c87; }
+  /* line 356, style.scss */
+  .bluePage .title {
+    font-size: 2.5em; }
+  /* line 360, style.scss */
+  .bluePage .border {
+    position: absolute;
+    top: -4em;
+    left: 0;
+    background: url("../images/border4.png") no-repeat;
+    background-size: cover;
+    width: 150%;
+    height: 5em;
+    z-index: 999;
+    pointer-events: none; }
+  /* line 372, style.scss */
+  .bluePage h1 {
+    font-size: 2em;
+    color: white; }
+  /* line 377, style.scss */
+  .bluePage h2 {
+    color: white; }
+  /* line 380, style.scss */
+  .bluePage h3 {
+    color: white;
+    font-weight: 800; }
+  /* line 385, style.scss */
+  .bluePage p {
+    color: white; }
+  /* line 389, style.scss */
+  .bluePage a {
+    color: gold; }
+  /* line 394, style.scss */
+  .bluePage .social i {
+    font-size: 1.5em;
+    padding: 0.25em; }
+  /* line 401, style.scss */
+  .bluePage blockquote {
+    color: white; }
+
+/* line 406, style.scss */
+.navbar.is-fixed-bottom,
+.navbar.is-fixed-top {
+  z-index: 9999; }
+
+/* line 411, style.scss */
+.content {
+  padding: 16px; }
+
+/* line 415, style.scss */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+/* line 421, style.scss */
+.sticky + .content {
+  padding-top: 60px; }
+
+/* line 425, style.scss */
+footer {
+  position: relative;
+  width: 100%;
+  height: 10em;
+  background-color: #333; }
+
+/* line 432, style.scss */
+.footerBorder {
+  position: absolute;
+  background: url("../images/footerBorder.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20em;
+  z-index: 9777777799;
+  pointer-events: none; }
+
+/* line 444, style.scss */
+.home .header1 {
+  position: relative;
+  left: 0;
+  padding: 1em;
+  color: white;
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800; }
+/* line 454, style.scss */
+.home .header2 {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+  color: white;
+  font-size: 3em;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  vertical-align: middle; }
+  /* line 466, style.scss */
+  .home .header2 p {
+    color: gold;
+    font-size: 0.5em;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    vertical-align: middle; }
+
+/* line 478, style.scss */
+.iconButton {
+  display: inline-block;
+  padding: 1em;
+  color: white;
+  cursor: pointer; }
+  /* line 484, style.scss */
+  .iconButton i {
+    font-size: 2em; }
+
+/* line 489, style.scss */
+#scene {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+/* line 495, style.scss */
+.logo {
+  z-index: 99;
+  max-width: 70%;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  padding-top: 10%; }
+
+/* line 502, style.scss */
+.star {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  opacity: 1;
+  background: url("../images/star.png") no-repeat;
+  background-size: cover;
+  height: 20em;
+  width: 20em;
+  z-index: -5;
+  pointer-events: none;
+  -webkit-animation: flickerAnimation 3s infinite;
+          animation: flickerAnimation 3s infinite; }
+
+/* line 517, style.scss */
+.bgCover {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: url("../images/bgcover.jpg") no-repeat;
+  background-size: cover;
+  height: 140vh;
+  width: 100%;
+  z-index: 9999;
+  opacity: 0.1;
+  pointer-events: none; }
+
+/* line 530, style.scss */
+canvas {
+  display: block;
+  vertical-align: bottom;
+  z-index: -9999; }
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+/* line 549, style.scss */
+#particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1000;
+  background: -webkit-linear-gradient(top, #1b529c 0%, black 100%);
+  background: linear-gradient(to bottom, #1b529c 0%, black 100%); }
+
+/* line 560, style.scss */
+.content {
+  min-height: 100%;
+  overflow: hidden; }
+
+/* line 565, style.scss */
+.wrapper {
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px; }
+
+/* line 598, style.scss */
+.box1 {
+  position: absolute;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  will-change: transform;
+  z-index: 999;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: 50%;
+  margin-top: -25%;
+  /* Half the height */
+  margin-left: -32.5%
+  /* Half the width */ }
+
+/* line 629, style.scss */
+.box2 {
+  position: absolute;
+  left: 0;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 100%;
+  width: 50%;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  will-change: transform;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+
+/* line 649, style.scss */
+.box3 {
+  position: absolute;
+  right: 0;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  height: 100%;
+  width: 50%;
+  line-height: 100px;
+  color: #fff;
+  will-change: transform;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s; }
+
+/* line 667, style.scss */
+.box4 {
+  position: absolute;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  will-change: transform;
+  font-size: 3em;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  vertical-align: middle;
+  padding: 1em;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
+
+/* line 689, style.scss */
+.box5 {
+  position: absolute;
+  -webkit-box-flex: none;
+  box-flex: none;
+  -webkit-flex: none;
+  -moz-flex: none;
+  -ms-flex: none;
+  flex: none;
+  will-change: transform;
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  vertical-align: middle;
+  display: inline-block;
+  color: white;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s; }
+
+/* line 712, style.scss */
+.box5 p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: gold;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 722, style.scss */
+.activeCast img {
+  border: 0.5em solid gold; }
+
+/* line 727, style.scss */
+.hide {
+  display: none; }
+
+/* line 731, style.scss */
+.mobileOnly {
+  display: none; }
+
+/* line 735, style.scss */
+blockquote {
+  display: block;
+  background: transparent;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  /*Font*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+  line-height: 1.2;
+  color: brown;
+  text-align: justify;
+  /*Borders - (Optional)*/
+  border-left: 15px solid gold;
+  border-right: none; }
+
+/* line 758, style.scss */
+blockquote::before {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-size: 60px;
+  font-weight: bold;
+  color: gold;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px; }
+
+/* line 772, style.scss */
+blockquote::after {
+  /*Reset to make sure*/
+  content: ""; }
+
+/* line 777, style.scss */
+blockquote a {
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c; }
+
+/* line 785, style.scss */
+blockquote a:hover {
+  color: #666; }
+
+/* line 789, style.scss */
+blockquote em {
+  font-style: italic; }
+
+@media screen and (max-width: 850px) {
+  /* line 794, style.scss */
+  .cast {
+    width: 49% !important; }
+
+  /* line 799, style.scss */
+  .menu li {
+    font-size: 0.8em;
+    padding: 0.5em; }
+
+  /* line 805, style.scss */
+  .box1 {
+    width: 85%;
+    height: 50%;
+    margin-top: -35%;
+    margin-left: -42.5%; }
+
+  /* line 811, style.scss */
+  .box4 {
+    font-size: 1.5em; }
+
+  /* line 815, style.scss */
+  .box5 {
+    font-size: 1.5em; } }
+@media screen and (max-width: 600px) {
+  /* line 823, style.scss */
+  .desktopOnly {
+    display: none; }
+
+  /* line 827, style.scss */
+  .mobileOnly {
+    display: inline; }
+
+  /* line 831, style.scss */
+  .menu {
+    display: none; }
+
+  /* line 835, style.scss */
+  .box1 {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 50%;
+    margin-top: -75%;
+    /* Half the height */
+    margin-left: -45%
+    /* Half the width */ }
+
+  /* line 846, style.scss */
+  .box2 {
+    height: 0;
+    bottom: 10em; }
+
+  /* line 851, style.scss */
+  .box3 {
+    height: 0;
+    bottom: 15em; }
+
+  /* line 856, style.scss */
+  .box4 {
+    padding: 0;
+    padding-top: 1em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em; }
+
+  /* line 864, style.scss */
+  .box5 {
+    padding: 0;
+    padding-top: 2.5em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em; }
+
+  /* line 872, style.scss */
+  .star {
+    left: 20%; }
+
+  /* line 876, style.scss */
+  #synopsis {
+    color: white; }
+
+  /* line 879, style.scss */
+  #synopsis .border {
+    width: 100%;
+    left: 0; }
+
+  /* line 883, style.scss */
+  #cast .border {
+    width: 100%;
+    left: 0; }
+
+  /* line 887, style.scss */
+  #page4 .border {
+    width: 100%;
+    left: 0; }
+
+  /* line 891, style.scss */
+  #page5 .border {
+    width: 100%;
+    left: 0; }
+
+  /* line 902, style.scss */
+  #cast .columns .cast {
+    width: 49%; }
+
+  /* line 910, style.scss */
+  blockquote {
+    font-size: 1em; }
+
+  /* line 916, style.scss */
+  #contact .container {
+    top: -6em; } }
+/* line 929, style.scss */
+.mobileMenu {
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 999999;
+  display: none; }
+  /* line 941, style.scss */
+  .mobileMenu img {
+    padding-top: 1em;
+    max-width: 60%; }
+  /* line 946, style.scss */
+  .mobileMenu li {
+    display: block;
+    padding: 1em; }
+  /* line 950, style.scss */
+  .mobileMenu a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: white; }
+
+/* line 961, style.scss */
+.menu-wrapper {
+  z-index: 999999999;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  margin: auto;
+  width: 30px;
+  height: 25px;
+  cursor: pointer; }
+
+/* line 972, style.scss */
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 30px;
+  height: 5px; }
+
+/* line 979, style.scss */
+.hamburger-menu {
+  position: relative;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  background: white;
+  -webkit-transition: all 0ms 300ms;
+          transition: all 0ms 300ms; }
+  /* line 985, style.scss */
+  .hamburger-menu.animate {
+    background: rgba(255, 255, 255, 0); }
+
+/* line 990, style.scss */
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background: white;
+  -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 999, style.scss */
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: white;
+  -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 1008, style.scss */
+.hamburger-menu.animate:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 1015, style.scss */
+.hamburger-menu.animate:before {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+/* line 1025, style.scss */
+figure.snip0078 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 310px;
+  width: 100%;
+  text-align: center; }
+
+/* line 1038, style.scss */
+figure.snip0078 * {
+  box-sizing: padding-box; }
+
+/* line 1043, style.scss */
+figure.snip0078 img {
+  opacity: 1;
+  max-width: 100%;
+  border: 10px solid #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+      transform: scale(0.85);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+      transform-origin: 0 0; }
+
+/* line 1055, style.scss */
+figure.snip0078 figcaption {
+  bottom: 0;
+  width: 60%;
+  right: 0;
+  position: absolute;
+  background: #000000;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+      transform: translateY(0);
+  box-shadow: 0 0px 10px -10px #000000; }
+
+/* line 1069, style.scss */
+figure.snip0078 figcaption h2,
+figure.snip0078 figcaption p {
+  margin: 0;
+  color: #ffffff; }
+
+/* line 1075, style.scss */
+figure.snip0078 figcaption h2 {
+  font-weight: 400;
+  text-transform: uppercase; }
+
+/* line 1080, style.scss */
+figure.snip0078 figcaption h2 span {
+  font-weight: 800; }
+
+/* line 1084, style.scss */
+figure.snip0078 figcaption p {
+  font-size: 0.9em;
+  font-weight: 500;
+  opacity: 0.65; }
+
+/* line 1090, style.scss */
+figure.snip0078 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1; }
+
+/* line 1099, style.scss */
+figure.snip0078.blue figcaption {
+  background: #1b557a; }
+
+/* line 1103, style.scss */
+figure.snip0078.blue img {
+  border: 10px solid #1b557a; }
+
+/* line 1107, style.scss */
+figure.snip0078.red figcaption {
+  background: #81261d; }
+
+/* line 1111, style.scss */
+figure.snip0078.red img {
+  border: 10px solid #81261d; }
+
+/* line 1115, style.scss */
+figure.snip0078.yellow figcaption {
+  background: #a85913; }
+
+/* line 1119, style.scss */
+figure.snip0078.yellow img {
+  border: 10px solid #a85913; }
+
+/* line 1123, style.scss */
+figure.snip0078:hover figcaption,
+figure.snip0078.hover figcaption {
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+      transform: translateY(-8px);
+  box-shadow: 0 15px 15px -15px #000000; }
+
+/* line 1130, style.scss */
+figure.snip0078:hover.blue img,
+figure.snip0078.hover.blue img {
+  border: 10px solid #2980b9; }
+
+/* line 1135, style.scss */
+figure.snip0078:hover.red img,
+figure.snip0078.hover.red img {
+  border: 10px solid #c0392b; }
+
+/* line 1140, style.scss */
+figure.snip0078:hover.yellow img,
+figure.snip0078.hover.yellow img {
+  border: 10px solid #e67e22; }
+
+/*# sourceMappingURL=style.css.map */
