@@ -1,12 +1,12 @@
 @charset "UTF-8";
-@import url(../node_modules/animate.css/animate.css);
+@import url(../css/animate.css);
 @import url(../css/morphist.css);
 @import url(../css/hover-min.css);
 @import url(../css/customIcons.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:200,400,700|Anton|Raleway:100,200,400");
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
-@import url(../node_modules/bulma-extensions/dist/bulma-extensions.min.css);
-@import url(../node_modules/bulma-extensions/bulma-carousel/dist/bulma-carousel.min.css);
+@import url(../css/bulma-extensions.min.css);
+@import url(../css/bulma-carousel.min.css);
 @import url(../css/circle.css);
 @import url(../css/jquery.fancybox.min.css);
 @keyframes spinAround {
